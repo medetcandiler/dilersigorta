@@ -14,6 +14,8 @@ const MobileNav: FC<IMobileNav> = ({ isClicked }) => {
         <MobileNavLink
           key={index}
           label={link.label}
+          hasChild={link.hasChild}
+          child={link.child}
         />
       ))}
     </nav>

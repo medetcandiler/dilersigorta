@@ -1,13 +1,13 @@
 import { FC } from "react";
-import { IDesktopNavLinkChild } from "./interface";
 import Link from "next/link";
+import { IDesktopNavLinkChild } from "../DesktopNavLinkChild/interface";
 import Arrow from "../Arrow";
 
-const DesktopNavLinkChild: FC<IDesktopNavLinkChild> = ({ desktopNavChild }) => {
+const MobileNavLinkChild: FC<IDesktopNavLinkChild> = ({ desktopNavChild }) => {
   return (
     <div
-      className={`absolute hidden bg-[#fff] top-6 px-6 pt-7 pb-3 right-1/2 w-auto translate-x-1/2 transition duration-300 whitespace-nowrap
-       group-hover:flex flex-col space-y-4 `}
+      className={`hidden bg-[#fff] w-auto py-3 transition duration-300 whitespace-nowrap
+     group-hover/edit:flex flex-col space-y-3 pl-4 `}
     >
       {desktopNavChild?.map((link) => (
         <Link
@@ -23,4 +23,4 @@ const DesktopNavLinkChild: FC<IDesktopNavLinkChild> = ({ desktopNavChild }) => {
   );
 };
 
-export default DesktopNavLinkChild;
+export default MobileNavLinkChild;

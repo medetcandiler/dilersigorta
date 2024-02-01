@@ -10,7 +10,13 @@ const Header: FC = () => {
       <section className="relative px-4 flex bg-transparent justify-between items-center h-[70px] md:container md:mx-auto">
         <div className="flex items-center justify-between w-full">
           <div className="">
-            <Image src="/logolong.png" alt="logo" width={150} height={150} priority />
+            <Image
+              src="/logolong.png"
+              alt="logo"
+              width={150}
+              height={150}
+              priority
+            />
           </div>
 
           <nav className="flex gap-3 md:gap-6">
@@ -18,14 +24,10 @@ const Header: FC = () => {
             <DesktopNav />
           </nav>
 
-          <div className="hidden gap-5 justify-between items-center text-sm font-bold tracking-wide leading-5 md:flex">
-            <div className="flex flex-col flex-1 ">
-              <div className="flex gap-4 justify-between items-center px-6 py-4 bg-sky-500 rounded-md">
-                <div className="grow">Teklif Al</div>
-                <Arrow color="black" type="right" width={20} height={20} />
-              </div>
-            </div>
-          </div>
+          <button className="hidden gap-3 justify-between items-center px-6 py-4 bg-sky-500 text-[#fff] rounded-md md:flex">
+            <span className="font-semibold">Teklif Al</span>
+            <Arrow color="white" type="right" width={20} height={20} />
+          </button>
         </div>
       </section>
     </header>
