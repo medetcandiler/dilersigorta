@@ -7,7 +7,7 @@ const MobileNavLink: FC<IMobileNavLink> = ({ label }) => {
   return (
     <Link
       href="/"
-      className={`ham-nav-link transition duration-300 group/edit`}
+      className={`ham-nav-link transition duration-300 group/edit px-10`}
     >
       <span className="group-hover/edit:opacity-80">{label}</span>
       <Arrow

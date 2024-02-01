@@ -9,21 +9,16 @@ const DesktopNavLinkChild: FC<IDesktopNavLinkChild> = ({ desktopNavChild }) => {
       className={`absolute hidden top-4 p-4 pb-3 right-1/2 w-auto translate-x-1/2 transition duration-300 whitespace-nowrap
        group-hover:flex flex-col space-y-3 `}
     >
-      {desktopNavChild?.map(link => (
+      {desktopNavChild?.map((link) => (
         <Link
-        href="/"
-        className={`group/edit nav-link hover:text-gray-400 text-sm `}
-      >
-        <span>{link}</span>
-        <Arrow
-          color='black'
-          type="right"
-          height={14}
-          width={12}
-        />
-      </Link>
+          key={link}
+          href="/"
+          className={`group/edit nav-link hover:text-gray-400 text-sm `}
+        >
+          <span>{link}</span>
+          <Arrow color="black" type="right" height={14} width={12} />
+        </Link>
       ))}
-      
     </div>
   );
 };

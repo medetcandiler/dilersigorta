@@ -4,7 +4,7 @@
 
 @layer components {
   .ham-nav-link {
-    @apply flex items-center justify-between px-4 text-xl border-b h-[50px] cursor-pointer;
+    @apply flex items-center bg-[#fff] justify-between px-4 text-xl border-b h-[50px] cursor-pointer;
   }
 
   .nav-link {
