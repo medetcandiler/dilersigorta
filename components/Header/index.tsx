@@ -24,7 +24,7 @@ const Header: FC = () => {
             <DesktopNav />
           </nav>
 
-          <button className="hidden gap-3 justify-between items-center px-6 py-4 bg-sky-500 text-[#fff] rounded-md md:flex">
+          <button className="hidden gap-3 justify-between items-center px-4 py-3 bg-sky-500 text-[#fff] rounded-md md:flex">
             <span className="font-semibold">Teklif Al</span>
             <Arrow color="white" type="right" width={20} height={20} />
           </button>

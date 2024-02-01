@@ -34,7 +34,7 @@ const HeroSection = () => {
       style={backgroundImageStyle}
       className={`bg-cover bg-center h-screen relative overflow-hidden pt-[80px]`}
     >
-      <div className="absolute bottom-12 flex w-full justify-between px-12">
+      <div className="absolute bottom-6 px-6 flex w-full justify-between  md:bottom-12 md:px-12">
         <div
           onClick={handlePrevSlice}
           className="flex justify-between items-center px-4 py-3 bg-sky-500 rounded-md cursor-pointer"
