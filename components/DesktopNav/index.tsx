@@ -10,9 +10,10 @@ const DesktopNav: FC = () => {
           key={link.label}
           label={link.label}
           hasChild={link.hasChild}
+          child={link.child}
         />
       ))}
-    </div>
+  </div>
   );
 };
 
