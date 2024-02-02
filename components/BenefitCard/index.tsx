@@ -11,7 +11,7 @@ const BenefitCard: FC<IBenefitCard> = ({
   return (
     <div
       className={`flex flex-col items-center px-10 py-12 w-full shadow-2xl flex-grow ${
-        bgColor ? bgColor : "bg-white"
+        bgColor ? 'bg-sky-500 text-white' : "bg-white"
       } md:items-start`}
     >
       <Image
@@ -21,10 +21,10 @@ const BenefitCard: FC<IBenefitCard> = ({
         height={40}
         className="object-center "
       />
-      <h3 className="mt-2.5 text-2xl font-bold tracking-normal text-slate-800 text-center md:text-start">
+      <h3 className="mt-2.5 text-2xl font-bold tracking-normal text-center md:text-start">
         {title}
       </h3>
-      <p className="mt-2.5 text-sm font-medium tracking-wide text-neutral-500 text-center md:text-start">
+      <p className="mt-2.5 text-sm font-medium tracking-wide text-center md:text-start">
         {description}
       </p>
     </div>

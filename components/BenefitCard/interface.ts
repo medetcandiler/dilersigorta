@@ -2,5 +2,5 @@ export interface IBenefitCard {
   imageSrc: string,
   title: string,
   description: string,
-  bgColor?: string
+  bgColor?: boolean
 }

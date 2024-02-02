@@ -14,10 +14,10 @@ export const benefits = [
   },
   {
     imageUrl:
-      "/icons/peopleicon.svg",
+      "/icons/whitepeople.png",
     title: "%100 Müşteri Memnuniyeti",
     description:
       "Müşteri memnuniyeti odaklı hizmetimizle her zaman yanınızdayız.",
-    bgColor: "bg-sky-500",
+    bgColor: true,
   },
 ];

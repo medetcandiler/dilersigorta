@@ -8,5 +8,5 @@ export const navLinks = [
     child: products.map(product => product.title),
   },
   { label: "Hakkımızda", hasChild: false },
-  { label: "Iletişim", hasChild: false },
+  { label: "İletişim", hasChild: false },
 ];
