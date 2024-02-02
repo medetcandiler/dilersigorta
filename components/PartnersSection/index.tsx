@@ -1,15 +1,27 @@
-import { FC } from "react"
-import { partners } from "./data"
-import PartnerCard from "../PartnerCard"
+import { FC } from "react";
+import { partners } from "./data";
+import PartnerCard from "../PartnerCard";
 
-const PartnersSection:FC = () => {
+const PartnersSection: FC = () => {
   return (
-    <div>
-      {partners.map(partner => (
-        <PartnerCard key={partner.id} imageSrc={partner.imageSrc} />
-      ))}
-    </div>
-  )
-}
+    <section className="bg-[#fafafa] py-20 px-20">
+      <div className="container mx-auto ">
+        <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl pb-16">
+          İş Birliği Yaptığımız Şirketler
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+          {partners.map((partner) => (
+            <PartnerCard
+              key={partner.id}
+              imageSrc={partner.imageSrc}
+              alt={partner.alt}
+              size={partner.size}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default PartnersSection
+export default PartnersSection;
