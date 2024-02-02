@@ -11,7 +11,7 @@ export const dataSlice = [
     title: "Konut Sigortası",
     description:
       "Ev sigortası ile evinizi ve eşyalarınızı güvence altına alın. Doğal afetler, hırsızlık ve diğer risklere karşı kapsamlı bir koruma sunuyoruz.",
-    bg: "/images/konut.jpeg",
+    bg: "/images/houses.avif",
   },
   {
     id: 3,
