@@ -4,7 +4,7 @@ export const dataSlice = [
     title: "Araç Sigortası",
     description:
       "Araç sigortası ile aracınızın güvence altında olduğundan emin olun. Trafik kazaları, hırsızlık ve diğer risklere karşı koruma sağlıyoruz.",
-    bg: "/images/bg.jpeg",
+    bg: "/images/car.jpeg",
   },
   {
     id: 2,
@@ -18,6 +18,6 @@ export const dataSlice = [
     title: "Sağlık Sigortası",
     description:
       "Sağlık sigortası ile sağlığınızı ön planda tutun. İleri tedaviler, acil durumlar ve diğer sağlık hizmetlerine geniş kapsamlı bir erişim sağlıyoruz.",
-    bg: "/images/logistic.jpeg",
+    bg: "/images/healt.avif",
   },
 ];
