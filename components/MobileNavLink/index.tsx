@@ -2,28 +2,21 @@ import { FC } from "react";
 import { IMobileNavLink } from "./interface";
 import Link from "next/link";
 import Arrow from "../Arrow";
-import MobileNavLinkChild from "../MobileNavLinkChild";
+import MobileLinkWithChild from "../MobileLinkWithChild";
+
 
 const MobileNavLink: FC<IMobileNavLink> = ({ label, hasChild, child }) => {
   if (hasChild)
     return (
-      <div
-        className={`flex flex-col bg-[#fff] transition duration-300 group/edit px-10 text-xl border-b py-3 cursor-pointer`}
-      >
-        <div className="flex items-center justify-between">
-          <span className="group-hover/edit:opacity-80">{label}</span>
-          <Arrow color="black" type="right" height={20} width={18} />
-        </div>
-        <MobileNavLinkChild desktopNavChild={child} />
-      </div>
+      <MobileLinkWithChild label={label} child={child} />
     );
   return (
     <Link
       href="/"
-      className={`ham-nav-link transition duration-300 group/edit`}
+      className={`ham-nav-link links-hover group/edit`}
     >
-      <span className="group-hover/edit:opacity-80">{label}</span>
-      <Arrow color="black" type="right" height={20} width={18} />
+      <span>{label}</span>
+      <Arrow color="black" type="right" height={20} width={18} isChildArrow={false} />
     </Link>
   );
 };

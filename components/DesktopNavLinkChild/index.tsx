@@ -13,7 +13,7 @@ const DesktopNavLinkChild: FC<IDesktopNavLinkChild> = ({ desktopNavChild }) => {
         <Link
           key={link}
           href="/"
-          className={`group/edit nav-link hover:text-gray-400 text-sm `}
+          className={`group/edit nav-link hover:text-[#0E7AB3] text-sm `}
         >
           <span>{link}</span>
           <Arrow color="black" type="right" height={14} width={12} />

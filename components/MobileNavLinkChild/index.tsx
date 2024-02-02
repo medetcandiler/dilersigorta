@@ -3,20 +3,20 @@ import Link from "next/link";
 import { IDesktopNavLinkChild } from "../DesktopNavLinkChild/interface";
 import Arrow from "../Arrow";
 
-const MobileNavLinkChild: FC<IDesktopNavLinkChild> = ({ desktopNavChild }) => {
+const MobileNavLinkChild: FC<IDesktopNavLinkChild> = ({ desktopNavChild, isClicked }) => {
   return (
     <div
-      className={`hidden bg-[#fff] w-auto py-3 transition duration-300 whitespace-nowrap
-     group-hover/edit:flex flex-col space-y-3 pl-4 `}
+      className={` bg-[#fff] w-auto py-3 transition duration-300 whitespace-nowrap
+     ${isClicked ? 'flex' : 'hidden'} flex-col space-y-3 pl-4 `}
     >
       {desktopNavChild?.map((link) => (
         <Link
           key={link}
           href="/"
-          className={`group/edit nav-link hover:text-gray-400 text-sm `}
+          className={`child py-1 group/second nav-link hover:text-[#0E7AB3] text-sm `}
         >
-          <span>{link}</span>
-          <Arrow color="black" type="right" height={14} width={12} />
+          <span className="child">{link}</span>
+          <Arrow color="black" type="right" height={20} width={18} isChildArrow={true} />
         </Link>
       ))}
     </div>

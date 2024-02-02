@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { FC } from "react";
 import { useState } from "react";
 import MobileNav from "../MobileNav";
@@ -6,14 +6,17 @@ import MobileNav from "../MobileNav";
 const HamburgerMenu: FC = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
 
-  const handleHamNavClick = () => {
-    setIsClicked(prev => !prev);
-  }
+  const handleHamNavClick = (e: React.MouseEvent) => {
+    
+    setIsClicked((prev) => !prev);
+  };
   return (
     <>
       <div
-        className={`inline-block cursor-pointer transition duration-300 group md:hidden ${isClicked ? 'change' : ''}`}
-        onClick={handleHamNavClick}
+        className={`inline-block cursor-pointer transition duration-300 group md:hidden ${
+          isClicked ? "change" : ""
+        }`}
+        onClick={(e) => handleHamNavClick(e)}
       >
         <div className={`bar1 group-hover:bg-slate-600`}></div>
         <div className={`bar2 group-hover:bg-slate-600`}></div>

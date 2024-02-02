@@ -3,4 +3,5 @@ export interface IArrowProps {
   type: "down" | "left" | "right";
   width: number;
   height: number;
+  isChildArrow: boolean
 }

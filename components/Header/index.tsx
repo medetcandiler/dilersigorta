@@ -11,7 +11,7 @@ const Header: FC = () => {
         <div className="flex items-center justify-between w-full">
           <div className="">
             <Image
-              src="/logolong.png"
+              src="/images/logolong.png"
               alt="logo"
               width={150}
               height={150}
@@ -26,7 +26,7 @@ const Header: FC = () => {
 
           <button className="hidden gap-3 justify-between items-center px-4 py-3 bg-sky-500 text-[#fff] rounded-md md:flex">
             <span className="font-semibold">Teklif Al</span>
-            <Arrow color="white" type="right" width={20} height={20} />
+            <Arrow color="white" type="right" width={20} height={20} isChildArrow={false} />
           </button>
         </div>
       </section>

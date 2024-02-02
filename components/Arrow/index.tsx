@@ -1,19 +1,27 @@
 import { FC } from "react";
 import { IArrowProps } from "./interface";
 
-const Arrow: FC<IArrowProps> = ({ color, type, width, height }) => {
+const Arrow: FC<IArrowProps> = ({
+  color,
+  type,
+  width,
+  height,
+  isChildArrow,
+}) => {
   let style = "";
   if (type === "down") {
-    style = "group-hover:opacity-80 group-hover:translate-y-[-3px]";
+    style = "group-hover/:fill-[#0E7AB3]";
   } else if (type === "left") {
     style = "rotate-90";
   } else if (type === "right") {
-    style = "-rotate-90"; 
+    style = "-rotate-90";
   }
 
   return (
     <svg
-      className={`transition duration-300 ${style} group-hover/edit:opacity-80`}
+      className={`child transition duration-300 group-hover/second:fill-[#0E7AB3] ${style} ${
+        isChildArrow ? "" : "group-hover/edit:fill-[#0E7AB3]"
+      }`}
       xmlns="http://www.w3.org/2000/svg"
       height={height}
       width={width}

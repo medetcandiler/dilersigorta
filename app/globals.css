@@ -8,11 +8,11 @@
   }
 
   .nav-link {
-    @apply flex items-center space-x-2
+    @apply flex items-center font-medium space-x-2 
   }
 
   .links-hover {
-    @apply transition duration-300 hover:translate-y-[-3px] hover:opacity-80
+    @apply transition duration-300 hover:text-[#0E7AB3]
   }
 }
 

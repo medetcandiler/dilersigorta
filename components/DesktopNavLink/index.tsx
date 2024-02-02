@@ -8,7 +8,7 @@ const DesktopNavLink: FC<IDesktopNavLink> = ({ label, hasChild, child }) => {
   if (hasChild)
   return (
     <div className="relative group nav-link cursor-pointer">
-      <span className="group/edit transition duration-300 group-hover:opacity-80 group-hover:translate-y-[-3px]">{label}</span>
+      <span className="group/edit transition duration-300 group-hover/:text-[#0E7AB3]">{label}</span>
       <Arrow
         color="black"
         type="down"

@@ -1,3 +1,4 @@
 export interface IDesktopNavLinkChild {
-  desktopNavChild?: string[]
+  isClicked: boolean;
+  desktopNavChild?: string[];
 }

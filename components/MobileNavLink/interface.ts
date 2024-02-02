@@ -1,5 +1,5 @@
 export interface IMobileNavLink {
   label: string;
-  hasChild: boolean;
+  hasChild?: boolean;
   child?: string[];
 }
