@@ -6,5 +6,5 @@ export const partners = [
     imageSrc: "/images/turkiye-sigorta.png",
     size: 200,
   },
-  { id: 3, alt: "ak-sigorta", imageSrc: "/images/ak-sigorta.png", size: 200 },
+  { id: 3, alt: "axa-sigorta", imageSrc: "/images/axa-sigorta.png", size: 200 },
 ];
