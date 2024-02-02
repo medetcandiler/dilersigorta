@@ -10,6 +10,7 @@ const DesktopNavLink: FC<IDesktopNavLink> = ({ label, hasChild, child }) => {
     <div className="relative group nav-link cursor-pointer">
       <span className="group/edit transition duration-300 group-hover/:text-[#0E7AB3]">{label}</span>
       <Arrow
+        isChildArrow={false}
         color="black"
         type="down"
         height={20}

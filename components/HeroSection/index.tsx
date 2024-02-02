@@ -35,18 +35,18 @@ const HeroSection = () => {
       className={`bg-cover bg-center h-screen relative overflow-hidden pt-[80px]`}
     >
       <div className="absolute bottom-6 px-6 flex w-full justify-between  md:bottom-12 md:px-12">
-        <div
+        <button
           onClick={handlePrevSlice}
           className="flex justify-between items-center px-4 py-3 bg-sky-500 rounded-md cursor-pointer"
         >
-          <Arrow color="white" type="left" width={15} height={15} />
-        </div>
-        <div
+          <Arrow color="white" type="left" width={15} height={15} isChildArrow={false} />
+        </button>
+        <button
           onClick={handleNextSlice}
           className="flex justify-between items-center px-4 py-3 bg-sky-500 rounded-md cursor-pointer"
         >
-          <Arrow color="white" type="right" width={15} height={15} />
-        </div>
+          <Arrow color="white" type="right" width={15} height={15} isChildArrow={false} />
+        </button>
       </div>
 
       <div className="flex justify-center items-center h-full">
