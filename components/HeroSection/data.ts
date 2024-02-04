@@ -18,6 +18,6 @@ export const dataSlice = [
     title: "Sağlık Sigortası",
     description:
       "Sağlık sigortası ile sağlığınızı ön planda tutun. İleri tedaviler, acil durumlar ve diğer sağlık hizmetlerine geniş kapsamlı bir erişim sağlıyoruz.",
-    bg: "/images/healt.avif",
+    bg: "/images/healt.jpg",
   },
 ];

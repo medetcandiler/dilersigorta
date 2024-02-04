@@ -79,7 +79,6 @@ const Footer: FC = () => {
             </div>
             <div className="flex gap-2.5 justify-between ">
               <Image
-                loading="lazy"
                 src="/icons/phone.svg"
                 alt="phone"
                 className="my-auto w-6 aspect-square"
@@ -90,7 +89,6 @@ const Footer: FC = () => {
             </div>
             <div className="flex gap-2.5 justify-between mt-2.5">
               <Image
-                loading="lazy"
                 src="/icons/location.svg"
                 alt="location"
                 className="w-6 aspect-[0.8]"
@@ -101,9 +99,8 @@ const Footer: FC = () => {
                 Atalar, Diler Sigorta, Üsküdar Cd. NO:117, 34862 Kartal/İstanbul
               </div>
             </div>
-            <div className="flex gap-2.5 justify-between mt-2.5 whitespace-nowrap">
+            <div className="flex gap-2.5 justify-between mt-2.5">
               <Image
-                loading="lazy"
                 src="/icons/email.svg"
                 alt="email"
                 className="my-auto w-6 aspect-[0.93]"

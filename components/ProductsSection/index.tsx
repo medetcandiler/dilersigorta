@@ -4,7 +4,7 @@ import { products } from "@/data/products";
 
 const ProductsSection: FC = () => {
   return (
-    <section className="bg-[#fafafa] px-5 py-20 lg:px-40">
+    <section className="bg-[#fafafa] px-5 py-20 xl:px-72">
       <h3 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl pb-8">
         Güvenin Adresi, Sigortada İhtiyacınız Olan Her Şey!
       </h3>
