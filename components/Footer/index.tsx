@@ -70,7 +70,7 @@ const Footer: FC = () => {
             </div>
             <div className="-ml-4">
               <Image
-                src="/images/logowithoutbg.png"
+                src="/images/dilerlogo.png"
                 alt="logo"
                 width={150}
                 height={150}
