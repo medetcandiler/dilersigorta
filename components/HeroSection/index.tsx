@@ -26,26 +26,38 @@ const HeroSection = () => {
   };
 
   const backgroundImageStyle = {
-    backgroundImage: `radial-gradient(rgba(0, 128, 128, 0.7), rgba(0, 123, 255, 0.1)), url('${dataSlice[currentSlice].bg}')`,
+    backgroundImage: `radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.1)), url('${dataSlice[currentSlice].bg}')`,
   };
 
   return (
     <section
       style={backgroundImageStyle}
-      className={`bg-cover bg-center h-screen relative overflow-hidden pt-[80px]`}
+      className={`bg-cover bg-center h-screen relative overflow-hidden pt-[70px] `}
     >
       <div className="absolute bottom-6 px-6 flex w-full justify-between  md:bottom-12 md:px-12">
         <button
           onClick={handlePrevSlice}
           className="flex justify-between items-center px-4 py-3 bg-sky-500 rounded-md cursor-pointer"
         >
-          <Arrow color="white" type="left" width={15} height={15} isChildArrow={false} />
+          <Arrow
+            color="white"
+            type="left"
+            width={15}
+            height={15}
+            isChildArrow={false}
+          />
         </button>
         <button
           onClick={handleNextSlice}
           className="flex justify-between items-center px-4 py-3 bg-sky-500 rounded-md cursor-pointer"
         >
-          <Arrow color="white" type="right" width={15} height={15} isChildArrow={false} />
+          <Arrow
+            color="white"
+            type="right"
+            width={15}
+            height={15}
+            isChildArrow={false}
+          />
         </button>
       </div>
 

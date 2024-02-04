@@ -9,7 +9,7 @@ const PartnersSection: FC = () => {
         <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl pb-16">
           İş Birliği Yaptığımız Şirketler
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
           {partners.map((partner) => (
             <PartnerCard
               key={partner.id}
