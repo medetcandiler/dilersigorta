@@ -32,7 +32,7 @@ const HeroSection = () => {
   return (
     <section
       style={backgroundImageStyle}
-      className={`bg-cover bg-center h-screen relative overflow-hidden pt-[70px] `}
+      className={`bg-cover bg-center h-screen relative overflow-hidden pt-[70px]`}
     >
       <div className="absolute bottom-6 px-6 flex w-full justify-between  md:bottom-12 md:px-12">
         <button
