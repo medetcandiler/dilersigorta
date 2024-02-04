@@ -116,7 +116,7 @@ const Footer: FC = () => {
       </div>
 
       {/* all rights section */}
-      <div className="bg-[#fafafa] py-5">
+      <div className="bg-[#fafafa] px-5 py-5">
         <div className="container mx-auto flex flex-col items-center gap-2 md:flex-row md:justify-between">
           <p className="text-gray-600">
             © 2024 Diler Sigorta. Tüm hakları saklıdır.
