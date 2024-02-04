@@ -8,7 +8,7 @@
   }
 
   .nav-link {
-    @apply flex items-center font-medium space-x-2 
+    @apply flex items-center font-medium space-x-2
   }
 
   .links-hover {
@@ -36,4 +36,13 @@
 
 .change .bar3 {
   transform: translate(0, -8px) rotate(45deg);
+}
+
+#scroll::-webkit-scrollbar {
+  display: none;
+}
+
+#scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
