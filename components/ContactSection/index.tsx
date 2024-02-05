@@ -15,7 +15,7 @@ const ContactSection: FC = () => {
         </div>
       </div>
 
-      <div className="container mx-auto flex flex-col items-center gap-20 py-20">
+      <div className="container mx-auto flex flex-col items-center gap-10 py-14">
         <div className="flex flex-col items-center gap-5">
           <h3 className="titleStyle md:text-3xl lg:text-4xl">Bize Ulaşın</h3>
           <span className="subTitleStyle text-neutral-500 pb-0">
@@ -24,9 +24,7 @@ const ContactSection: FC = () => {
           <GoogleMaps />
         </div>
 
-        
-
-        <div className="container mx-auto flex flex-col items-center gap-10 px-5">
+        <div className="container mx-auto flex flex-col items-center gap-10 ">
           <div className="px-5">
             <h3 className="titleStyle md:text-3xl lg:text-4x">
               Bizimle İletişime Geçin
