@@ -10,7 +10,7 @@ const HeroSection = () => {
   useEffect(() => {
     const intervalNext = setInterval(() => {
       handleNextSlice();
-    }, 5000);
+    }, 3500);
 
     return () => {
       clearInterval(intervalNext);
