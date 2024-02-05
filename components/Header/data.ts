@@ -7,6 +7,6 @@ export const navLinks = [
     hasChild: true,
     child: products.map(product => product.title),
   },
-  { label: "Hakkımızda", hasChild: false },
+  { label: "Hakkimizda", hasChild: false },
   { label: "İletişim", hasChild: false },
 ];

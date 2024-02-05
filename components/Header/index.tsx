@@ -5,13 +5,12 @@ import HamburgerMenu from "../HamburgerMenu";
 import DesktopNav from "../DesktopNav";
 import Arrow from "../Arrow";
 
-
 const Header: FC = () => {
   return (
     <header className="fixed w-full transition duration-300 z-50 bg-[#fff]">
       <section className="relative px-4 flex bg-transparent justify-between items-center h-[70px] md:container md:mx-auto">
         <div className="flex items-center justify-between w-full">
-          <Link href='/' className="cursor-pointer">
+          <Link href="/" className="cursor-pointer">
             <Image
               src="/images/dilerlogo.png"
               alt="logo"
@@ -28,7 +27,13 @@ const Header: FC = () => {
 
           <button className="hidden gap-3 justify-between items-center px-4 py-3 bg-sky-500 text-[#fff] rounded-md md:flex">
             <span className="font-semibold">Teklif Al</span>
-            <Arrow color="white" type="right" width={20} height={20} isChildArrow={false} />
+            <Arrow
+              color="white"
+              type="right"
+              width={20}
+              height={20}
+              isChildArrow={false}
+            />
           </button>
         </div>
       </section>

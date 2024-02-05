@@ -20,7 +20,7 @@ const DesktopNavLink: FC<IDesktopNavLink> = ({ label, hasChild, child }) => {
     </div>
   );
 return (
-  <Link className="nav-link" href="/">
+  <Link className="nav-link" href={label.toLocaleLowerCase()}>
     <span className="links-hover">{label}</span>
   </Link>
 );
