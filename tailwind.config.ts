@@ -11,6 +11,9 @@ const config: Config = {
       height: {
         "screen-80": "calc(100vh - 80px)",
       },
+      colors: {
+        transparentSky: "rgba(11, 165, 233, 0.3)"
+      }
     },
   },
   plugins: [],

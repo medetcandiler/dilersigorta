@@ -34,10 +34,10 @@ const HeroSection = () => {
       style={backgroundImageStyle}
       className={`bg-cover bg-center h-screen relative overflow-hidden pt-[70px]`}
     >
-      <div className="absolute bottom-6 px-6 flex w-full justify-between  md:bottom-12 md:px-12">
+      <div className="absolute bottom-1/2 translate-y-1/2 px-1 sm:px-3 flex w-full justify-between md:bottom-12 md:px-12  ">
         <button
           onClick={handlePrevSlice}
-          className="flex justify-between items-center px-4 py-3 bg-sky-500 rounded-md cursor-pointer"
+          className="flex justify-between items-center px-3 py-3 bg-transparentSky rounded-md cursor-pointer"
         >
           <Arrow
             color="white"
@@ -49,7 +49,7 @@ const HeroSection = () => {
         </button>
         <button
           onClick={handleNextSlice}
-          className="flex justify-between items-center px-4 py-3 bg-sky-500 rounded-md cursor-pointer"
+          className="flex justify-between items-center px-3 py-3 bg-transparentSky rounded-md cursor-pointer"
         >
           <Arrow
             color="white"
