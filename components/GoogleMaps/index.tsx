@@ -13,10 +13,9 @@ const center = {
 const GoogleMaps = () => {
   return (
     <LoadScript
-      googleMapsApiKey={`${process.env.NEXT_PUBLIC_GOOGLE_APIKEY}&libraries=places`}
+      googleMapsApiKey={`AIzaSyBprqEjKG35UgCI7_OAM1WLpb-qltlxG4Y&libraries=places`}
     >
       <div className="flex items-center justify-center size-96 bg-red-300 md:w-[800px]  md:h-[400px]">
-
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           zoom={10}
