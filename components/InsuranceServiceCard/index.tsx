@@ -16,10 +16,10 @@ const InsuranceServiceCard: FC<IInsuranceServiceCard> = ({
         height={40}
         className="object-center "
       />
-      <h3 className="mt-2.5 text-xl font-bold tracking-normal text-slate-800 text-center">
+      <h3 className="mt-2.5 contentHeader text-center">
         {title}
       </h3>
-      <p className="mt-2.5 text-sm font-medium tracking-wide text-neutral-500 text-center">
+      <p className="mt-2.5 contentText text-center">
         {description}
       </p>
     </div>

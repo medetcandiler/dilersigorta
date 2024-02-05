@@ -4,15 +4,39 @@
 
 @layer components {
   .ham-nav-link {
-    @apply flex items-center bg-[#fff] justify-between px-10 text-xl border-b py-3 cursor-pointer;
+    @apply flex items-center bg-[#fff] text-slate-800 justify-between px-10 text-xl border-b py-3 cursor-pointer;
   }
 
   .nav-link {
-    @apply flex items-center font-medium space-x-2
+    @apply flex items-center font-medium space-x-2 text-slate-800
   }
 
   .links-hover {
     @apply transition duration-300 hover:text-[#0E7AB3]
+  }
+
+  .skyButton {
+    @apply flex justify-center items-center px-4 py-3 md:px-9 md:py-4 border border-sky-500 bg-sky-500 rounded-full transition duration-300 hover:border-white hover:bg-transparent
+  }
+
+  .outlineButton {
+    @apply flex justify-center items-center px-4 py-3 md:px-9 md:py-4 border border-solid rounded-full transition duration-300 hover:border-sky-500 hover:bg-sky-500
+  }
+
+  .titleStyle {
+    @apply text-center font-bold text-3xl md:text-4xl lg:text-5xl text-slate-800
+  }
+
+  .subTitleStyle {
+    @apply text-center text-lg pb-6 text-neutral-500
+  }
+
+  .contentHeader {
+    @apply text-xl font-bold tracking-normal text-slate-800
+  }
+
+  .contentText {
+    @apply text-sm font-medium tracking-wide text-neutral-500
   }
 }
 

@@ -21,10 +21,10 @@ const AboutCard: FC<IAboutCard> = ({ title, content, imageSrc }) => {
       </div>
 
       <div className="flex flex-col gap-2 md:w-1/2 md:gap-4">
-        <h3 className="text-3xl font-medium text-center md:text-start">
+        <h3 className="contentHeader text-center md:text-start">
           {title}
         </h3>
-        <p className="text-sm font-medium tracking-wide text-center md:text-md md:text-start">
+        <p className="contentText text-center md:text-md md:text-start">
           {content}
         </p>
       </div>

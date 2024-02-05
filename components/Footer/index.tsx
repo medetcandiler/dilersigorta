@@ -9,7 +9,7 @@ const Footer: FC = () => {
         {/* Section 1 */}
         <div className="col-span-1 md:col-span-1 lg:col-span-1">
           <div className="flex flex-col">
-            <div className="text-base font-bold tracking-normal leading-6 whitespace-nowrap text-black">
+            <div className="contentHeader whitespace-nowrap text-black">
               Şirket Bilgisi
             </div>
             <div className="mt-5">Hakkımızda</div>
@@ -22,7 +22,7 @@ const Footer: FC = () => {
         {/* Section 2 */}
         <div className="col-span-1 md:col-span-1 lg:col-span-1">
           <div className="flex flex-col">
-            <div className="text-base font-bold tracking-normal leading-6 text-black">
+            <div className="contentHeader text-black">
               Hukuki
             </div>
             <div className="mt-5">Kullanım Şartları</div>
@@ -35,7 +35,7 @@ const Footer: FC = () => {
         {/* Section 3 */}
         <div className="col-span-1 md:col-span-1 lg:col-span-1">
           <div className="flex flex-col">
-            <div className="text-base font-bold tracking-normal leading-6 text-black">
+            <div className="contentHeader text-black">
               Özellikler
             </div>
             <div className="mt-5 whitespace-nowrap max-md:mr-0.5">
@@ -52,7 +52,7 @@ const Footer: FC = () => {
         {/* Section 4 */}
         <div className="col-span-1 md:col-span-1 lg:col-span-1">
           <div className="flex flex-col">
-            <div className="text-base font-bold tracking-normal leading-6 text-black">
+            <div className="contentHeader text-black">
               Kaynaklar
             </div>
             <div className="mt-5">Sigorta Uygulamaları</div>
@@ -65,7 +65,7 @@ const Footer: FC = () => {
         {/* Section 5 */}
         <div className="col-span-1 md:col-span-2 lg:col-span-1 order-first md:order-last">
           <div className="flex flex-col">
-            <div className="text-base font-bold tracking-normal leading-6 text-black">
+            <div className="contentHeader text-black">
               İletişim
             </div>
             <div className="-ml-4">

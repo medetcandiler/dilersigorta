@@ -6,7 +6,7 @@ const PartnersSection: FC = () => {
   return (
     <section className="bg-[#fff] py-36 px-5 md:px-16">
       <div className="container mx-auto ">
-        <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl pb-16">
+        <h1 className="titleStyle pb-16">
           İş Birliği Yaptığımız Şirketler
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-5">

@@ -23,7 +23,7 @@ const MobileLinkWithChild: FC<IMobileLinkWithChild> = ({ label, child }) => {
       className={`flex flex-col bg-[#fff] transition duration-300 group/edit px-10 text-xl border-b py-3 cursor-pointer`}
     >
       <div className="flex items-center justify-between">
-        <span className="group-hover/edit:text-[#0E7AB3]">{label}</span>
+        <span className="text-slate-800 group-hover/edit:text-[#0E7AB3]">{label}</span>
         <Arrow
           color="black"
           type="right"

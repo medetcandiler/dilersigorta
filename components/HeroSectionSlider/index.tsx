@@ -10,17 +10,17 @@ const HeroSectionSlider: FC<IHeroSectionSlider> = ({ content, isVisible }) => {
           : "opacity-0 translate-y-[-100px]"
       } md:w-1/2`}
     >
-      <h1 className="text-3xl font-extrabold text-[#fff] md:text-6xl text-center">
+      <h1 className="titleStyle text-[#fff]">
         {content.title}
       </h1>
       <p className="text-lg font-medium text-[#fff] text-center md:text-xl">
         {content.description}
       </p>
       <div className="flex gap-2.5 items-center text-sm font-bold tracking-wide leading-5 text-center text-[#fff] whitespace-nowrap">
-        <button className="grow justify-center items-stretch px-4 py-3 md:px-9 md:py-4 border border-sky-500 bg-sky-500 rounded-full">
+        <button className="skyButton">
           Teklif Alın
         </button>
-        <button className="grow justify-center items-stretch px-4 py-3 md:px-9 md:py-4 border border-solid rounded-full">
+        <button className="outlineButton">
           Daha Fazla Bilgi
         </button>
       </div>
