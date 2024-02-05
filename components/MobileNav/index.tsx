@@ -16,6 +16,7 @@ const MobileNav: FC<IMobileNav> = ({ isClicked }) => {
           label={link.label}
           hasChild={link.hasChild}
           child={link.child}
+          href={link.href}
         />
       ))}
     </nav>

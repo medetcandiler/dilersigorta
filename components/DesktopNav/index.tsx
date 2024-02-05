@@ -11,6 +11,7 @@ const DesktopNav: FC = () => {
           label={link.label}
           hasChild={link.hasChild}
           child={link.child}
+          href={link.href}
         />
       ))}
   </div>

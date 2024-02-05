@@ -5,14 +5,14 @@ import Arrow from "../Arrow";
 import MobileLinkWithChild from "../MobileLinkWithChild";
 
 
-const MobileNavLink: FC<IMobileNavLink> = ({ label, hasChild, child }) => {
+const MobileNavLink: FC<IMobileNavLink> = ({ label, hasChild, child, href }) => {
   if (hasChild)
     return (
       <MobileLinkWithChild label={label} child={child} />
     );
   return (
     <Link
-      href="/"
+      href={href}
       className={`ham-nav-link links-hover group/edit`}
     >
       <span>{label}</span>

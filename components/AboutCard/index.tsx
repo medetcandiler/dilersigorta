@@ -16,6 +16,7 @@ const AboutCard: FC<IAboutCard> = ({ title, content, imageSrc }) => {
           width={500}
           height={500}
           alt={title}
+          priority
         />
       </div>
 

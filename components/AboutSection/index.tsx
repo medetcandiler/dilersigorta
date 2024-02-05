@@ -12,7 +12,7 @@ const AboutSection: FC = () => {
     <div className="relative pt-[70px]">
       <div className="bg-cover bg-center h-[50vh]" style={styling}>
         <div className="flex justify-center items-center h-full">
-          <h3 className="text-[#fff] text-5xl">Hakkimizda</h3>
+          <h3 className="text-[#fff] text-5xl">Hakkımızda</h3>
         </div>
       </div>
 

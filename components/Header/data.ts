@@ -1,12 +1,13 @@
 import { products } from "@/data/products";
 
 export const navLinks = [
-  { label: "Anasayfa", hasChild: false },
+  { label: "Anasayfa", hasChild: false, href: "/" },
   {
     label: "Ürünler",
     hasChild: true,
-    child: products.map(product => product.title),
+    child: products.map((product) => product.title),
+    href: "/urunler",
   },
-  { label: "Hakkimizda", hasChild: false },
-  { label: "İletişim", hasChild: false },
+  { label: "Hakkımızda", hasChild: false, href: "/hakkimizda" },
+  { label: "İletişim", hasChild: false, href: "/iletisim" },
 ];
