@@ -6,6 +6,7 @@ import MobileLinkWithChild from "../MobileLinkWithChild";
 
 
 const MobileNavLink: FC<IMobileNavLink> = ({ label, hasChild, child, href }) => {
+  console.log(href)
   if (hasChild)
     return (
       <MobileLinkWithChild label={label} child={child} />

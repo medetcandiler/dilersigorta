@@ -2,9 +2,9 @@
 import { FC, useState } from "react";
 import Arrow from "../Arrow";
 import MobileNavLinkChild from "../MobileNavLinkChild";
-import { IMobileNavLink } from "../MobileNavLink/interface";
+import { IMobileLinkWithChild } from "./interface";
 
-const MobileLinkWithChild: FC<IMobileNavLink> = ({ label, child }) => {
+const MobileLinkWithChild: FC<IMobileLinkWithChild> = ({ label, child }) => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
 
   const handleClick = (e: React.MouseEvent) => {

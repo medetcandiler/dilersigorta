@@ -6,7 +6,7 @@ export const navLinks = [
     label: "Ürünler",
     hasChild: true,
     child: products.map((product) => product.title),
-    href: "/urunler",
+    href: "/urunler", // This is a correct Next.js route
   },
   { label: "Hakkımızda", hasChild: false, href: "/hakkimizda" },
   { label: "İletişim", hasChild: false, href: "/iletisim" },
