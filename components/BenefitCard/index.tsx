@@ -21,7 +21,7 @@ const BenefitCard: FC<IBenefitCard> = ({
         height={40}
         className="object-center"
       />
-      <h3 className="mt-2.5 text-2xl font-bold tracking-normal text-center md:text-start whitespace-nowrap">
+      <h3 className="mt-2.5 text-2xl font-bold tracking-normal text-center md:text-start xl:whitespace-nowrap">
         {title}
       </h3>
       <p className="mt-2.5 text-sm font-medium tracking-wide text-center md:text-start">
