@@ -5,7 +5,7 @@ import { benefits } from "./data";
 const Benefits: FC = () => {
   return (
     <section className="bg-[#fafafa]">
-      <div className="container mx-auto px-10 py-20 md:px-5">
+      <div className="container mx-auto px-10 paddingForSections md:px-5">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
           {benefits.map((benefit) => (
             <BenefitCard

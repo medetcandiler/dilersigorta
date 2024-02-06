@@ -38,6 +38,10 @@
   .contentText {
     @apply text-sm font-medium tracking-wide text-neutral-500
   }
+
+  .paddingForSections {
+    @apply py-20 md:py-28
+  }
 }
 
 .bar1,

@@ -4,7 +4,7 @@ import TestimonialCard from "../TestimonialCard";
 
 const Testimonials: FC = () => {
   return (
-    <section className="bg-[#fafafa] px-5 md:px-16 py-20 ">
+    <section className="bg-[#fafafa] px-5 md:px-16 paddingForSections">
       <div className="container mx-auto">
         <h1 className="titleStyle pb-8">
           Diler Sigorta Müşteri Deneyimleri
