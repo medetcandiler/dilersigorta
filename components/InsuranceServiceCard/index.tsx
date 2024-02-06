@@ -14,7 +14,7 @@ const InsuranceServiceCard: FC<IInsuranceServiceCard> = ({
         src={imageSrc}
         width={40}
         height={40}
-        className="object-center "
+        className="object-center w-[40px] h-[40px]"
       />
       <h3 className="mt-2.5 contentHeader text-center">
         {title}

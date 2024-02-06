@@ -13,7 +13,7 @@ const DesktopNavLink: FC<IDesktopNavLink> = ({ label, hasChild, child, href }) =
         </span>
         <Arrow
           isChildArrow={false}
-          color="black"
+          color="#1E293B"
           type="down"
           height={20}
           width={18}

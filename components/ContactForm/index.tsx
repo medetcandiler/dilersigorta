@@ -59,7 +59,7 @@ const ContactForm: FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className="flex justify-center items-center ">
-      <div className="flex flex-col items-center gap-9 border border-black p-14 md:p-14 rounded-lg shadow-black shadow-lg lg:p-20 lg:py-24">
+      <div className="flex flex-col items-center gap-10 border border-black p-14 rounded-lg shadow-black shadow-lg lg:p-20 lg:py-20">
         <div className="flex flex-col gap-9 sm:gap-12 sm:flex-row ">
           <div className="relative z-0 w-full group">
             <input
@@ -130,7 +130,7 @@ const ContactForm: FC = () => {
             onChange={handleChange}
             name="message"
             id="message"
-            className={`block pb-12 py-2.5 px-0 w-full border-b pl-2 bg-transparent  appearance-none focus:outline-none focus:ring-0 peer ${
+            className={`block pb-16 py-2.5 px-0 w-full border-b pl-2 bg-transparent  appearance-none focus:outline-none focus:ring-0 peer ${
               error.message ? "border-[#D40000]" : "border-black"
             }`}
             placeholder=" "
@@ -155,7 +155,7 @@ const ContactForm: FC = () => {
         <div className="flex justify-center md:justify-start">
           <button
             type="submit"
-            className="flex justify-center items-center px-4 py-3 md:px-9 md:py-4 border border-sky-500 bg-sky-500 rounded-lg transition duration-300 text-[#fff] hover:bg-[#fff] hover:text-sky-500"
+            className="skySqrButton "
           >
             Gönder
           </button>

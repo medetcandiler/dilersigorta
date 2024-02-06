@@ -13,14 +13,14 @@ const HamburgerMenu: FC = () => {
   return (
     <>
       <div
-        className={`inline-block cursor-pointer transition duration-300 group md:hidden ${
+        className={`inline-block cursor-pointer transition duration-300 md:hidden ${
           isClicked ? "change" : ""
         }`}
         onClick={(e) => handleHamNavClick(e)}
       >
-        <div className={`bar1 group-hover:bg-slate-600`}></div>
-        <div className={`bar2 group-hover:bg-slate-600`}></div>
-        <div className={`bar3 group-hover:bg-slate-600`}></div>
+        <div className={`bar1`}></div>
+        <div className={`bar2`}></div>
+        <div className={`bar3`}></div>
         <MobileNav isClicked={isClicked} />
       </div>
     </>

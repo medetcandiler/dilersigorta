@@ -25,7 +25,7 @@ const MobileLinkWithChild: FC<IMobileLinkWithChild> = ({ label, child }) => {
       <div className="flex items-center justify-between">
         <span className="text-slate-800 group-hover/edit:text-[#0E7AB3]">{label}</span>
         <Arrow
-          color="black"
+          color="#1E293B"
           type="right"
           height={20}
           width={18}

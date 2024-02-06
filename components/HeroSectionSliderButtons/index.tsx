@@ -2,7 +2,11 @@ import { FC, useEffect } from "react";
 import Arrow from "../Arrow";
 import { IHeroSectionSliderButtons } from "./interface";
 
-const HeroSectionSliderButtons:FC<IHeroSectionSliderButtons> = ({currentSlice, setCurrentSlice, dataSlice}) => {
+const HeroSectionSliderButtons: FC<IHeroSectionSliderButtons> = ({
+  currentSlice,
+  setCurrentSlice,
+  dataSlice,
+}) => {
   useEffect(() => {
     const intervalNext = setInterval(() => {
       handleNextSlice();

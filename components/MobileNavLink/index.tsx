@@ -15,7 +15,7 @@ const MobileNavLink: FC<IMobileNavLink> = ({
     <Link href={href} className={`ham-nav-link links-hover group/edit`}>
       <span>{label}</span>
       <Arrow
-        color="black"
+        color="#1E293B"
         type="right"
         height={20}
         width={18}

@@ -19,9 +19,9 @@ const BenefitCard: FC<IBenefitCard> = ({
         src={imageSrc}
         width={40}
         height={40}
-        className="object-center "
+        className="object-center"
       />
-      <h3 className="mt-2.5 text-2xl font-bold tracking-normal text-center md:text-start">
+      <h3 className="mt-2.5 text-2xl font-bold tracking-normal text-center md:text-start whitespace-nowrap">
         {title}
       </h3>
       <p className="mt-2.5 text-sm font-medium tracking-wide text-center md:text-start">

@@ -18,6 +18,6 @@ export const dataSlice = [
     title: "Araç Sigortası",
     description:
       "Araç sigortası ile aracınızın güvence altında olduğundan emin olun. Trafik kazaları, hırsızlık ve diğer risklere karşı koruma sağlıyoruz.",
-    bg: "/images/carinsurance4.jpg",
+    bg: "/images/carinsurance.jpg",
   },
 ];

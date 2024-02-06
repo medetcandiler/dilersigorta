@@ -22,9 +22,7 @@ const Footer: FC = () => {
         {/* Section 2 */}
         <div className="col-span-1 md:col-span-1 lg:col-span-1">
           <div className="flex flex-col">
-            <div className="contentHeader text-black">
-              Hukuki
-            </div>
+            <div className="contentHeader text-black">Hukuki</div>
             <div className="mt-5">Kullanım Şartları</div>
             <div className="mt-2.5">Gizlilik Politikası</div>
             <div className="mt-2.5 whitespace-nowrap">Telif Hakkı</div>
@@ -35,9 +33,7 @@ const Footer: FC = () => {
         {/* Section 3 */}
         <div className="col-span-1 md:col-span-1 lg:col-span-1">
           <div className="flex flex-col">
-            <div className="contentHeader text-black">
-              Özellikler
-            </div>
+            <div className="contentHeader text-black">Özellikler</div>
             <div className="mt-5 whitespace-nowrap max-md:mr-0.5">
               Kapsamlı Sigorta Çeşitleri
             </div>
@@ -52,9 +48,7 @@ const Footer: FC = () => {
         {/* Section 4 */}
         <div className="col-span-1 md:col-span-1 lg:col-span-1">
           <div className="flex flex-col">
-            <div className="contentHeader text-black">
-              Kaynaklar
-            </div>
+            <div className="contentHeader text-black">Kaynaklar</div>
             <div className="mt-5">Sigorta Uygulamaları</div>
             <div className="mt-2.5">Demo İzle</div>
             <div className="mt-2.5">Müşteri Yorumları</div>
@@ -65,9 +59,7 @@ const Footer: FC = () => {
         {/* Section 5 */}
         <div className="col-span-1 md:col-span-2 lg:col-span-1 order-first md:order-last">
           <div className="flex flex-col">
-            <div className="contentHeader text-black">
-              İletişim
-            </div>
+            <div className="contentHeader text-black">İletişim</div>
             <div className="-ml-4">
               <Image
                 src="/images/dilerlogo.png"
@@ -81,7 +73,7 @@ const Footer: FC = () => {
               <Image
                 src="/icons/phone.svg"
                 alt="phone"
-                className="my-auto w-6 aspect-square"
+                className="my-auto w-[24px] h-[24px] "
                 width={24}
                 height={24}
               />
@@ -91,9 +83,9 @@ const Footer: FC = () => {
               <Image
                 src="/icons/location.svg"
                 alt="location"
-                className="w-6 aspect-[0.8]"
+                className="w-[24px] h-[24px] "
                 width={24}
-                height={20}
+                height={24}
               />
               <div className="flex-auto">
                 Atalar, Diler Sigorta, Üsküdar Cd. NO:117, 34862 Kartal/İstanbul
@@ -103,9 +95,9 @@ const Footer: FC = () => {
               <Image
                 src="/icons/email.svg"
                 alt="email"
-                className="my-auto w-6 aspect-[0.93]"
-                width={23}
-                height={22}
+                className="my-auto w-[24px] h-[24px] "
+                width={24}
+                height={24}
               />
               <div className="flex-auto">hasandiler@dilersigorta.com</div>
             </div>
@@ -116,9 +108,16 @@ const Footer: FC = () => {
       {/* all rights section */}
       <div className="bg-[#fff] px-5 py-5">
         <div className="container mx-auto flex flex-col items-center gap-2 md:flex-row md:justify-between">
-          <p className="text-gray-600">
-            © 2024 Diler Sigorta. Tüm hakları saklıdır.
-          </p>
+          <div className="flex items-center gap-1 text-gray-600">
+            <Image
+              src="/images/dilershortlogo.png"
+              width={30}
+              height={30}
+              alt="dilersigorta logo"
+              className="pb-1"
+            />
+            <p>© 2024 Diler Sigorta. Tüm hakları saklıdır.</p>
+          </div>
           <div className="flex items-center justify-center gap-5">
             <Link href="https://www.instagram.com/" target="_blank">
               <svg
