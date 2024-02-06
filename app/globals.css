@@ -24,7 +24,7 @@
   }
 
   .skySqrButton {
-    @apply hidden gap-3 justify-between items-center px-4 py-3 md:px-9 md:py-4 bg-sky-500 text-[#fff] rounded-md hover:rounded-full md:flex
+    @apply gap-3 justify-between items-center px-4 py-3 md:px-9 md:py-4 bg-sky-500 text-[#fff] rounded-md hover:rounded-full
   }
 
   .titleStyle {

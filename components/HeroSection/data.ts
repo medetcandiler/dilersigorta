@@ -8,16 +8,16 @@ export const dataSlice = [
   },
   {
     id: 2,
+    title: "Araç Sigortası",
+    description:
+    "Araç sigortası ile aracınızın güvence altında olduğundan emin olun. Trafik kazaları, hırsızlık ve diğer risklere karşı koruma sağlıyoruz.",
+    bg: "/images/carinsurance.jpg",
+  },
+  {
+    id: 3,
     title: "Sağlık Sigortası",
     description:
     "Sağlık sigortası ile sağlığınızı ön planda tutun. İleri tedaviler, acil durumlar ve diğer sağlık hizmetlerine geniş kapsamlı bir erişim sağlıyoruz.",
     bg: "/images/healt.jpg",
-  },
-  {
-    id: 3,
-    title: "Araç Sigortası",
-    description:
-      "Araç sigortası ile aracınızın güvence altında olduğundan emin olun. Trafik kazaları, hırsızlık ve diğer risklere karşı koruma sağlıyoruz.",
-    bg: "/images/carinsurance.jpg",
   },
 ];

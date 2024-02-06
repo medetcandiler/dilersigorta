@@ -1,7 +1,10 @@
 "use client";
 import { ChangeEvent, FC, FormEvent, useState } from "react";
 import { IFormData } from "./interface";
-import Image from "next/image";
+import emailjs from "@emailjs/browser";
+import Loader from "../Loader";
+import ContactFormError from "../ContactFormError";
+import SuccessModal from "../SuccessModal";
 
 const ContactForm: FC = () => {
   const [formData, setFormData] = useState<IFormData>({
@@ -10,46 +13,68 @@ const ContactForm: FC = () => {
     message: "",
   });
   const [error, setError] = useState<{ [key: string]: string }>({});
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [showModal, setShowModal] = useState<boolean>(false);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
     setFormData((prev) => ({ ...prev, [name]: value }));
+    validateField(name, value);
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const validateField = (name: string, value: string) => {
+    let errorMessage = "";
+
+    if (name === "username") {
+      if (value.length < 3) {
+        errorMessage = "En az 3 karakter girmelisiniz";
+      }
+    } else if (name === "email") {
+      if (!validateEmail(value)) {
+        errorMessage = "Geçersiz e-posta adresi";
+      }
+    } else if (name === "message") {
+      if (value.length < 5) {
+        errorMessage = "En az 5 karakter girmelisiniz";
+      }
+    }
+
+    setError((prev) => ({ ...prev, [name]: errorMessage }));
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    if (Object.values(error).some((errorMsg) => errorMsg !== "")) {
+      return;
+    }
+
+    setIsLoading(true);
     setError({});
 
-    if (formData.username.length < 3) {
-      setError((prev) => ({
-        ...prev,
-        username: "En az 3 karakter girmelisiniz",
-      }));
-      return;
+    const emailData: Record<string, unknown> = {
+      name: formData.username,
+      message: formData.message,
+      email: formData.email,
+    };
+
+    emailjs.init("I3AlGHR70MDSofPQ5");
+
+    try {
+      await emailjs.send("service_394cpsn", "dilersigortatemplate", emailData);
+      setShowModal(true)
+      setFormData({
+        username: "",
+        email: "",
+        message: "",
+      });
+    } catch (err) {
+      console.error("Error submitting form:", err);
+    } finally {
+      setIsLoading(false);
+      setTimeout(() => setShowModal(false), 3500)
     }
-
-    if (!validateEmail(formData.email)) {
-      setError((prev) => ({ ...prev, email: "Geçersiz e-posta adresi" }));
-      return;
-    }
-
-    if (formData.message.length < 5) {
-      setError((prev) => ({
-        ...prev,
-        message: "En az 5 karakter girmelisiniz",
-      }));
-      return;
-    }
-
-    console.log(formData);
-
-    setFormData({
-      username: "",
-      email: "",
-      message: "",
-    });
   };
 
   const validateEmail = (email: string): boolean => {
@@ -57,9 +82,15 @@ const ContactForm: FC = () => {
     return emailRegex.test(email);
   };
 
+  const isSubmitDisabled =
+    formData.username.length < 3 ||
+    !validateEmail(formData.email) ||
+    formData.message.length < 5 ||
+    isLoading;
+
   return (
     <form onSubmit={handleSubmit} className="flex justify-center items-center ">
-      <div className="flex flex-col items-center gap-10 border border-black p-14 rounded-lg shadow-black shadow-lg lg:p-20 lg:py-20">
+      <div className="relative flex flex-col items-center gap-10 border border-black p-14 rounded-lg shadow-black shadow-lg lg:p-20 lg:py-20">
         <div className="flex flex-col gap-9 sm:gap-12 sm:flex-row ">
           <div className="relative z-0 w-full group">
             <input
@@ -81,20 +112,7 @@ const ContactForm: FC = () => {
             >
               Ad Soyad
             </label>
-            {error.username && (
-              <span className="absolute flex items-center gap-1 pt-1.5 text-xs leading-3 text-[#D40000]">
-                <svg
-                  className="w-4 h-4"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                </svg>
-                {error.username}
-              </span>
-            )}
+            {error.username && <ContactFormError error={error.username} />}
           </div>
 
           <div className="relative z-0 w-full  group">
@@ -117,11 +135,7 @@ const ContactForm: FC = () => {
             >
               E-posta
             </label>
-            {error.email && (
-              <span className="absolute pt-2 text-xs leading-4 text-[#D40000] w-full">
-                {error.email}
-              </span>
-            )}
+            {error.email && <ContactFormError error={error.email} />}
           </div>
         </div>
 
@@ -145,21 +159,20 @@ const ContactForm: FC = () => {
           >
             Mesaj
           </label>
-          {error.message && (
-            <span className="absolute pt-2 text-xs leading-4 text-[#D40000] w-full">
-              {error.message}
-            </span>
-          )}
+          {error.message && <ContactFormError error={error.message} />}
         </div>
 
-        <div className="flex justify-center md:justify-start">
+        <div className=" relative flex justify-center md:justify-start">
           <button
             type="submit"
-            className="skySqrButton "
+            className="skySqrButton flex items-center justify-center gap-2"
+            disabled={isSubmitDisabled}
           >
-            Gönder
+            {isLoading && <Loader isSectionLoader={false} />}{" "}
+            <span>Gönder</span>
           </button>
         </div>
+        {showModal && <SuccessModal />}
       </div>
     </form>
   );

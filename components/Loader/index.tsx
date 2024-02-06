@@ -1,10 +1,10 @@
-function Loader() {
+function Loader({ isSectionLoader }: { isSectionLoader: boolean }) {
   return (
-    <div className="h-screen grid place-content-center" data-testid="loader">
+    <div className={`${isSectionLoader ? 'h-screen grid place-content-center' : ''}`} data-testid="loader">
       <div role="status">
         <svg
           aria-hidden="true"
-          className="inline w-10 h-10text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+          className={`${isSectionLoader ? 'w-10 h-10 text-gray-800' : 'w-4 h-4 text-gray-200'} inline animate-spin fill-blue-600`}
           viewBox="0 0 100 101"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
