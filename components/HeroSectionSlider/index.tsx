@@ -7,7 +7,7 @@ const HeroSectionSlider: FC<IHeroSectionSlider> = ({ content, isVisible }) => {
       className={`absolute flex flex-col items-center justify-center space-y-6 w-2/3 transition-all duration-700 ${
         isVisible
           ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-[-100px]"
+          : "opacity-0 translate-y-[-150px]"
       } md:w-1/2`}
     >
       <h1 className="titleStyle text-[#fff]">
