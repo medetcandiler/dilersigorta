@@ -108,15 +108,15 @@ const Footer: FC = () => {
       {/* all rights section */}
       <div className="bg-[#fff] px-5 py-5">
         <div className="container mx-auto flex flex-col items-center gap-2 md:flex-row md:justify-between">
-          <div className="flex items-center gap-1 text-gray-600">
+          <div className="flex flex-col items-center text-slate-800 md:flex-row">
             <Image
               src="/images/dilershortlogo.png"
-              width={30}
-              height={30}
+              width={36}
+              height={36}
               alt="dilersigorta logo"
               className="pb-1"
             />
-            <p>© 2024 Diler Sigorta. Tüm hakları saklıdır.</p>
+            <p className="text-center">© 2024 Diler Sigorta. Tüm hakları saklıdır.</p>
           </div>
           <div className="flex items-center justify-center gap-5">
             <Link href="https://www.instagram.com/" target="_blank">
