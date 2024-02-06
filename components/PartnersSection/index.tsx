@@ -4,7 +4,7 @@ import PartnerCard from "../PartnerCard";
 
 const PartnersSection: FC = () => {
   return (
-    <section className="bg-[#fff] py-36 px-5 md:px-16">
+    <section className="bg-[#fff] py-20 px-5 md:px-16">
       <div className="container mx-auto ">
         <h1 className="titleStyle pb-16">
           İş Birliği Yaptığımız Şirketler
