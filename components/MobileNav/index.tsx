@@ -2,6 +2,7 @@ import { FC } from "react";
 import { navLinks } from "../Header/data";
 import { IMobileNav } from "./interface";
 import MobileNavLink from "../MobileNavLink";
+import OfferButton from "../OfferButton";
 
 const MobileNav: FC<IMobileNav> = ({ isClicked }) => {
   return (
@@ -19,6 +20,9 @@ const MobileNav: FC<IMobileNav> = ({ isClicked }) => {
           href={link.href}
         />
       ))}
+      <div className="flex justify-center bg-[#fff] items-center py-3">
+        <OfferButton isOnMobile={true} />
+      </div>
     </nav>
   );
 };

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import HamburgerMenu from "../HamburgerMenu";
 import DesktopNav from "../DesktopNav";
-import Arrow from "../Arrow";
+import OfferButton from "../OfferButton";
 
 const Header: FC = () => {
   return (
@@ -25,16 +25,7 @@ const Header: FC = () => {
             <DesktopNav />
           </nav>
 
-          <button className="hidden gap-3 justify-between items-center px-4 py-3 bg-sky-500 text-[#fff] rounded-md hover:rounded-full md:flex">
-            <span className="font-semibold">Teklif Al</span>
-            <Arrow
-              color="white"
-              type="right"
-              width={20}
-              height={20}
-              isChildArrow={false}
-            />
-          </button>
+          <OfferButton isOnMobile={false} />
         </div>
       </section>
     </header>
