@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 import { Montserrat } from 'next/font/google'
+import "./globals.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GoToTopButton from "@/components/GoToTopButton";
 
 const montserrat = Montserrat({
   weight: '400',
@@ -28,6 +28,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <Header />
         {children}
+        {true && <GoToTopButton isOpened={true} />}
         <Footer />
       </body>
     </html>
