@@ -20,8 +20,8 @@ const SuccessModal: FC = () => {
         <path
           fill="none"
           stroke="#fff"
-          stroke-miterlimit="10"
-          stroke-width="3"
+          strokeMiterlimit="10"
+          strokeWidth="3"
           d="M11.2,20.1l5.8,5.8l13.2-13.2"
         />
       </svg>

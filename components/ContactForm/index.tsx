@@ -59,10 +59,10 @@ const ContactForm: FC = () => {
       email: formData.email,
     };
 
-    emailjs.init("I3AlGHR70MDSofPQ5");
+    emailjs.init("GXMbWWj4rBujnoLG9");
 
     try {
-      await emailjs.send("service_394cpsn", "dilersigortatemplate", emailData);
+      await emailjs.send("service_rmy2czc", "template_sgkw2as", emailData);
       setShowModal(true)
       setFormData({
         username: "",
