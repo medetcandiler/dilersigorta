@@ -5,7 +5,7 @@ import ContactForm from "../ContactForm";
 const ContactSection: FC = () => {
   const styling = {
     backgroundImage:
-      "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.1)), url('/images/contactbg.jpg')",
+      "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.1)), url('/images/dilersigortabg.jpeg')",
   };
   return (
     <div className=" pt-[70px]">
