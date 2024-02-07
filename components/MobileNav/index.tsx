@@ -7,7 +7,7 @@ import OfferButton from "../OfferButton";
 const MobileNav: FC<IMobileNav> = ({ isClicked }) => {
   return (
     <nav
-      className={`absolute flex flex-col border-t w-full left-0 top-[70px] transition duration-500 ease-in-out ${
+      className={`absolute flex flex-col border-t w-full left-0 top-[69px] transition duration-500 ease-in-out ${
         isClicked ? "transform translate-x-0" : "transform translate-x-full"
       } md:hidden`}
     >
