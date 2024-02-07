@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from 'next/font/google'
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 import Header from "@/components/Header";
@@ -7,10 +7,9 @@ import Footer from "@/components/Footer";
 import GoToTopButton from "@/components/GoToTopButton";
 
 const montserrat = Montserrat({
-  weight: '400',
-  subsets: ['latin'],
-})
-
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Diler Sigorta | Anasayfa",
@@ -28,7 +27,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <Header />
         {children}
-        {true && <GoToTopButton isOpened={true} />}
+        <GoToTopButton />
         <Footer />
       </body>
     </html>
