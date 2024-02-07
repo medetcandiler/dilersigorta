@@ -31,6 +31,10 @@
     @apply text-center font-bold text-3xl md:text-4xl lg:text-5xl text-slate-800
   }
 
+  .hoverTranslateY {
+    @apply hover:-translate-y-[5px]
+  }
+
   .subTitleStyle {
     @apply text-center text-lg pb-6 text-neutral-500
   }
