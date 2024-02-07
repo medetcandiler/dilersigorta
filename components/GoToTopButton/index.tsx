@@ -15,9 +15,15 @@ const GoToTopButton: FC = () => {
     }
   };
 
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", toggleVisible);
-  }
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", toggleVisible);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisible);
+    };
+  }, []);
 
   const handleClick = (e: MouseEvent<HTMLImageElement>) => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
