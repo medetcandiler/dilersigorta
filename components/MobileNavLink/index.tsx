@@ -17,8 +17,8 @@ const MobileNavLink: FC<IMobileNavLink> = ({
       <Arrow
         color="#1E293B"
         type="right"
-        height={20}
-        width={18}
+        height={15}
+        width={12}
         isChildArrow={false}
       />
     </Link>

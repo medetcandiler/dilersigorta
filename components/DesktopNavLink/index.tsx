@@ -8,21 +8,21 @@ const DesktopNavLink: FC<IDesktopNavLink> = ({ label, hasChild, child, href }) =
   if (hasChild)
     return (
       <div className="relative group nav-link cursor-pointer">
-        <span className="group/edit transition duration-300 group-hover/:text-[#0E7AB3]">
+        <span className=" group/edit -mr-0.5 transition duration-300 group-hover/:text-[#0E7AB3]">
           {label}
         </span>
         <Arrow
           isChildArrow={false}
           color="#1E293B"
           type="down"
-          height={20}
-          width={18}
+          height={15}
+          width={12}
         />
         <DesktopNavLinkChild desktopNavChild={child} />
       </div>
     );
   return (
-    <Link className="nav-link" href={href}>
+    <Link className="nav-link " href={href}>
       <span className="links-hover">{label}</span>
     </Link>
   );

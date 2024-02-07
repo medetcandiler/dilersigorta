@@ -16,7 +16,7 @@ const MobileNavLinkChild: FC<IDesktopNavLinkChild> = ({ desktopNavChild, isClick
           className={`child py-1 group/second nav-link hover:text-[#0E7AB3] text-sm `}
         >
           <span className="child">{link}</span>
-          <Arrow color="black" type="right" height={20} width={18} isChildArrow={true} />
+          <Arrow color="black" type="right" height={15} width={12} isChildArrow={true} />
         </Link>
       ))}
     </div>

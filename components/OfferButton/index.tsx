@@ -13,7 +13,7 @@ const OfferButton: FC<{ isOnMobile: boolean }> = ({ isOnMobile }) => {
         color="white"
         type="right"
         width={20}
-        height={20}
+        height={18}
         isChildArrow={false}
       />
     </button>
