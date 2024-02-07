@@ -14,8 +14,8 @@ const Header: FC = () => {
             <Image
               src="/images/dilerlogo.png"
               alt="logo"
-              width={150}
-              height={150}
+              width={175}
+              height={175}
               priority
             />
           </Link>
