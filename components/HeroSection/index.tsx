@@ -16,8 +16,12 @@ const HeroSection = () => {
       style={backgroundImageStyle}
       className={`bg-cover bg-center h-screen relative overflow-hidden pt-[70px]`}
     >
-      <div className="absolute bottom-1/2 translate-y-1/2 px-1 sm:px-3 flex w-full justify-between md:bottom-12 md:px-12  ">
-       <HeroSectionSliderButtons dataSlice={dataSlice} currentSlice={currentSlice} setCurrentSlice={setCurrentSlice} />
+      <div className="absolute bottom-1/2 translate-y-1/2 px-1 sm:px-3 flex w-full justify-between">
+        <HeroSectionSliderButtons
+          dataSlice={dataSlice}
+          currentSlice={currentSlice}
+          setCurrentSlice={setCurrentSlice}
+        />
       </div>
 
       <div className="flex justify-center items-center h-full">
