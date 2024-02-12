@@ -10,8 +10,8 @@ const HelpfullLinksSection: FC = () => {
         Bağlantıya geçmek için kartlara tıklayabilirsiniz.
       </h3>
 
-      <div className="container mx-auto md:px-5">
-        <div className="grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container mx-auto flex justify-center md:px-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 md:gap-20 lg:grid-cols-3">
           {helpfullLinks.map((link) => (
             <HelpfullLinkCard
               key={link.id}
