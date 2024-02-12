@@ -14,8 +14,8 @@ export default function Home() {
       <Benefits />
       <InsuranceServicesSection />
       <Testimonials />
-      <HelpfullLinksSection />
       <PartnersSection />
+      <HelpfullLinksSection isSection={true} />
     </main>
   );
 }

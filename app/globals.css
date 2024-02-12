@@ -36,7 +36,7 @@
   }
 
   .subTitleStyle {
-    @apply text-center text-lg pb-6 text-neutral-500
+    @apply text-center text-lg pb-12 text-neutral-500
   }
 
   .contentHeader {
