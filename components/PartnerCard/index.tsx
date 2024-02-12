@@ -18,7 +18,7 @@ const PartnerCard: FC<IPartnerCard> = ({
 
         <div className="flip-card-back bg-[#0BA5E9] flex flex-col items-center justify-center gap-2 md:gap-2 text-white  rounded-xl ">
           <Image src={imageSrc} width={size / 2} height={size / 2} alt={alt} />
-          <div className="flex gap-1 p-2 rounded-lg transition duration-300 hover:scale-105 hover:bg-gradient-to-r from-[#0BA5E9] to-[#0877c0] md:gap-2.5  ">
+          <div className="flex gap-1 p-2 rounded-lg transition duration-300 hover:scale-105 hover:bg-[#0877c0] md:gap-2.5  ">
             <Image
               src="/icons/bluePhone.svg"
               alt="phone"
