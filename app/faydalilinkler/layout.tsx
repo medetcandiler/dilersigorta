@@ -6,7 +6,7 @@ interface IAboutLayoutProps {
 }
 
 export const metadata: Metadata = {
-  title: 'Diler Sigorta | Hakkımızda'
+  title: 'Diler Sigorta | Faydalı Linkler'
 }
 
 const AboutLayout: FC<IAboutLayoutProps> = ({ children }) => {
