@@ -4,6 +4,7 @@ import Link from "next/link";
 import HamburgerMenu from "../HamburgerMenu";
 import DesktopNav from "../DesktopNav";
 import OfferButton from "../OfferButton";
+import ContactButton from "../ContactButton";
 
 const Header: FC = () => {
   return (
@@ -14,18 +15,23 @@ const Header: FC = () => {
             <Image
               src="/images/dilerlogo.png"
               alt="logo"
-              width={250}
-              height={250}
+              width={225}
+              height={225}
               priority
             />
           </Link>
 
           <nav className="flex gap-3 md:gap-6">
-            <HamburgerMenu />
             <DesktopNav />
+            <HamburgerMenu />
           </nav>
 
-          <OfferButton isOnMobile={false} />
+          <div className="hidden items-center justify-center gap-4 md:flex">
+            <div className="hidden lg:flex">
+              <ContactButton />
+            </div>
+            <OfferButton isOnMobile={false} />
+          </div>
         </div>
       </section>
     </header>

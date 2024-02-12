@@ -3,6 +3,7 @@ import { navLinks } from "../Header/data";
 import { IMobileNav } from "./interface";
 import MobileNavLink from "../MobileNavLink";
 import OfferButton from "../OfferButton";
+import ContactButton from "../ContactButton";
 
 const MobileNav: FC<IMobileNav> = ({ isClicked }) => {
   return (
@@ -20,7 +21,8 @@ const MobileNav: FC<IMobileNav> = ({ isClicked }) => {
           href={link.href}
         />
       ))}
-      <div className="flex justify-center bg-[#fff] items-center py-3">
+      <div className="flex flex-col justify-center bg-[#fff] items-start gap-3 py-3 px-10">
+        <ContactButton />
         <OfferButton isOnMobile={true} />
       </div>
     </nav>

@@ -12,8 +12,11 @@ const config: Config = {
         "screen-80": "calc(100vh - 80px)",
       },
       colors: {
-        transparentSky: "rgba(11, 165, 233, 0.3)"
-      }
+        transparentSky: "rgba(11, 165, 233, 0.3)",
+      },
+      boxShadow: {
+        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.9)",
+      },
     },
   },
   plugins: [],
