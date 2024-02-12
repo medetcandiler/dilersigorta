@@ -9,9 +9,9 @@ const Testimonials: FC = () => {
         <h1 className="titleStyle pb-8">
           Diler Sigorta Müşteri Deneyimleri
         </h1>
-        <p className="subTitleStyle">
+        <h3 className="subTitleStyle">
           Siz de Deneyimleyin ve Güvenin Adresine Katılın.
-        </p>
+        </h3>
         <div id="scroll" className="grid grid-flow-col gap-5 sm:gap-20 overflow-x-auto scroll-smooth ">
           {testimonials.map((testimonial) => (
             <TestimonialCard
