@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-[#fafafa] text-neutral-500">
+    <footer className="bg-[#fff] text-neutral-500">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 py-20 px-5 text-sm font-semibold tracking-wide leading-6">
         {/* Section 1 */}
         <div className="col-span-1 md:col-span-1 lg:col-span-1">
@@ -106,7 +106,7 @@ const Footer: FC = () => {
       </div>
 
       {/* all rights section */}
-      <div className="bg-[#fff] px-5 py-5">
+      <div className="bg-[#fafafa] px-5 py-5">
         <div className="container mx-auto flex flex-col items-center gap-2 md:flex-row md:justify-between">
           <div className="flex flex-col items-center text-slate-800 md:flex-row">
             <Image
