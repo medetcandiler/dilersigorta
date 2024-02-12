@@ -16,7 +16,7 @@ const HeroSection = () => {
       style={backgroundImageStyle}
       className={`bg-cover bg-center h-screen relative overflow-hidden pt-[70px]`}
     >
-      <div className="absolute bottom-1/2 translate-y-1/2 pt-[70px] px-1 sm:px-3 flex w-full justify-between">
+      <div className="absolute bottom-1/2 translate-y-1/2 px-1 sm:px-3 flex w-full justify-between md:pt-[70px]">
         <HeroSectionSliderButtons
           dataSlice={dataSlice}
           currentSlice={currentSlice}
