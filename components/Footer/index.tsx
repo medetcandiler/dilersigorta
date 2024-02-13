@@ -99,7 +99,7 @@ const Footer: FC = () => {
                 width={24}
                 height={24}
               />
-              <div className="flex-auto">hasandiler@dilersigorta.com</div>
+              <div className="flex-auto">hasan@dilersigorta.com</div>
             </div>
           </div>
         </div>
