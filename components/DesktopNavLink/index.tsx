@@ -4,7 +4,13 @@ import { IDesktopNavLink } from "./interface";
 import Arrow from "../Arrow";
 import DesktopNavLinkChild from "../DesktopNavLinkChild";
 
-const DesktopNavLink: FC<IDesktopNavLink> = ({ label, hasChild, child, href }) => {
+const DesktopNavLink: FC<IDesktopNavLink> = ({
+  label,
+  hasChild,
+  child,
+  href,
+  isVisibleOnMd,
+}) => {
   if (hasChild)
     return (
       <div className="relative group nav-link cursor-pointer">
@@ -22,8 +28,11 @@ const DesktopNavLink: FC<IDesktopNavLink> = ({ label, hasChild, child, href }) =
       </div>
     );
   return (
-    <Link className="nav-link " href={href}>
-      <span className="links-hover">{label}</span>
+    <Link
+      className={`nav-link ${isVisibleOnMd ? "md:block" : "md:hidden"} lg:block`}
+      href={href}
+    >
+      <span className="links-hover whitespace-nowrap">{label}</span>
     </Link>
   );
 };

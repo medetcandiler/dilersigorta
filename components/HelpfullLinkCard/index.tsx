@@ -26,9 +26,7 @@ const HelpfullLinkCard: FC<IHelpfullLinkCard> = ({
           <line x1="21" y1="21" x2="16.65" y2="16.65" />
         </svg>
       </a>
-      <span
-        className="text-center bg-[#fafafa] text-black shadow-3xl z-0 -ml-3 py-2 px-5 rounded-r-full whitespace-nowrap transition duration-300 group-hover:bg-sky-500 group-hover:text-[#fff] "
-      >
+      <span className="text-center bg-[#fafafa] text-black shadow-3xl z-0 -ml-3 py-2 px-5 rounded-r-full whitespace-nowrap transition duration-300 group-hover:bg-sky-500 group-hover:text-[#fff] ">
         {title}
       </span>
       <span className="text-center absolute -bottom-full left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">

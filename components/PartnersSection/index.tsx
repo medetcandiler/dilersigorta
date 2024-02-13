@@ -12,7 +12,7 @@ const PartnersSection: FC = () => {
           Kartların üzerine gelerek acil yardım numaralarına ulaşabilirsiniz
         </h3>
         <div className="grid place-content-center">
-          <div className="flex flex-col items-center sm:grid sm:grid-cols-2 md:grid-cols-3 md:justify-center gap-10 md:gap-40">
+          <div className="flex flex-col items-center gap-10 sm:grid sm:grid-cols-2 lg:grid-cols-3 lg:justify-center md:gap-20 lg:gap-40">
             {partners.map((partner) => (
               <PartnerCard
                 key={partner.id}
