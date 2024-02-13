@@ -9,7 +9,7 @@ const PartnersSection: FC = () => {
         <h1 className="titleStyle pb-8">İş Birliği Yaptığımız Şirketler</h1>
         <h3 className="subTitleStyle">
           {" "}
-          Kartların üzerine gelerek iletişim bilgilerini görüntüleyebilirsiniz
+          Kartların üzerine gelerek acil yardım numaralarına ulaşabilirsiniz
         </h3>
         <div className="grid place-content-center">
           <div className="flex flex-col items-center sm:grid sm:grid-cols-2 md:grid-cols-3 md:justify-center gap-10 md:gap-40">
