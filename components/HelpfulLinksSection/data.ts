@@ -31,8 +31,9 @@ export const helpfullLinks = [
   },
   {
     id: 6,
-    title: "Link 6",
-    description: "Description for Link 6",
-    url: "#",
+    title: "112 Acil Çağrı Merkezi",
+    description:
+      "Ambulans, polis, itfaiye vb.",
+    url: "tel:112",
   },
 ];
