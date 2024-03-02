@@ -11,7 +11,7 @@ const HelpfullLinksSection: FC<IHelpfullLinksSection> = ({ isSection }) => {
     <section className={`${isSection ? "bg-[#fafafa]" : "bg-[#fff]"}`}>
       <div
         className={`container mx-auto px-10 ${
-          isSection ? "paddingForSections" : "py-10"
+          isSection ? "paddingForSections" : "py-20"
         } `}
       >
         <h1 className="titleStyle pb-8">Faydalı Bağlantılar</h1>

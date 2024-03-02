@@ -14,7 +14,7 @@ const HelpfullLinkPage: FC = () => {
         </div>
       </div>
 
-      <div className="container mx-auto flex flex-col gap-20 bg-[#fafafa] ">
+      <div className="container mx-auto flex flex-col gap-20 bg-[#fafafa]  ">
         <HelpfullLinksSection isSection={false} />
       </div>
     </div>

@@ -1,7 +1,7 @@
 import { products } from "@/data/products";
 
 export const navLinks = [
-  { label: "Anasayfa", hasChild: false, href: "/", isVisibleOnMd: true },
+  { label: "Anasayfa", hasChild: false, href: "/", isVisibleOnMd: false },
   {
     label: "Ürünler",
     hasChild: true,
@@ -25,6 +25,12 @@ export const navLinks = [
     label: "Faydalı Linkler",
     hasChild: false,
     href: "/faydalilinkler",
+    isVisibleOnMd: true,
+  },
+  {
+    label: "KVKK Metni",
+    hasChild: false,
+    href: "/kvkk-aydinlatma-metni",
     isVisibleOnMd: false,
   },
 ];

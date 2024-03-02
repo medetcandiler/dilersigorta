@@ -3,7 +3,7 @@ import Link from "next/link";
 import { IDesktopNavLink } from "./interface";
 import Arrow from "../Arrow";
 import DesktopNavLinkChild from "../DesktopNavLinkChild";
-
+ 
 const DesktopNavLink: FC<IDesktopNavLink> = ({
   label,
   hasChild,
@@ -29,7 +29,7 @@ const DesktopNavLink: FC<IDesktopNavLink> = ({
     );
   return (
     <Link
-      className={`nav-link ${isVisibleOnMd ? "md:block" : "md:hidden"} lg:block`}
+      className={`nav-link ${isVisibleOnMd ? "md:block" : "md:hidden"} xl:block`}
       href={href}
     >
       <span className="links-hover whitespace-nowrap">{label}</span>
