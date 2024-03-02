@@ -4,7 +4,7 @@ import DesktopNavLink from "../DesktopNavLink";
 
 const DesktopNav: FC = () => {
   return (
-    <div className="hidden space-x-4 md:space-x-2 lg:space-x-4 md:flex">
+    <div className="hidden space-x-4 md:flex">
       {navLinks.map((link) => (
         <DesktopNavLink
           key={link.label}
