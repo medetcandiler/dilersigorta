@@ -13,8 +13,8 @@ const KVKKSection: FC = () => {
           <h3 className="titleStyle text-[#fff]">KVKK Aydınlatma Metni</h3>
         </div>
       </div>
-      <div className="flex justify-center items-center paddingForSections ">
-        <div className="md:border-black p-14 rounded-lg md:shadow-black shadow-lg w-[calc(200vw/3)] md:h-[700px] md:overflow-y-auto">
+      <div className="flex justify-center items-center md:paddingForSections ">
+        <div className="md:border-black p-14 rounded-lg md:shadow-black shadow-lg md:w-[calc(200vw/3)]  md:overflow-y-auto">
           <h4 className="font-bold contentHeader text-lg mb-2">1. GİRİŞ</h4>
           <p className="contentText mb-6">
             İşbu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması
