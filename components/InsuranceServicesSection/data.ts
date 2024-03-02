@@ -3,7 +3,7 @@ export const insuranceServices = [
     imageSrc: "/icons/wallet.svg",
     title: "Güvende Olma",
     description:
-      "Sigorta poliçelerimizle huzur içinde olun. Küçük ölçekteki riskleri büyük bir özenle yönetiyoruz.",
+      "Sigorta poliçelerimizle huzur içinde olun. Önemli riskleri de kapsayan sigorta poliçelerimizle huzur içinde olun.",
   },
   {
     imageSrc: "/icons/save.svg",

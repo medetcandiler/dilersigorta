@@ -4,7 +4,7 @@ export const benefits = [
       "/icons/peopleicon.svg",
     title: "Kapsamlı Güvence",
     description:
-      "Ev hırsızlığından doğal afetlere kadar geniş kapsamlı sigorta hizmetleri.",
+      "Beklenmedik durumlar karşısında korunmanızı sağlamak için buradayız.",
   },
   {
     imageUrl:

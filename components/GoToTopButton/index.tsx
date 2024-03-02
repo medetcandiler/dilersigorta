@@ -10,7 +10,7 @@ const GoToTopButton: FC = () => {
 
     if (scrolled > window.innerHeight) {
       setIsOpened(true);
-    } else if (scrolled <= 300) {
+    } else if (scrolled <= 600) {
       setIsOpened(false);
     }
   };
