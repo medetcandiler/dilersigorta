@@ -11,12 +11,12 @@ const Header: FC = () => {
     <header className="fixed w-full transition duration-300 z-50 bg-[#fff]">
       <section className="relative px-4   flex bg-transparent justify-between items-center h-[80px] md:container md:mx-auto">
         <div className="flex items-center justify-between w-full">
-          <Link href="/" className="cursor-pointer -ml-3">
+          <Link href="/" className="cursor-pointer ml-0 md:-ml-5 xl:ml-0">
             <Image
               src="/images/dilerlogo.png"
               alt="logo"
-              width={225}
-              height={225}
+              width={200}
+              height={200}
               priority
             />
           </Link>

@@ -1,6 +1,7 @@
 import { FC } from "react";
 import GoogleMaps from "../GoogleMaps";
 import ContactForm from "../ContactForm";
+import Image from "next/image";
 
 const ContactSection: FC = () => {
   const styling = {
@@ -15,12 +16,34 @@ const ContactSection: FC = () => {
         </div>
       </div>
 
-      <div className="container mx-auto flex flex-col items-center gap-10 py-14">
+      <div className="container mx-auto flex flex-col items-center gap-10 py-14 px-12 md:px-0">
         <div className="flex flex-col items-center gap-5">
           <h3 className="titleStyle md:text-3xl lg:text-4xl">Bize Ulaşın</h3>
-          <span className="subTitleStyle text-neutral-500 pb-0">
-            Atalar, Diler Sigorta, Üsküdar Cd. NO:117, 34862 Kartal/İstanbul
-          </span>
+          <div className=" subTitleStyle text-neutral-500 pb-0">
+            <p className="relative px-2 md:px-6">
+              <Image
+                className="absolute top-1 -left-2  md:top-1/2 md:-translate-y-1/2 "
+                src="/icons/location.svg"
+                height={16}
+                width={16}
+                alt="location logo"
+              />
+              Atalar, Diler Sigorta, Üsküdar Cd. NO:117, 34862 Kartal/İstanbul
+            </p>
+          </div>
+          <div className="subTitleStyle text-neutral-500 pb-0">
+            <p className="relative px-3 sm:px-5 md:px-6">
+              <Image
+                className="absolute top-1 -left-2  md:top-1/2 md:-translate-y-1/2 "
+                src="/icons/location.svg"
+                height={16}
+                width={16}
+                alt="location logo"
+              />
+              Örnek Mahallesi, Cahar Dudayev Cad., Ferah Feza Sok., No:9,
+              Ataşehir/İstanbul
+            </p>
+          </div>
           <GoogleMaps />
         </div>
 
