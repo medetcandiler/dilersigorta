@@ -5,6 +5,7 @@ import ProductsSection from "@/components/ProductsSection";
 import Testimonials from "@/components/Testimonials";
 import PartnersSection from "@/components/PartnersSection";
 import HelpfullLinksSection from "@/components/HelpfulLinksSection";
+import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Testimonials />
       <PartnersSection />
       <HelpfullLinksSection isSection={true} />
+      <ContactSection isPage={false} />
     </main>
   );
 }

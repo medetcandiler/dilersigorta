@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 
 import Header from "@/components/Header";
@@ -10,6 +11,9 @@ const montserrat = Montserrat({
   weight: "400",
   subsets: ["latin"],
 });
+
+
+const outfit = Outfit({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Diler Sigorta | Anasayfa",
@@ -24,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={outfit.className}>
         <Header />
         {children}
         <GoToTopButton />

@@ -1,10 +1,10 @@
-import ContactSection from "@/components/ContactSection"
+import ContactSection from "@/components/ContactSection";
 const IletisimPage = () => {
   return (
     <>
-      <ContactSection />
+      <ContactSection isPage={true} />
     </>
-  )
-}
+  );
+};
 
-export default IletisimPage
+export default IletisimPage;

@@ -63,7 +63,7 @@ const ContactForm: FC = () => {
 
     try {
       await emailjs.send("service_rmy2czc", "template_sgkw2as", emailData);
-      setShowModal(true)
+      setShowModal(true);
       setFormData({
         username: "",
         email: "",
@@ -73,7 +73,7 @@ const ContactForm: FC = () => {
       console.error("Error submitting form:", err);
     } finally {
       setIsLoading(false);
-      setTimeout(() => setShowModal(false), 3500)
+      setTimeout(() => setShowModal(false), 3500);
     }
   };
 
@@ -165,7 +165,7 @@ const ContactForm: FC = () => {
         <div className=" relative flex justify-center md:justify-start">
           <button
             type="submit"
-            className="skySqrButton flex items-center justify-center gap-2"
+            className="skySqrButton flex items-center justify-center gap-2 cursor-pointer"
             disabled={isSubmitDisabled}
           >
             {isLoading && <Loader isSectionLoader={false} />}{" "}
