@@ -1,3 +1,4 @@
+import type { Metadata, ResolvingMetadata } from "next";
 import { products } from "@/data/products";
 import ProductInnerCard from "@/components/ProductInnerCard";
 
@@ -5,6 +6,18 @@ export async function generateStaticParams() {
   return products.map((product) => ({
     title: product.title,
   }));
+}
+
+export async function generateMetadata(
+  { params }: { params: { title: string } },
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const title = decodeURIComponent(params.title);
+  const capitilisedTitle = title[0].toUpperCase() + title.slice(1);
+
+  return {
+    title: `Diler Sigorta | ${capitilisedTitle}`,
+  };
 }
 
 const DynamicProductPage = ({ params }: { params: { title: string } }) => {
