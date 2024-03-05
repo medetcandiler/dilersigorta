@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 
@@ -7,13 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GoToTopButton from "@/components/GoToTopButton";
 
-const montserrat = Montserrat({
-  weight: "400",
-  subsets: ["latin"],
-});
-
-
-const outfit = Outfit({ subsets: ['latin'] })
+const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Diler Sigorta | Anasayfa",
