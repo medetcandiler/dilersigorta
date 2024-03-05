@@ -27,10 +27,4 @@ export const navLinks = [
     href: "/faydalilinkler",
     isVisibleOnMd: true,
   },
-  {
-    label: "KVKK Metni",
-    hasChild: false,
-    href: "/kvkk-aydinlatma-metni",
-    isVisibleOnMd: false,
-  },
 ];

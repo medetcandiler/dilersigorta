@@ -3,7 +3,7 @@ import { FC } from "react";
 const TermsOfUseSection: FC = () => {
   const styling = {
     backgroundImage:
-      "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.1)), url(&rsquo;/images/termsofuse.jpg&rsquo;)",
+      "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.1)), url(/images/termsofuse.jpg)",
   };
   return (
     <section className="pt-[70px]">

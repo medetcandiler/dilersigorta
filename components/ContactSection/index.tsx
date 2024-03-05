@@ -8,7 +8,7 @@ import ContactSectionAdress from "../ContactSectionAdress";
 const ContactSection: FC<IContentSectionProps> = ({ isPage }) => {
   const styling = {
     backgroundImage:
-      "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.1)), url('/images/dilersigortabg.jpeg')",
+      "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.1)), url('/images/dilersigortabg2.png')",
   };
   return (
     <div className={`${isPage ? "pt-[70px]" : ""}`}>
