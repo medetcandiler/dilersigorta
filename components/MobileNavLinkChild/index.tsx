@@ -1,8 +1,8 @@
 import { FC } from "react";
 import Link from "next/link";
-import { IDesktopNavLinkChild } from "../DesktopNavLinkChild/interface";
+import { IMobileNavLinkChild } from "./interface";
 
-const MobileNavLinkChild: FC<IDesktopNavLinkChild> = ({
+const MobileNavLinkChild: FC<IMobileNavLinkChild> = ({
   desktopNavChild,
   isClicked,
   onclick,
