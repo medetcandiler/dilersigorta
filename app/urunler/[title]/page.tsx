@@ -1,6 +1,11 @@
-"use client";
 import { products } from "@/data/products";
 import ProductInnerCard from "@/components/ProductInnerCard";
+
+export async function generateStaticParams() {
+  return products.map((product) => ({
+    title: product.title,
+  }));
+}
 
 const DynamicProductPage = ({ params }: { params: { title: string } }) => {
   const decodedTitle = decodeURIComponent(params.title);
