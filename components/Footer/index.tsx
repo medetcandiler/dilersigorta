@@ -5,8 +5,8 @@ import FooterSectionLinks from "../FooterSectionLinks";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#fafafa] py-10 md:py-15">
-      <div className="flex flex-col items-center gap-3 text-slate-800">
+    <footer className="bg-[#fafafa] py-10 px-5 md:py-15">
+      <div className="flex flex-col items-center gap-4 text-slate-800 text-center text-md md:text-start md:text-lg">
         <div>
           <Image
             src="/images/dilerlogo.png"
@@ -54,9 +54,10 @@ const Footer = () => {
             hasan@dilersigorta.com
           </Link>
         </div>
-        <div className="flex items-center space-x-1">
+        <div className="flex flex-col items-center gap-1 md:flex-row md:gap-2">
           <FooterSectionLinks />
-          <p>| 2024 © Diler Sigorta. Tüm hakları saklıdır.</p>
+          <span className="hidden md:block">|</span>
+          <p>2024 © Diler Sigorta. Tüm hakları saklıdır.</p>
         </div>
         <FooterSocialLinks />
       </div>

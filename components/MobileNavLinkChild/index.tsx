@@ -12,7 +12,7 @@ const MobileNavLinkChild: FC<IDesktopNavLinkChild> = ({ desktopNavChild, isClick
       {desktopNavChild?.map((link) => (
         <Link
           key={link}
-          href="/"
+          href={`/urunler/${link.toLocaleLowerCase()}`}
           className={`child py-1 group/second nav-link hover:text-[#0E7AB3] text-sm `}
         >
           <span className="child">{link}</span>

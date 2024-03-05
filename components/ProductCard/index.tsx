@@ -7,13 +7,14 @@ import { usePathname } from "next/navigation";
 
 const ProductCard: FC<IProductCard> = ({ title, imageSrc, isNav }) => {
   const pathname = usePathname();
-  const decodedPathName = decodeURIComponent(pathname)
-  const activeLink = decodedPathName === `/urunler/${title.toLocaleLowerCase()}`;
+  const decodedPathName = decodeURIComponent(pathname);
+  const activeLink =
+    decodedPathName === `/urunler/${title.toLocaleLowerCase()}`;
   return (
     <Link
       href={`/urunler/${title.toLocaleLowerCase()}`}
-      className={`flex flex-col items-center links-hover hoverTranslateY drop-shadow-lg ${
-        activeLink ? "text-[#0E7AB3] md:scale-110 drop-shadow-2xl" : ""
+      className={`flex flex-col items-center links-hover hoverTranslateY shadow-lg rounded-lg ${
+        activeLink ? "text-[#0E7AB3] shadow-blue-300" : ""
       }`}
     >
       <div
@@ -30,7 +31,9 @@ const ProductCard: FC<IProductCard> = ({ title, imageSrc, isNav }) => {
             priority
           />
         </div>
-        <h3 className="text-center text-sm font-semibold whitespace-nowrap">{title}</h3>
+        <h3 className="text-center text-sm font-semibold whitespace-nowrap">
+          {title}
+        </h3>
       </div>
     </Link>
   );

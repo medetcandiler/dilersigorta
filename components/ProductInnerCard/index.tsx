@@ -5,7 +5,7 @@ import Image from "next/image";
 const ProductInnerCard: FC<IProductInnerCard> = ({ title, description }) => {
   return (
     <div className="relative shadow-2xl p-6 rounded-xl lg:w-1/2">
-      <div className="flex justify-between items-center py-12 px-5 rounded-lg bg-gradient-to-r from-[#0BA5E9] to-blue-700">
+      <div className="flex justify-between items-center py-12 px-3 rounded-lg bg-gradient-to-r from-[#0BA5E9] to-blue-700 md:px-5">
         <h1 className="text-xl text-[#fff]">{title}</h1>
         <Image
           src="/images/whitedilerlogo.png"

@@ -9,12 +9,15 @@ const ProductsSection: FC<IProductsSection> = ({ isNav }) => {
       "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.1)), url('/images/productbg.jpg')",
   };
   return (
-    <section className={isNav ? "pt-[70px]" : "bg-[#fff] py-10 px-10 xl:px-40 2xl:px-72"}>
+    <section
+      className={
+        isNav ? "pt-[70px]" : "bg-[#fff] py-10 px-10 xl:px-40 2xl:px-72"
+      }
+    >
       {isNav ? (
         <div className="bg-cover bg-center h-[25vh]" style={styling}>
           <div className="flex justify-center items-center h-full">
-            <h3 className="titleStyle text-[#fff]">Ürünlerimiz
-</h3>
+            <h3 className="titleStyle text-[#fff]">Ürünlerimiz</h3>
           </div>
         </div>
       ) : (
@@ -26,10 +29,8 @@ const ProductsSection: FC<IProductsSection> = ({ isNav }) => {
         </>
       )}
       <div
-        className={`container mx-auto flex  flex-nowrap px-2 pb-10 overflow-y-auto md:flex-wrap md:overflow-hidden md:justify-center ${
-          isNav
-            ? "gap-3 md:gap-5 pt-10"
-            : "gap-10 md:gap-12"
+        className={`container mx-auto flex flex-wrap  px-2 pb-10 md:justify-center ${
+          isNav ? "overflow-y-auto flex-nowrap md:overflow-hidden gap-3 md:gap-5 pt-10" : "justify-center gap-3 md:gap-12"
         }`}
       >
         {products.map((product) => (
