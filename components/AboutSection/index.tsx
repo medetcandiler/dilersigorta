@@ -16,8 +16,13 @@ const AboutSection: FC = () => {
       </div>
 
       <div className="container mx-auto flex flex-col gap-20 py-10">
-        {aboutSectionContent.map(content => (
-          <AboutCard key={content.id} title={content.title} content={content.content} imageSrc={content.imageSrc}/>
+        {aboutSectionContent.map((content) => (
+          <AboutCard
+            key={content.id}
+            title={content.title}
+            content={content.content}
+            imageSrc={content.imageSrc}
+          />
         ))}
       </div>
     </div>
