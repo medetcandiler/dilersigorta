@@ -10,9 +10,9 @@ const PartnerCard: FC<IPartnerCard> = ({
 }) => {
   const formattedPhoneNumber = phoneNumber.substring(4, phoneNumber.length);
   return (
-    <div className="flip-card flex justify-center h-32 w-52 relative cursor-pointer overflow-hidden md:h-40 rounded-lg shadow-xl">
+    <div className="flip-card flex justify-center h-32 w-60 relative cursor-pointer overflow-hidden md:h-40 rounded-lg shadow-xl">
       <div className="flip-card-inner">
-        <div className="flip-card-front flex justify-center items-center px-4 bg-[#fff] rounded-xl">
+        <div className="flip-card-front flex justify-center items-center px-5 bg-[#fff] rounded-xl">
           <Image src={imageSrc} width={size} height={size} alt={alt} />
         </div>
 
