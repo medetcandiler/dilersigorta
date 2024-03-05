@@ -12,7 +12,7 @@ const DesktopNavLinkChild: FC<IDesktopNavLinkChild> = ({ desktopNavChild }) => {
       {desktopNavChild?.map((link) => (
         <Link
           key={link}
-          href="/"
+          href={`/urunler/${link.toLocaleLowerCase()}`}
           className={`group/edit nav-link hover:text-[#0E7AB3] text-sm `}
         >
           <span>{link}</span>

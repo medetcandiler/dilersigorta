@@ -11,7 +11,7 @@ const ProductsSection: FC<IProductsSection> = ({ isNav }) => {
   return (
     <section className={isNav ? "pt-[70px]" : "bg-[#fff] py-10 px-10 xl:px-40 2xl:px-72"}>
       {isNav ? (
-        <div className="bg-cover bg-center h-[20vh]" style={styling}>
+        <div className="bg-cover bg-center h-[25vh]" style={styling}>
           <div className="flex justify-center items-center h-full">
             <h3 className="titleStyle text-[#fff]">Ürünlerimiz
 </h3>

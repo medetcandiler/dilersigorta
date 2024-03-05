@@ -1,12 +1,3 @@
-export const products2 = [
-  { id: 1, title: "Kasko", imageSrc: "/icons/car.jpg" },
-  { id: 2, title: "Trafik Sigortası", imageSrc: "/icons/traffic.png" },
-  { id: 3, title: "Tamamlayıcı Sağlık", imageSrc: "/icons/health.jpg" },
-  { id: 4, title: "Özel Sağlık", imageSrc: "/icons/healthhand.jpg" },
-  { id: 5, title: "DASK", imageSrc: "/icons/house.jpg" },
-  { id: 6, title: "Yangın Sigortası", imageSrc: "/icons/fire.jpg" },
-];
-
 export const products = [
   {
     id: 1,
@@ -60,7 +51,7 @@ export const products = [
   },
   {
     id: 3,
-    title: "Saglik",
+    title: "Sağlık",
     imageSrc: "/icons/saglik.png",
     content: [
       {
@@ -85,7 +76,7 @@ export const products = [
   },
   {
     id: 4,
-    title: "Arac",
+    title: "Araç",
     imageSrc: "/icons/car.png",
     content: [
       {
@@ -123,7 +114,7 @@ export const products = [
   },
   {
     id: 6,
-    title: "Is Yeri",
+    title: "İş Yeri",
     imageSrc: "/icons/fire.jpg",
     content: [
       {
