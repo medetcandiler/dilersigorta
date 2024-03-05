@@ -9,6 +9,7 @@ interface IProductPageProps {
 export const metadata: Metadata = {
   title: "Diler Sigorta | Ürünler",
 };
+
 const ProductLayout: FC<IProductPageProps> = ({ children }) => {
   return (
     <section>

@@ -1,9 +1,11 @@
 import { FC } from "react";
 import Arrow from "../Arrow";
+import Link from "next/link";
 
 const OfferButton: FC<{ isOnMobile: boolean }> = ({ isOnMobile }) => {
   return (
-    <button
+    <Link
+      href="/iletisim"
       className={`${
         isOnMobile ? "flex" : "hidden md:flex"
       } items-center gap-1 px-4 py-3 bg-sky-500 text-[#fff] rounded-md hover:rounded-full `}
@@ -16,7 +18,7 @@ const OfferButton: FC<{ isOnMobile: boolean }> = ({ isOnMobile }) => {
         height={18}
         isChildArrow={false}
       />
-    </button>
+    </Link>
   );
 };
 

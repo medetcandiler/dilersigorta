@@ -6,7 +6,7 @@ import { IProductsSection } from "./interface";
 const ProductsSection: FC<IProductsSection> = ({ isNav }) => {
   const styling = {
     backgroundImage:
-      "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.1)), url('/images/productbg.jpg')",
+      "radial-gradient(rgba(0, 128, 128, 0.9), rgba(0, 123, 255, 1))",
   };
   return (
     <section
@@ -16,8 +16,11 @@ const ProductsSection: FC<IProductsSection> = ({ isNav }) => {
     >
       {isNav ? (
         <div className="bg-cover bg-center h-[25vh]" style={styling}>
-          <div className="flex justify-center items-center h-full">
-            <h3 className="titleStyle text-[#fff]">Ürünlerimiz</h3>
+          <div className="flex flex-col items-center justify-center pt-[70px] h-full">
+            <h3 className="titleStyle text-[#fff] pb-1">Ürünlerimiz</h3>
+            <p className="subTitleStyle text-[#fff]">
+              Sigorta ihtiyaçlarınız için en güvenilir adres!
+            </p>
           </div>
         </div>
       ) : (
@@ -30,7 +33,9 @@ const ProductsSection: FC<IProductsSection> = ({ isNav }) => {
       )}
       <div
         className={`container mx-auto flex flex-wrap  px-2 pb-10 md:justify-center ${
-          isNav ? "overflow-y-auto flex-nowrap md:overflow-hidden gap-3 md:gap-5 pt-10" : "justify-center gap-3 md:gap-12"
+          isNav
+            ? "overflow-y-auto flex-nowrap md:overflow-hidden gap-3 md:gap-5 pt-10"
+            : "justify-center gap-3 md:gap-12"
         }`}
       >
         {products.map((product) => (

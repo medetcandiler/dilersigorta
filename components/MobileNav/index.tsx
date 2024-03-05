@@ -5,7 +5,7 @@ import MobileNavLink from "../MobileNavLink";
 import OfferButton from "../OfferButton";
 import ContactButton from "../ContactButton";
 
-const MobileNav: FC<IMobileNav> = ({ isClicked }) => {
+const MobileNav: FC<IMobileNav> = ({ isClicked, onclick }) => {
   return (
     <nav
       className={`absolute flex flex-col border-t w-full left-0 top-[69px] transition duration-500 ease-in-out ${
@@ -19,6 +19,7 @@ const MobileNav: FC<IMobileNav> = ({ isClicked }) => {
           hasChild={link.hasChild}
           child={link.child}
           href={link.href}
+          onclick={onclick}
         />
       ))}
       <div className="flex flex-col justify-center bg-[#fff] items-start gap-3 py-3 px-10">

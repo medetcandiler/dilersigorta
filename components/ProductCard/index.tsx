@@ -13,7 +13,7 @@ const ProductCard: FC<IProductCard> = ({ title, imageSrc, isNav }) => {
   return (
     <Link
       href={`/urunler/${title.toLocaleLowerCase()}`}
-      className={`flex flex-col items-center links-hover hoverTranslateY shadow-lg rounded-lg ${
+      className={`flex flex-col items-center links-hover shadow-lg rounded-lg hover:shadow-blue-300 ${
         activeLink ? "text-[#0E7AB3] shadow-blue-300" : ""
       }`}
     >
@@ -31,7 +31,7 @@ const ProductCard: FC<IProductCard> = ({ title, imageSrc, isNav }) => {
             priority
           />
         </div>
-        <h3 className="text-center text-sm font-semibold whitespace-nowrap">
+        <h3 className="text-center text-md font-semibold whitespace-nowrap">
           {title}
         </h3>
       </div>

@@ -6,11 +6,13 @@ const ContactButton: FC = () => {
   return (
     <section className="flex flex-col">
       <div>
-        <span className="text-md text-gray-700 md:text-xs">Destek için hazırız</span>
+        <span className="text-md text-gray-700 md:text-xs">
+          Destek için hazırız
+        </span>
       </div>
-      <Link className="flex items-center links-hover " href="/iletisim">
-        <Image src="icons/phone.svg" width={20} height={20} alt="phone icon" />
-        <span className="ml-2 "> (530) 417 52 31</span>
+      <Link className="flex items-center links-hover " href="tel:+905304175231">
+        <Image src='/icons/phone.svg' width={20} height={20} alt="phone icon" />
+        <span className="ml-2 ">(530) 417 52 31</span>
       </Link>
     </section>
   );

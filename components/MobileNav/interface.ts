@@ -1,3 +1,4 @@
 export interface IMobileNav {
-  isClicked: boolean
+  isClicked: boolean;
+  onclick: () => void;
 }

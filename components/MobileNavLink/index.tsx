@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { IMobileNavLink } from "./interface";
 import Link from "next/link";
-import Arrow from "../Arrow";
 import MobileLinkWithChild from "../MobileLinkWithChild";
 
 const MobileNavLink: FC<IMobileNavLink> = ({
@@ -9,18 +8,15 @@ const MobileNavLink: FC<IMobileNavLink> = ({
   hasChild,
   child,
   href,
+  onclick,
 }) => {
-  if (hasChild) return <MobileLinkWithChild label={label} child={child} />;
+  if (hasChild)
+    return (
+      <MobileLinkWithChild label={label} child={child} onclick={onclick} />
+    );
   return (
     <Link href={href} className={`ham-nav-link links-hover group/edit`}>
       <span>{label}</span>
-      <Arrow
-        color="#1E293B"
-        type="right"
-        height={15}
-        width={12}
-        isChildArrow={false}
-      />
     </Link>
   );
 };

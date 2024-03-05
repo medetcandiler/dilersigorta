@@ -3,4 +3,5 @@ export interface IMobileNavLink {
   hasChild?: boolean;
   child?: string[];
   href: string;
+  onclick: () => void;
 }

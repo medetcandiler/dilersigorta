@@ -6,7 +6,6 @@ const DynamicProductPage = ({ params }: { params: { title: string } }) => {
   const selectedProduct = products.filter(
     (product) => product.title.toLocaleLowerCase() === decodedTitle
   )[0];
-  console.log();
 
   return (
     <section className="bg-[#fff] pb-20">
