@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className=" ">
       <HeroSection />
-      <ProductsSection />
+      <ProductsSection isNav={false} />
       <Benefits />
       <InsuranceServicesSection />
       <Testimonials />
