@@ -5,9 +5,6 @@ interface IDynamicProductPageProps {
   children: ReactNode;
 }
 
-export const metadata: Metadata = {
-  title: "Diler Sigorta | Ürünler",
-};
 const DynamicProductLayout: FC<IDynamicProductPageProps> = ({ children }) => {
   return (
     <section>

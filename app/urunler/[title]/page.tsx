@@ -34,6 +34,7 @@ const DynamicProductPage = ({ params }: { params: { title: string } }) => {
             key={content.id}
             title={content.title}
             description={content.description}
+            path={decodedTitle}
           />
         ))}
       </div>

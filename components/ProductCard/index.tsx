@@ -8,8 +8,12 @@ import { usePathname } from "next/navigation";
 const ProductCard: FC<IProductCard> = ({ title, imageSrc, isNav }) => {
   const pathname = usePathname();
   const decodedPathName = decodeURIComponent(pathname);
+  const splittedPathName = decodedPathName.split(" ")[0];
+
   const activeLink =
-    decodedPathName === `/urunler/${title.toLocaleLowerCase()}`;
+    splittedPathName === `/urunler/${title.toLocaleLowerCase()}` ||
+    splittedPathName ===
+      `/urunler/${title.toLocaleLowerCase()}/${title.toLocaleLowerCase()}`;
   return (
     <Link
       href={`/urunler/${title.toLocaleLowerCase()}`}

@@ -1,12 +1,23 @@
 import { FC } from "react";
 import { IProductInnerCard } from "./interface";
 import Image from "next/image";
+import Link from "next/link";
 
-const ProductInnerCard: FC<IProductInnerCard> = ({ title, description }) => {
+const ProductInnerCard: FC<IProductInnerCard> = ({
+  title,
+  description,
+  path,
+}) => {
+  const decodedPath = decodeURI(path);
   return (
-    <div className="relative shadow-2xl p-6 rounded-xl lg:w-1/2">
+    <Link
+      href={`/urunler/${decodedPath}/${title.toLocaleLowerCase()}`}
+      className="relative shadow-2xl p-6 rounded-xl lg:w-1/2"
+    >
       <div className="flex justify-between items-center py-12 px-3 rounded-lg bg-gradient-to-r from-[#0BA5E9] to-blue-700 md:px-5">
-        <h1 className="text-xl text-[#fff]">{title}</h1>
+        <h1 className="text-xl text-[#fff]">
+          {title.split(" ").splice(1).join(" ")}
+        </h1>
         <Image
           src="/images/whitedilerlogo.png"
           width={100}
@@ -20,9 +31,11 @@ const ProductInnerCard: FC<IProductInnerCard> = ({ title, description }) => {
       </div>
 
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
-        <button className="skySqrButton whitespace-nowrap">Daha Fazla Bilgi Al</button>
+        <button className="skySqrButton whitespace-nowrap">
+          Daha Fazla Bilgi Al
+        </button>
       </div>
-    </div>
+    </Link>
   );
 };
 
