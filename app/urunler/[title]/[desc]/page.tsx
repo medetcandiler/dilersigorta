@@ -17,22 +17,27 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
     (desc) => desc.title.toLocaleLowerCase() === decodedPath
   )[0];
 
-  console.log(Object.keys(matchedTitle.subDescription))
   return (
     <section>
       <div className="flex justify-center items-center">
-        <h3 className="titleStyle">{matchedTitle.subDescription.firstTitle}</h3>
+        {/* <h3 className="titleStyle">{matchedTitle.subDescription}</h3> */}
       </div>
       <div className="flex justify-center items-center md:py-12">
         <div className="md:border-black p-14 md:rounded-lg md:shadow-black md:shadow-lg md:w-[calc(200vw/3)] md:overflow-y-auto">
-          {Object.keys(matchedTitle.subDescription).map((key) => (
+          {Object.entries(matchedTitle.subDescription).map(([key, value]) => (
             <div key={key}>
-              <h4 className="font-bold contentHeader text-lg mb-2">
-                {matchedTitle.subDescription[key]}
-              </h4>
-              <p className="contentText mb-6">
-                {matchedTitle.subDescription[key]}
-              </p>
+              <h4 className="font-bold contentHeader text-lg mb-2">{key}</h4>
+              {Array.isArray(value) ? (
+                <ul className="list-disc pl-6">
+                  {value.map((item, index) => (
+                    <li key={index} className="listItem">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="contentText mb-6">{value}</p>
+              )}
             </div>
           ))}
         </div>
@@ -42,5 +47,3 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
 };
 
 export default NestedDescPage;
-
-// i̇ş
