@@ -25,7 +25,6 @@ const DynamicProductPage = ({ params }: { params: { title: string } }) => {
   const selectedProduct = products.filter(
     (product) => product.title.toLocaleLowerCase() === decodedTitle
   )[0];
-
   return (
     <section className="bg-[#fff] pb-20">
       <div className="container mx-auto px-5 flex flex-col gap-10 lg:flex-row">
@@ -34,7 +33,7 @@ const DynamicProductPage = ({ params }: { params: { title: string } }) => {
             key={content.id}
             title={content.title}
             description={content.description}
-            path={decodedTitle}
+            routePath={decodedTitle}
           />
         ))}
       </div>

@@ -6,12 +6,11 @@ import Link from "next/link";
 const ProductInnerCard: FC<IProductInnerCard> = ({
   title,
   description,
-  path,
+  routePath,
 }) => {
-  const decodedPath = decodeURI(path);
   return (
     <Link
-      href={`/urunler/${decodedPath}/${title.toLocaleLowerCase()}`}
+      href={`/urunler/${routePath}/${title.toLocaleLowerCase()}`}
       className="relative shadow-2xl p-6 rounded-xl lg:w-1/2"
     >
       <div className="flex justify-between items-center py-12 px-3 rounded-lg bg-gradient-to-r from-[#0BA5E9] to-blue-700 md:px-5">
