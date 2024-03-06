@@ -27,7 +27,7 @@ const ProductInnerCard: FC<IProductInnerCard> = ({
         <h1>{description}</h1>
       </div>
 
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
+      <div className="absolute bottom-9 left-1/2 -translate-x-1/2">
         <Link
           href={`/urunler/${decodedPath}/${title.toLocaleLowerCase()}`}
           className="skySqrButton whitespace-nowrap"
