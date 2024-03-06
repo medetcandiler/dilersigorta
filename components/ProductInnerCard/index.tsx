@@ -8,11 +8,9 @@ const ProductInnerCard: FC<IProductInnerCard> = ({
   description,
   routePath,
 }) => {
+  const decodedPath = decodeURI(routePath);
   return (
-    <Link
-      href={`/urunler/${routePath}/${title.toLocaleLowerCase()}`}
-      className="relative shadow-2xl p-6 rounded-xl lg:w-1/2"
-    >
+    <section className="relative shadow-2xl p-6 rounded-xl lg:w-1/2">
       <div className="flex justify-between items-center py-12 px-3 rounded-lg bg-gradient-to-r from-[#0BA5E9] to-blue-700 md:px-5">
         <h1 className="text-xl text-[#fff]">
           {title.split(" ").splice(1).join(" ")}
@@ -30,11 +28,14 @@ const ProductInnerCard: FC<IProductInnerCard> = ({
       </div>
 
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
-        <button className="skySqrButton whitespace-nowrap">
+        <Link
+          href={`/urunler/${decodedPath}/${title.toLocaleLowerCase()}`}
+          className="skySqrButton whitespace-nowrap"
+        >
           Daha Fazla Bilgi Al
-        </button>
+        </Link>
       </div>
-    </Link>
+    </section>
   );
 };
 

@@ -35,7 +35,7 @@ const GoogleMaps = () => {
     setMap(null);
   }, []);
   return isLoaded ? (
-    <div className="flex items-center justify-center w-[350px] h-[250px] sm:w-[500px] sm:h-[325px] md:w-[600px] lg:w-[800px] lg:h-[400px]  px-5">
+    <div className="flex items-center justify-center w-[290px] h-[250px] sm:w-[500px] sm:h-[325px] md:w-[600px] lg:w-[800px] lg:h-[400px] px-5 pt-3">
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         center={center}

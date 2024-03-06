@@ -9,15 +9,18 @@ const ProductCard: FC<IProductCard> = ({ title, imageSrc, isNav }) => {
   const pathname = usePathname();
   const decodedPathName = decodeURIComponent(pathname);
   const splittedPathName = decodedPathName.split(" ")[0];
+  const finalPathName = splittedPathName.includes("i̇ş")
+    ? splittedPathName + " yeri"
+    : decodedPathName.split(" ")[0];
 
   const activeLink =
-    splittedPathName === `/urunler/${title.toLocaleLowerCase()}` ||
-    splittedPathName ===
+    finalPathName === `/urunler/${title.toLocaleLowerCase()}` ||
+    finalPathName ===
       `/urunler/${title.toLocaleLowerCase()}/${title.toLocaleLowerCase()}`;
   return (
     <Link
       href={`/urunler/${title.toLocaleLowerCase()}`}
-      className={`flex flex-col items-center links-hover shadow-lg rounded-lg hover:shadow-blue-300 ${
+      className={`flex flex-col items-center links-hover shadow-lg rounded-lg hover:hoverTranslateY ${
         activeLink ? "text-[#0E7AB3] shadow-blue-300" : ""
       }`}
     >

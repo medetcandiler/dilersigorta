@@ -90,7 +90,7 @@ const ContactForm: FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className="flex justify-center items-center ">
-      <div className="relative flex flex-col items-center gap-10 border border-black p-14 rounded-lg shadow-black shadow-lg lg:p-20 lg:py-20">
+      <div className="relative flex flex-col items-center gap-10 border border-black rounded-lg shadow-black shadow-lg px-10 py-10 sm:px-20 sm:py-16 lg:px-20 lg:py-20">
         <div className="flex flex-col gap-9 sm:gap-12 sm:flex-row ">
           <div className="relative z-0 w-full group">
             <input

@@ -22,11 +22,18 @@ const ContactSection: FC<IContentSectionProps> = ({ isPage }) => {
         ""
       )}
 
-      <div className="container mx-auto flex flex-col items-center gap-10 py-14 px-12 md:px-0">
-        <div className="flex flex-col items-center gap-6">
-          <h3 className="titleStyle md:text-3xl lg:text-4xl">Bize Ulaşın</h3>
-          <ContactSectionAdress address="Atalar, Diler Sigorta, Üsküdar Cd. NO:117, 34862 Kartal/İstanbul" />
-          <ContactSectionAdress address="Örnek Mahallesi,Cahar Dudayev Cad.Ferah Feza Sok. No:9 Ataşehir/İstanbul" />
+      <div className="container mx-auto flex flex-col items-center gap-14 py-14 px-5 md:px-0">
+        <div className="flex flex-col items-center gap-8">
+          <div className="flex flex-col gap-3 items-center">
+            <h1 className="titleStyle md:text-3xl lg:text-4xl">Bize Ulaşın</h1>
+            <h3 className="text-center text-xl font-medium text-neutral-500">
+              Diler Sigorta Ofis Lokasyonlarımız
+            </h3>
+          </div>
+          <div className="flex flex-col gap-3 items-center">
+            <ContactSectionAdress address="Atalar, Diler Sigorta, Üsküdar Cd. NO: 117, 34862 Kartal/İstanbul" />
+            <ContactSectionAdress address="Örnek Mahallesi,Cahar Dudayev Cad.Ferah Feza Sok.No:9 Ataşehir/İstanbul" />
+          </div>
           <GoogleMaps />
         </div>
 

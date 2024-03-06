@@ -27,7 +27,7 @@ const DynamicProductPage = ({ params }: { params: { title: string } }) => {
   )[0];
   return (
     <section className="bg-[#fff] pb-20">
-      <div className="container mx-auto px-5 flex flex-col gap-10 lg:flex-row">
+      <div className="container mx-auto px-5 flex flex-col gap-5 lg:flex-row">
         {selectedProduct?.content.map((content) => (
           <ProductInnerCard
             key={content.id}
