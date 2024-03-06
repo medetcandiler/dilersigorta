@@ -17,10 +17,16 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
     (desc) => desc.title.toLocaleLowerCase() === decodedPath
   )[0];
 
+  const header = arrayDecodedPath.includes("i̇ş")
+    ? decodedPath.split(" ").splice(2).join(" ").toUpperCase()
+    : decodedPath.split(" ").splice(1).join(" ").toUpperCase();
+
   return (
     <section>
       <div className="flex justify-center items-center">
-        {/* <h3 className="titleStyle">{matchedTitle.subDescription}</h3> */}
+        <h3 className="text-center font-bold text-3xl md:text-4xl text-slate-800">
+          {header}
+        </h3>
       </div>
       <div className="flex justify-center items-center md:py-12">
         <div className="md:border-black p-14 md:rounded-lg md:shadow-black md:shadow-lg md:w-[calc(200vw/3)] md:overflow-y-auto">
