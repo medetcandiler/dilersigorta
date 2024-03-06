@@ -24,7 +24,7 @@ const ContactSection: FC<IContentSectionProps> = ({ isPage }) => {
 
       <div className="container mx-auto flex flex-col items-center gap-14 py-14 px-5 md:px-0">
         <div className="flex flex-col items-center gap-8">
-          <div className="flex flex-col gap-3 items-center">
+          <div className="flex flex-col gap-5 items-center">
             <h1 className="titleStyle md:text-3xl lg:text-4xl">Bize Ulaşın</h1>
             <h3 className="text-center text-xl font-medium text-neutral-500">
               Diler Sigorta Ofis Lokasyonlarımız

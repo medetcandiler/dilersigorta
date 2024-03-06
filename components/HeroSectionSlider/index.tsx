@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { IHeroSectionSlider } from "./interface";
+import Link from "next/link";
 
 const HeroSectionSlider: FC<IHeroSectionSlider> = ({ content, isVisible }) => {
   return (
@@ -10,19 +11,17 @@ const HeroSectionSlider: FC<IHeroSectionSlider> = ({ content, isVisible }) => {
           : "opacity-0 translate-y-[-150px]"
       } md:w-1/2`}
     >
-      <h1 className="titleStyle text-[#fff]">
-        {content.title}
-      </h1>
+      <h1 className="titleStyle text-[#fff]">{content.title}</h1>
       <p className="text-lg font-medium text-[#fff] text-center md:text-xl">
         {content.description}
       </p>
       <div className="flex gap-2.5 items-center text-sm font-bold tracking-wide leading-5 text-center text-[#fff] whitespace-nowrap">
-        <button className="skyButton">
+        <Link href="/iletisim" className="skyButton">
           Teklif Alın
-        </button>
-        <button className="outlineButton">
+        </Link>
+        <Link href={content.href} className="outlineButton">
           Daha Fazla Bilgi
-        </button>
+        </Link>
       </div>
     </div>
   );

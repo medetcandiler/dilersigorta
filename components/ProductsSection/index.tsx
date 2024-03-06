@@ -25,9 +25,9 @@ const ProductsSection: FC<IProductsSection> = ({ isNav }) => {
         </div>
       ) : (
         <>
-          <h3 className="titleStyle pb-8">
-            Güvenin Adresi, Sigortada İhtiyacınız Olan Her Şey!
-          </h3>
+          <h1 className="titleStyle pb-8">
+            Diler Sigorta, Güvenle Hayatınızı Sigortalıyor!
+          </h1>
           <p className="subTitleStyle">Doğru Ürün. İyi Fiyat.</p>
         </>
       )}
@@ -37,6 +37,7 @@ const ProductsSection: FC<IProductsSection> = ({ isNav }) => {
             ? "overflow-y-auto flex-nowrap md:overflow-hidden gap-3 md:gap-5 pt-10"
             : "justify-center gap-3 md:gap-12"
         }`}
+        style={{ scrollbarWidth: "none" }}
       >
         {products.map((product) => (
           <ProductCard
