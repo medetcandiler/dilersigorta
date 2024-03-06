@@ -1,4 +1,17 @@
+import type { Metadata, ResolvingMetadata } from "next";
 import { products } from "@/data/products";
+
+export async function generateMetadata(
+  { params }: { params: { desc: string } },
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const title = decodeURIComponent(params.desc);
+  const capitilisedTitle = title[0].toUpperCase() + title.slice(1);
+
+  return {
+    title: `Diler Sigorta | ${capitilisedTitle}`,
+  };
+}
 
 const NestedDescPage = ({ params }: { params: { desc: string } }) => {
   const decodedPath = decodeURI(params.desc);
