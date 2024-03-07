@@ -13,23 +13,22 @@ const KVKKSection: FC = () => {
           <h3 className="titleStyle text-[#fff]">KVKK Aydınlatma Metni</h3>
         </div>
       </div>
-      <div className="flex justify-center items-center md:py-12 ">
-        <div className="md:border-black p-14 md:rounded-lg md:shadow-black md:shadow-lg md:w-[calc(200vw/3)]  md:overflow-y-auto">
+      <div className="container mx-auto flex justify-center items-center py-20 md:px-5 lg:px-20 ">
+        <div className="md:border-black px-10 md:py-10 lg:px-20 lg:py-16 md:rounded-lg md:shadow-black md:shadow-lg md:overflow-y-auto">
           <h4 className="font-bold contentHeader text-lg mb-2">1. GİRİŞ</h4>
           <p className="contentText mb-6">
             İşbu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması
-            Kanunu’nun (“Kanun”) 10. maddesi uyarınca, T.C. KÜLTÜR VE TURİZM
-            BAKANLIĞI (“VERİ SORUMLUSU”) tüzel kişiliği, ilgili müdürlük ve
-            birimleri ve hizmet merkezlerinde toplanan kişisel verilerin
-            işlenmesine ilişkin ilgili kişilerin aydınlatılması amacı ile
-            hazırlanmıştır. VERİ SORUMLUSU, kişisel verilerin işlenmesi,
-            korunması ve güvenliği hususuna azami hassasiyet ve gayret
-            göstermektedir. Kişisel veriler VERİ SORUMLUSU tarafından her türlü
-            işitsel, yazılı, görsel ya da elektronik yöntemlerle
-            toplanabilecektir. Bu kapsamda ve Kanun gereğince ilgili kişilerin
-            kişisel verileri VERİ SORUMLUSU tarafından Kanunda sayılan genel
-            ilkeler doğrultusunda gerçekleştirilmesi gereken iş ve işlemler için
-            Veri Sorumlusu sıfatıyla işlenebilecektir.
+            Kanunu’nun 10. maddesi uyarınca, T.C. KÜLTÜR VE TURİZM BAKANLIĞI
+            tüzel kişiliği, ilgili müdürlük ve birimleri ve hizmet merkezlerinde
+            toplanan kişisel verilerin işlenmesine ilişkin ilgili kişilerin
+            aydınlatılması amacı ile hazırlanmıştır. VERİ SORUMLUSU, kişisel
+            verilerin işlenmesi, korunması ve güvenliği hususuna azami
+            hassasiyet ve gayret göstermektedir. Kişisel veriler VERİ SORUMLUSU
+            tarafından her türlü işitsel, yazılı, görsel ya da elektronik
+            yöntemlerle toplanabilecektir. Bu kapsamda ve Kanun gereğince ilgili
+            kişilerin kişisel verileri VERİ SORUMLUSU tarafından Kanunda sayılan
+            genel ilkeler doğrultusunda gerçekleştirilmesi gereken iş ve
+            işlemler için Veri Sorumlusu sıfatıyla işlenebilecektir.
           </p>
 
           <h4 className="font-bold contentHeader text-lg mb-2">

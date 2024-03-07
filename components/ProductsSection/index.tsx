@@ -32,12 +32,11 @@ const ProductsSection: FC<IProductsSection> = ({ isNav }) => {
         </>
       )}
       <div
-        className={`container mx-auto flex flex-wrap  px-2 pb-10 md:justify-center ${
+        className={`flex flex-wrap ${
           isNav
-            ? "overflow-y-auto flex-nowrap md:overflow-hidden gap-3 md:gap-5 pt-10"
-            : "justify-center gap-3 md:gap-12"
+            ? "overflow-x-scroll flex-nowrap gap-3 md:gap-5 px-5 pt-10 pb-5 md:flex-wrap md:justify-center md:container md:mx-auto "
+            : "container mx-auto justify-center gap-3 px-2 pb-10 md:gap-12"
         }`}
-        style={{ scrollbarWidth: "none" }}
       >
         {products.map((product) => (
           <ProductCard

@@ -5,7 +5,7 @@ export const navLinks = [
   {
     label: "Ürünler",
     hasChild: true,
-    child: products.map((product) => product.title),
+    child: products.map((product) => product.route),
     href: "/urunler",
     isVisibleOnMd: true,
   },

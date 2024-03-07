@@ -14,17 +14,21 @@ const MobileNavLinkChild: FC<IMobileNavLinkChild> = ({
   };
   return (
     <div
-      className={` bg-[#fff] w-auto py-3 transition duration-300 whitespace-nowrap
+      className={` bg-[#fff] w-auto py-1 transition duration-300 whitespace-nowrap
      ${isClicked ? "flex" : "hidden"} flex-col space-y-3 pl-4 `}
     >
       {desktopNavChild?.map((link) => (
         <Link
           key={link}
-          href={`/urunler/${link.toLocaleLowerCase()}`}
+          href={`/urunler/${link}`}
           onClick={() => handleClose()}
           className={`child py-1 group/second nav-link hover:text-[#0E7AB3] text-sm `}
         >
-          <span className="child">{link}</span>
+          <span className="child">
+            {link === "isyeri"
+              ? "İş Yeri"
+              : link[0].toLocaleUpperCase() + link.slice(1)}
+          </span>
         </Link>
       ))}
     </div>

@@ -12,11 +12,21 @@ const DesktopNavLinkChild: FC<IDesktopNavLinkChild> = ({ desktopNavChild }) => {
       {desktopNavChild?.map((link) => (
         <Link
           key={link}
-          href={`/urunler/${link.toLocaleLowerCase()}`}
+          href={`/urunler/${link}`}
           className={`group/edit nav-link hover:text-[#0E7AB3] text-sm `}
         >
-          <span>{link}</span>
-          <Arrow color="#1E293B" type="right" height={12} width={15} isChildArrow={false}/>
+          <span>
+            {link === "isyeri"
+              ? "İş Yeri"
+              : link[0].toLocaleUpperCase() + link.slice(1)}
+          </span>
+          <Arrow
+            color="#1E293B"
+            type="right"
+            height={12}
+            width={15}
+            isChildArrow={false}
+          />
         </Link>
       ))}
     </div>

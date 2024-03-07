@@ -16,7 +16,7 @@ const HelpfullLinksSection: FC<IHelpfullLinksSection> = ({ isSection }) => {
       >
         <h1 className="titleStyle pb-8">Faydalı Bağlantılar</h1>
         <h3 className="subTitleStyle">
-          Bağlantıya geçmek için kartlara tıklayabilirsiniz.
+          Bağlantıya geçmek için arama simgesine tıklayabilirsiniz.
         </h3>
 
         <div className="container mx-auto flex justify-center md:px-5">

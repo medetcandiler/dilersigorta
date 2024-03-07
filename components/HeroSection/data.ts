@@ -5,7 +5,7 @@ export const dataSlice = [
     description:
       "Ev sigortası ile evinizi ve eşyalarınızı güvence altına alın. Doğal afetler, hırsızlık ve diğer risklere karşı kapsamlı bir koruma sunuyoruz.",
     bg: "/images/happyfamily.jpg",
-    href: '/urunler/konut'
+    href: "/urunler/konut",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const dataSlice = [
     description:
       "Araç sigortası ile aracınızın güvence altında olduğundan emin olun. Trafik kazaları, hırsızlık ve diğer risklere karşı koruma sağlıyoruz.",
     bg: "/images/carinsurance.jpg",
-    href: '/urunler/araç'
+    href: "/urunler/arac",
   },
   {
     id: 3,
@@ -21,6 +21,6 @@ export const dataSlice = [
     description:
       "Sağlık sigortası ile sağlığınızı ön planda tutun. İleri tedaviler, acil durumlar ve diğer sağlık hizmetlerine geniş kapsamlı bir erişim sağlıyoruz.",
     bg: "/images/healt.jpg",
-    href: '/urunler/sağlık'
+    href: "/urunler/saglik",
   },
 ];

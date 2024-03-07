@@ -11,7 +11,7 @@ const HelpfullLinkCard: FC<IHelpfullLinkCard> = ({
       <a
         href={url}
         target="_blank"
-        className="flex size-12 bg-[#0E7AB3] rounded-full p-2 z-10 transition duration-300 group-hover:scale-110 hover:bg-[#0091D5]"
+        className="flex size-12 bg-[#0E7AB3] rounded-full p-2 z-10 transition duration-300 group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-blue-500 hover:bg-[#0091D5]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

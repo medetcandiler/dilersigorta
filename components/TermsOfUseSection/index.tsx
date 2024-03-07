@@ -12,17 +12,16 @@ const TermsOfUseSection: FC = () => {
           <h3 className="titleStyle text-[#fff]">Kullanım Şartları</h3>
         </div>
       </div>
-      <div className="flex justify-center items-center md:py-12 ">
-        <div className="md:border-black p-14 md:rounded-lg md:shadow-black md:shadow-lg md:w-[calc(200vw/3)]  md:overflow-y-auto">
+      <div className="container mx-auto flex justify-center items-center py-20 md:px-5 lg:px-20 ">
+        <div className="md:border-black px-10 md:py-10 lg:px-20 lg:py-16 md:rounded-lg md:shadow-black md:shadow-lg md:overflow-y-auto">
           <h4 className="font-bold contentHeader text-lg mb-2">1. GENEL</h4>
           <p className="contentText mb-6">
             İşbu kullanım şartları metni, Diler Sigorta Aracilik Hizmetleri
-            (&quot;Şirket&quot;) tarafından işletilen www.dilersigorta.com web
-            sitesinin (&quot;Web Sitesi&quot;) kullanımı ile ilgili koşulları
-            belirlemektedir. Web Sitesi&rsquo;ni kullanarak, bu kullanım
-            şartlarına tamamen ve koşulsuz olarak bağlı olduğunuzu kabul
-            etmektesiniz. Eğer bu kullanım şartlarına katılmıyorsanız, Web
-            Sitesi&rsquo;ni kullanmayınız.
+            tarafından işletilen www.dilersigorta.com web sitesinin kullanımı
+            ile ilgili koşulları belirlemektedir. Web Sitesi&rsquo;ni
+            kullanarak, bu kullanım şartlarına tamamen ve koşulsuz olarak bağlı
+            olduğunuzu kabul etmektesiniz. Eğer bu kullanım şartlarına
+            katılmıyorsanız, Web Sitesi&rsquo;ni kullanmayınız.
           </p>
 
           <h4 className="font-bold contentHeader text-lg mb-2">
@@ -30,9 +29,9 @@ const TermsOfUseSection: FC = () => {
           </h4>
           <div className="contentText mb-6">
             Şirket, kullanıcılara, bu Web Sitesi&rsquo;nde sunulan bilgileri ve
-            hizmetleri kullanma hakkı vermektedir. Ancak, bu hak, Web Sitesi&rsquo;ni
-            kullanımınızın aşağıdaki faaliyetlerde bulunmanızı içermediğini
-            kabul ve beyan etmektesiniz:
+            hizmetleri kullanma hakkı vermektedir. Ancak, bu hak, Web
+            Sitesi&rsquo;ni kullanımınızın aşağıdaki faaliyetlerde bulunmanızı
+            içermediğini kabul ve beyan etmektesiniz:
             <ul className="list-disc pl-6">
               <li>Web Sitesi&rsquo;ne zarar vermek veya erişimi engellemek</li>
               <li>
