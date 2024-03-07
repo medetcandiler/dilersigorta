@@ -9,21 +9,19 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  { params }: { params: { title: string } },
+  { params }: { params: { route: string } },
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const title = decodeURIComponent(params.title);
-  const capitilisedTitle = title[0].toUpperCase() + title.slice(1);
-
+  const capitilisedTitle =
+    params.route[0].toLocaleUpperCase() + params.route.slice(1);
   return {
     title: `Diler Sigorta | ${capitilisedTitle}`,
   };
 }
 
-const DynamicProductPage = ({ params }: { params: { title: string } }) => {
-  const decodedTitle = decodeURIComponent(params.title);
+const DynamicProductPage = ({ params }: { params: { route: string } }) => {
   const selectedProduct = products.filter(
-    (product) => product.title.toLocaleLowerCase() === decodedTitle
+    (product) => product.route === params.route
   )[0];
   return (
     <section className="bg-[#fff] pb-20">
@@ -33,7 +31,7 @@ const DynamicProductPage = ({ params }: { params: { title: string } }) => {
             key={content.id}
             title={content.title}
             description={content.description}
-            routePath={decodedTitle}
+            routePath={params.route}
           />
         ))}
       </div>

@@ -8,7 +8,6 @@ const ProductInnerCard: FC<IProductInnerCard> = ({
   description,
   routePath,
 }) => {
-  const decodedPath = decodeURI(routePath);
   return (
     <section className="relative shadow-2xl p-6 rounded-xl lg:w-1/2">
       <div className="flex justify-between items-center py-12 px-3 rounded-lg bg-gradient-to-r from-[#0BA5E9] to-blue-700 md:px-5">
@@ -29,7 +28,7 @@ const ProductInnerCard: FC<IProductInnerCard> = ({
 
       <div className="absolute bottom-9 left-1/2 -translate-x-1/2">
         <Link
-          href={`/urunler/${decodedPath}/${title.toLocaleLowerCase()}`}
+          href={`/urunler/${routePath}/${title}`}
           className="skySqrButton whitespace-nowrap"
         >
           Daha Fazla Bilgi Al

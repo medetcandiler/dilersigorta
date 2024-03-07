@@ -43,6 +43,7 @@ const ProductsSection: FC<IProductsSection> = ({ isNav }) => {
           <ProductCard
             key={product.id}
             title={product.title}
+            route={product.route}
             imageSrc={product.imageSrc}
             isNav={isNav}
           />

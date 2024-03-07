@@ -5,21 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const ProductCard: FC<IProductCard> = ({ title, imageSrc, isNav }) => {
+const ProductCard: FC<IProductCard> = ({ title, imageSrc, isNav, route }) => {
   const pathname = usePathname();
-  const decodedPathName = decodeURIComponent(pathname);
-  const splittedPathName = decodedPathName.split(" ")[0];
-  const finalPathName = splittedPathName.includes("i̇ş")
-    ? splittedPathName + " yeri"
-    : decodedPathName.split(" ")[0];
-
   const activeLink =
-    finalPathName === `/urunler/${title.toLocaleLowerCase()}` ||
-    finalPathName ===
-      `/urunler/${title.toLocaleLowerCase()}/${title.toLocaleLowerCase()}`;
+    pathname === `/urunler/${route}` ||
+    pathname.includes(`/urunler/${route}/${route}`);
   return (
     <Link
-      href={`/urunler/${title.toLocaleLowerCase()}`}
+      href={`/urunler/${route}`}
       className={`flex flex-col items-center links-hover shadow-lg rounded-lg hover:hoverTranslateY ${
         activeLink ? "text-[#0E7AB3] shadow-blue-300" : ""
       }`}

@@ -5,9 +5,8 @@ export async function generateMetadata(
   { params }: { params: { desc: string } },
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const title = decodeURIComponent(params.desc);
-  const capitilisedTitle = title[0].toUpperCase() + title.slice(1);
-
+  const decodedPath = decodeURI(params.desc);
+  const capitilisedTitle = decodedPath.split(" ").slice(1).join(" ");
   return {
     title: `Diler Sigorta | ${capitilisedTitle}`,
   };
@@ -15,30 +14,23 @@ export async function generateMetadata(
 
 const NestedDescPage = ({ params }: { params: { desc: string } }) => {
   const decodedPath = decodeURI(params.desc);
-  const arrayDecodedPath = decodedPath.split(" ");
-  const title = arrayDecodedPath.includes("i̇ş")
-    ? decodedPath.split(" ")[0] + " " + decodedPath.split(" ")[1]
-    : decodedPath.split(" ")[0];
+  const matchedPath = decodedPath.split(" ")[0];
 
   const matchedProduct = products.filter(
-    (product) => product.title.toLocaleLowerCase() === title
+    (product) => product.route === matchedPath
   );
 
   const productContent = matchedProduct.map((product) => product.content)[0];
 
   const matchedTitle = productContent.filter(
-    (desc) => desc.title.toLocaleLowerCase() === decodedPath
+    (desc) => desc.title.toLocaleLowerCase() === decodedPath.toLocaleLowerCase()
   )[0];
-
-  const header = arrayDecodedPath.includes("i̇ş")
-    ? decodedPath.split(" ").splice(2).join(" ").toUpperCase()
-    : decodedPath.split(" ").splice(1).join(" ").toUpperCase();
 
   return (
     <section>
       <div className="flex justify-center items-center">
         <h3 className="text-center font-bold text-3xl md:text-4xl text-slate-800">
-          {header}
+          {matchedTitle.title.split(" ").slice(1).join(" ")}
         </h3>
       </div>
       <div className="flex justify-center items-center md:py-12">
