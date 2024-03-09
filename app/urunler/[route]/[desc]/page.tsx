@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata, ResolvingMetadata } from "next";
 import { products } from "@/data/products";
 import OfferButton from "@/components/OfferButton";
@@ -27,6 +28,15 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
     (desc) => desc.title.toLocaleLowerCase() === decodedPath.toLocaleLowerCase()
   )[0];
 
+  const renderTextWithLineBreaks = (text: string) => {
+    return text.split('\n').map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        <br />
+      </React.Fragment>
+    ));
+  };
+
   return (
     <section>
       <div className="container mx-auto flex justify-center items-center pb-10 pt-5 md:pt-10 md:px-5 lg:px-20">
@@ -40,7 +50,7 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
             <div key={key}>
               <h4 className="font-bold contentHeader text-lg mb-2">{key}</h4>
               {Array.isArray(value) ? (
-                <ul className="list-disc pl-6">
+                <ul className="list-disc pl-6 pb-5">
                   {value.map((item, index) => (
                     <li key={index} className="listItem contentText">
                       {item}
@@ -48,7 +58,7 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
                   ))}
                 </ul>
               ) : (
-                <p className="contentText mb-6">{value}</p>
+                <p className="contentText mb-6">{renderTextWithLineBreaks(value)}</p>
               )}
             </div>
           ))}

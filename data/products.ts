@@ -35,6 +35,40 @@ export const products = [
             "Her şeyin başı sağlık diyerek, kendinize şöyle kapsamlı bir sigorta yaptırmaya karar verdiniz.İşte ihtiyacınız için en uygun sigorta Özel Sağlık Sigortası (Limitsiz)! Türkiye Sigorta Özel Sağlık Sigortası (Limitsiz) ile yurt içi ve yurt dışında meydana gelebilecek sağlık giderleri için size kapsamlı teminatlar sunuyoruz. Bunun yanında sizlere, yaşa ve sigortalılık süresine bağlı olarak 2 ile 4 yıl arasında değişen sürelerde yenileme garantisi sunuyoruz. Bireysel Özel Sağlık Sigortası Bilgilendirme ve Aydınlanma Formu için tıklayınız. Vergi İndirimi Avantajına ilişkin detaylı bilgi almak için  tıklayınız.",
         },
       },
+      {
+        id: 4,
+        title: "saglik Bireysel Ferdi Kaza Sigortası",
+        description:
+          "Bir kaza durumunda, yaşanılacak üzüntü bir yana, inanılmaz masraflarla karşı karşıya kalınabilir. Ferdi kaza sigortası, ani ve beklenmedik kazaların sonuçlarına karşı güvence sağlar.",
+        subDescription: {
+          "Bireysel Ferdi Kaza Sigortası nedir?":
+            "Ferdi Kaza Sigortası, hayatınızın her anında beklenmedik risklere karşı koruma sağlar. Sıradan bir gününüzde yaşayabileceğiniz kazaların getirebileceği maddi ve manevi zararları telafi eder, size ve sevdiklerinize güvence verir.",
+
+          "Bu sigorta kapsamına giren teminatlar aşağıda belirtilmiştir:": [
+            "Ölüm",
+            "Sürekli sakatlık",
+            "Gündelik tazminat",
+            "Tedavi masrafları",
+            "Deprem",
+          ],
+
+          "Ölüm teminatı":
+            "Poliçe ile temin edilen bir kaza sonucu sigortalının derhal veya kaza tarihinden itibaren bir sene zarfında ölümü halinde geçerli olan bir teminattır.",
+
+          "Sürekli sakatlık teminatı":
+            "Poliçe ile temin edilen bir kaza sonucu sigortalının derhal veya kaza tarihinden itibaren iki sene zarfında sürekli sakatlığa maruz kalması halinde geçerli olan bir teminattır.Sürekli sakatlık teminatı, ölüm teminatından az ve ölüm teminatının iki katından fazla olamaz.\n Ödenecek tazminat, genel şartlarda belirlenen oranlar dahilinde hesaplanır.",
+          "Gündelik tazminat":
+            "Sigortalı, kaza neticesinde geçici olarak çalışamayacak duruma düşerse, kendisine poliçede yazılı olan gündelik tazminat ödenir.Gündelik tazminat miktarı 200 gün süreyle ödenebilir. Her türlü spor kazalarından dolayı ortaya çıkan gündelik tazminatlar 7 günü geçen süreler için ödenir.Bu tazminat, ölüm ve sürekli sakatlık teminatları toplamının % 0,025'ini geçemez.",
+          "Tedavi masrafları teminatları":
+            "Sigorta poliçesinin kapsamına giren bir kaza sonucunda sigortalının doktor ücreti ile ilaç, radyografi, kaplıca tedavisi, masaj, hastane ve diğer gerekli tedavi masrafları, nakil ücretleri hariç, sigorta edilebilir. \n\n Bu teminat, ölüm ve sürekli sakatlık teminatları toplamının %5'ini geçemez.\n\n Ölüm hali ve sürekli sakatlık teminatları birlikte sigorta edilebilir. Gündelik tazminat veya tedavi masrafları yalnız başına sigorta edilemez, ancak ölüm ve sürekli sakatlık teminatları ile birlikte verilebilir.",
+          "Sigorta teminatı kapsamına alınacak kişilerin meslek sınıfları üç gruba ayrılmıştır:":
+            [
+              "Fikren veya elle çalışanlar",
+              "Elle ve aynı zamanda bedenen çalışanlar",
+              "Elle ve aynı zamanda bedenen çalışanlar,",
+            ],
+        },
+      },
     ],
   },
   {
@@ -45,12 +79,36 @@ export const products = [
     content: [
       {
         id: 1,
-        title: "arac Kasko",
+        title: "arac Kasko Sigortası",
         description:
           "İhtiyacınıza özel genişletilmiş teminatlarla hazırlanan kasko sigortası ile aracınız, başına gelebilecek risklere karşı koruma altında! Genişletilmiş Kasko Sigortası aracınızı çarpma, çarpışma, yanma, çalınma ve bunun gibi birçok duruma karşı güvence altına alır.",
         subDescription: {
-          Kasko:
-            "Araç sahibi olmak kimimizin gençlik hayali, kimileri içinse gereklilik... Sebebi her ne olursa olsun bir aracınız varsa ve ufak da olsa bir hasara uğrarsa, hele bir de kaskonuz yoksa, düşünecek çok şeyiniz var demektir. Gelin, iş işten geçmeden Genişletilmiş Kasko yaptırın, biz sizin yerinize riskleri hesaplayalım. Size de yolların tadını çıkarmak kalsın. İster kısa mesafe olsun ister uzun, yolda düşündüğünüz tek risk trafik olsun. Karşılaşabileceğiniz diğer riskler için Genişletilmiş Kasko ile yanınızdayız",
+          "Kasko Sigortası nedir?":
+            "Kasko Sigortası, karayollarında hareket edebilen her türlü nakil aracınızın gerek hareket gerekse durma halindeyken uğrayabileceği zararları güvence altına alır. \n\n Kasko Sigortası; hasar, araç sahibinin kendi hatası sonucu meydana gelmiş olsa bile temin etmektedir. Ayrıca istenirse araç yardım hizmetleri de (asistans) teminata dahil edilebilmektedir.",
+
+          "Teminatlar;": [
+            "Çarpma, çarpılma, çarpışma",
+            "Yanma",
+            "Çalınma, çalınmaya teşebbüs",
+            "Sel ve su baskını",
+            "Deprem ve yanardağ püskürmesi",
+            "Grev, lokavt, kargaşalık, halk hareketleri, terör",
+            "Enflasyon (Üretici Fiyat Endeksi'ne göre)",
+            "Otomatik değer artışı (ödenen hasar sonrası araç değerinin primsiz olarak hasar öncesi meblağa yükseltilmesi)",
+            "İhtiyari mali sorumluluk (aracın işletenine yöneltilebilecek sorumluluğun Zorunlu Mali Sorumluluk Sigortası limitleri üzerinde olan kısmının - bedeni ve maddi olmak üzere - temin edilmesi)",
+            "Ferdi Kaza Sigortası (Bir kaza neticesinde araçta seyahat eden yolcu, sürücü ve sürücü yardımcılarının isim belirtilmeden yaşam kaybı, sürekli sakatlık ve tedavi masraflarının karşılanması)",
+          ],
+
+          "Oto Kasko Sigortası'nın teminat kapsamı, istenildiği takdirde aşağıdaki ek teminatlarla genişletilebilmektedir.":
+            [
+              "Sigara yanığı",
+              "Yetkili olmayan kişilerce çekilme",
+              "Asistans hizmetleri",
+              "Kıymet kazanma (poliçe teminatına giren herhangi bir hasar sonucunda ödenecek tazminat tutarından eskime düşülmemesi)",
+              "Sıfır kilometre hususi araçlara, araç alındığında sigortalanması şartıyla, aracın çalınması ya da tam ziya olması halinde anahtar teslim değerinin ödenmesi",
+              "Aracın anahtarının kaybolması, çalınması nedeniyle aracın güvenliğini sağlamak için yapılan anahtarın kopyalanması, alarm veya immobilizerin yeniden kodlanması, komple kilit kontak setinin değiştirilme masraflarının karşılanması",
+              "Araçta bulunan çanta, gözlük vb kişisel eşyanın poliçe üzerinde belirtilen rakam dahilinde temin edilmesi",
+            ],
         },
       },
       {
@@ -201,9 +259,7 @@ export const products = [
           "Otel Paket Sigortası, turizm işletmelerinin karşılaşabileceği büyük-küçük pek çok riski geniş kapsamlı tek bir poliçeyle güvence altına almaktadır.",
         subDescription: {
           "Otel Paket Sigortası nedir?":
-            "Bu sigorta ile; hangi boyutta olursa olsun otel, motel, tatil köyü ve benzeri turistik tesisler başlığı altında toplanabilecek işletmelerinizin binalarını, muhteviyatını (demirbaş, makine-tesisat, emtea, kasa muhteviyatı, odalarda ve emanete bırakılan eşyalar vb.), camlarını, tesisinizde konaklayan müşterilerinizi, çalışanlarınızı ve üçüncü kişileri sigorta güvencesi altına alabilirsiniz.",
-
-          "": "Üstelik,Otel Paket Sigortası, bu kadar geniş güvence kapsamını size çok ekonomik bir çözümle ulaştırıyor.",
+            "Bu sigorta ile; hangi boyutta olursa olsun otel, motel, tatil köyü ve benzeri turistik tesisler başlığı altında toplanabilecek işletmelerinizin binalarını, muhteviyatını (demirbaş, makine-tesisat, emtea, kasa muhteviyatı, odalarda ve emanete bırakılan eşyalar vb.), camlarını, tesisinizde konaklayan müşterilerinizi, çalışanlarınızı ve üçüncü kişileri sigorta güvencesi altına alabilirsiniz. \n\n Üstelik,Otel Paket Sigortası, bu kadar geniş güvence kapsamını size çok ekonomik bir çözümle ulaştırıyor.",
 
           "Otel Paket Sigortasının tek poliçeyle otomatik olarak güvenceye aldığı riskler;":
             [
@@ -248,7 +304,8 @@ export const products = [
               "Otomobil firmalarının servis istasyonları",
             ],
 
-          "": "Plaza Paket Sigorta Poliçesi; işletmenize özel olarak oluşturulan teminatları, sunduğu geniş kapsamlı asistans hizmetleri ile işletmenizi ve çalışanlarınızı, üstelik çok ekonomik bir çözümle koruyor.",
+          "Plaza Paket Sigorta Poliçesi;":
+            "işletmenize özel olarak oluşturulan teminatları, sunduğu geniş kapsamlı asistans hizmetleri ile işletmenizi ve çalışanlarınızı, üstelik çok ekonomik bir çözümle koruyor.",
 
           "Plaza Paket Sigortasının tek poliçeyle otomatik olarak sunduğu güvenceler;":
             [
@@ -367,8 +424,6 @@ export const products = [
         description:
           "Bu sigorta ile, bir malın bir taşıma aracı ile (gemi, kamyon, uçak, ya da tren) bir yerden bir yere taşınması sırasında poliçede yer alan kloz ve şartlar uyarınca bir kaza ya da olaya bağlı olarak fiziken zarar görmesi teminat altına alınır.",
         subDescription: {
-          "Nakliyat Emtia Sigortası-Teminatlar": "",
-
           "Tam Ziya Teminatı":
             "Malın taşıma aracı ile birlikte tüm değerini yitirecek şekilde tamamen zarar görmesi hali.",
           "Dar Teminat":
