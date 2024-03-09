@@ -101,22 +101,181 @@ export const products = [
     content: [
       {
         id: 1,
-        title: "isyeri Kapsamlı İş Yeri Sigortası",
+        title: "isyeri İşyeri Paket Sigortası",
         description:
           "İş yerinizde karşılaşabileceğiniz birçok riske karşı özel olarak hazırladığımız geniş kapsamlı koruma sağlayan Kapsamlı İş Yeri Sigortası ile iş yeriniz güvencemiz altında.",
         subDescription: {
-          "Kapsamlı İş Yeri Sigortası":
-            "Sizin ve sevdiklerinizin sorumluluğuna ek olarak, çalışanlarınızın geleceğini de düşünmek zorundaysanız bu sigorta tam size göre. Büyük ölçekli iş yerlerinin karşılaşabileceği riskler için düzenlenen bu poliçe ile tüm enerjinizi artık işinize verebileceksiniz.",
+          "İşyeri Paket Sigortası nedir?":
+            "İşyeri Paket Sigortası ile işyeri binanızı, muhteviyatınızı (demirbaş, makine-tesisat, emtea vb.) ve camlarınızı, paket olarak biraraya getirilmiş otomatik teminatlar çerçevesinde sigorta güvencesi altına alabilirsiniz. Otomatik teminatlara ilave olarak, aşağıda listelenen ek teminatlardan dilediğinizi seçerek kapsamı genişletebilir, ihtiyaçlarınıza en uygun alternatifi yaratabilirsiniz.",
+
+          "Işyeri Paket Sigortası Teminatlar": [
+            "Yangın, Yıldırım, İnfilak",
+            "İzolasyon yetersizliğinden kaynaklanan dahili su hasarları",
+            "Fırtına",
+            "Kara/hava/deniz taşıtları Çarpması",
+            "Yer kayması",
+            "Yer kayması ek teminatı civaz kazılar",
+            "Duman",
+            "Deprem",
+            "Sel veya su baskını",
+            "Kar ağırlığı",
+            "Yangın mali sorumluluğu",
+            "Enkaz kaldırma masrafları",
+            "Hırsızlık (Makine, Tesisat, Demirbaş ve Emtea)",
+            "Grev, lokavt, kargaşalık, halk hareketleri, kötü niyetli hareketler, terör",
+          ],
         },
       },
       {
         id: 2,
-        title: "isyeri İş Yeri Ekstra Sigortası",
+        title: "isyeri Eczane Paket Sigortası",
         description:
-          "Siz tüm enerjinizi iş yerinizi ayakta tutmak için harcarken, biz de aklınıza bile gelmeyecek risklere karşı iş yerinizde koruma sağlıyoruz!",
+          "Eczane Paket Sigorta Poliçesi ile eczanelerin tüm sigorta ihtiyaçları tek bir poliçede toplanmıştır. Eczane Paket Sigorta Poliçesi; işletmenize özel olarak oluşturulan teminatları, sunduğu geniş kapsamlı asistans hizmetleri ile işletmenizi ve çalışanlarınızı, üstelik çok ekonomik bir çözümle koruyor.",
         subDescription: {
-          "İş Yeri Ekstra Sigortası":
-            "Bir iş yeri açmaya karar vermek, sürdürmek ve hatta büyütmek bir birey yetiştirmek kadar zorlu bir süreç. Siz tüm enerjinizi iş yerinizi ayakta tutmak için verirken, biz de aklınıza bile gelmeyecek risklere karşı koruma sağlıyoruz! İş Yeri Ekstra’nın kapsamlı çözümleri ile yarınlarınızı tam güvence altına alın.",
+          "Eczane Paket Sigortası nedir?":
+            "Eczane Paket Sigortası, eczanelerin ihtiyaç duyduğu çeşitli sigorta teminatlarını tek bir poliçe altında toplar. Özel olarak tasarlanmış teminatlar ve geniş kapsamlı asistans hizmetleri sunarak işletmelerinizi ve çalışanlarınızı korur. Bu poliçe, işletmenizi uygun maliyetlerle güvence altına alır.",
+
+          "Eczane Paket Sigortasının tek poliçeyle otomatik olarak sunduğu güvenceler":
+            [
+              "Yangın, yıldırım, infilak",
+              "Yer kayması",
+              "Yer kayması ek teminatı - civar kazılar sonucu oluşan hasarlar",
+              "Deprem",
+              "Enkaz kaldırma masrafları",
+              "Fırtına",
+              "Duman",
+              "Kar ağırlığı",
+              "Sel, su baskını",
+              "Dahili su",
+              "Sprinkler sızıntısı oluşan su hasarları",
+              "İzolasyon yetersizliği sonucu oluşan su hasarları",
+              "Kara/hava/deniz taşıtları çarpması",
+              "İş durması",
+              "Alternatif eczane değişikliği masrafları",
+              "Kira kaybı",
+              "Grev, lokavt, kargaşalık, halk hareketleri, kötü niyetli hareketler, terör",
+              "Hırsızlık",
+              "Bina sabit tesisat hırsızlık",
+              "Nakit para ve kıymetli evrak hırsızlığı",
+              "Taşınan para hırsızlığı",
+              "Emniyeti suiistimal",
+            ],
+        },
+      },
+      {
+        id: 3,
+        title: "isyeri Noter Paket Sigortası",
+        description:
+          "Noterlerimizin günümüz ihtiyaçlarına ve mesleki çalışma koşullarına göre özel olarak tasarlanan Noter Paket Poliçesi yangından depreme, üçüncü şahıs sorumluluktan ferdi kazaya kadar çok geniş teminatlar içermektedir.",
+        subDescription: {
+          "Noter Paket Sigortası nedir?":
+            "Noter Paket Sigortası, noterlerin işyerlerini güvence altına alan bir sigorta türüdür. Yangın, deprem gibi risklerin yanı sıra üçüncü şahıs sorumluluğunu ve ferdi kazaları da kapsar.",
+
+          "Noter Paket Sigortasının tek poliçeyle otomatik olarak sunduğu güvenceler;":
+            [
+              "Yangın, yıldırım, infilak",
+              "Yer kayması",
+              "Yer kayması ek teminatı-civar kazılar sonucu oluşan hasarlar",
+              "Deprem",
+              "Enkaz kaldırma masrafları",
+              "Fırtına",
+              "Duman",
+              "Kar ağırlığı",
+              "Sel, su baskını",
+              "Dahili su",
+              "Sprinkler sızıntısı sonucu oluşan su hasarları",
+              "İzolasyon yetersizliği sonucu oluşan su hasarları",
+              "Kara/hava/deniz taşıtları çarpması",
+              "İş durması",
+              "Alternatif işyeri değişikliği masrafları",
+              "Kira kaybı",
+              "Grev, lokavt, kargaşalık, halk hareketleri, kötü niyetli hareketler, terör",
+              "Hırsızlık",
+            ],
+        },
+      },
+      {
+        id: 4,
+        title: "isyeri Otel Paket Sigortası",
+        description:
+          "Otel Paket Sigortası, turizm işletmelerinin karşılaşabileceği büyük-küçük pek çok riski geniş kapsamlı tek bir poliçeyle güvence altına almaktadır.",
+        subDescription: {
+          "Otel Paket Sigortası nedir?":
+            "Bu sigorta ile; hangi boyutta olursa olsun otel, motel, tatil köyü ve benzeri turistik tesisler başlığı altında toplanabilecek işletmelerinizin binalarını, muhteviyatını (demirbaş, makine-tesisat, emtea, kasa muhteviyatı, odalarda ve emanete bırakılan eşyalar vb.), camlarını, tesisinizde konaklayan müşterilerinizi, çalışanlarınızı ve üçüncü kişileri sigorta güvencesi altına alabilirsiniz.",
+
+          "": "Üstelik,Otel Paket Sigortası, bu kadar geniş güvence kapsamını size çok ekonomik bir çözümle ulaştırıyor.",
+
+          "Otel Paket Sigortasının tek poliçeyle otomatik olarak güvenceye aldığı riskler;":
+            [
+              "Yangın, yıldırım, infilak",
+              "Yer kayması",
+              "Yer kayması ek teminatı-civar kazılar sonucu oluşan hasarlar",
+              "Deprem",
+              "Enkaz kaldırma masrafları",
+              "Fırtına",
+              "Duman",
+              "Kar ağırlığı",
+              "Sel, su baskını",
+              "Dahili su",
+              "Sprinkler sızıntısı sonucu oluşan su hasarları",
+              "İzolasyon yetersizliği sonucu oluşan su hasarları",
+              "Kara/hava/deniz taşıtları çarpması",
+              "İş durması",
+              "Alternatif otel değişikliği masrafları",
+              "Kira kaybı",
+              "Grev, lokavt, kargaşalık, halk hareketleri, kötü niyetli hareketler, terör",
+              "Hırsızlık",
+              "Bina sabit tesisat hırsızlık",
+              "Nakit para ve kıymetli evrak hırsızlığı",
+              "Taşınan para hırsızlığı",
+              "Emniyeti suiistimal",
+            ],
+        },
+      },
+      {
+        id: 5,
+        title: "isyeri Plaza Paket Sigortası",
+        description:
+          "Plaza Paket Sigorta Poliçesi ile otomotiv sektöründe faaliyet gösteren işletmelerin tüm sigorta ihtiyaçları tek bir poliçe ile teminat altına alınmaktadır.",
+        subDescription: {
+          "Plaza Paket Sigortası nedir?":
+            "Plaza Paket Sigortası, otomotiv sektöründe hizmet veren işletmelerin özel sigorta gereksinimlerini karşılamak üzere tasarlanmış bir poliçedir. Bu özel sigorta paketi, işletmelerin yangın, hırsızlık, iş durması gibi çeşitli risklere karşı korunmasını sağlar ve işletmelerin faaliyetlerini kesintisiz sürdürmelerine yardımcı olur.",
+
+          "Bu poliçe ile teminat altına alınabilecek faaliyet kolları aşağıda sunulmuştur.":
+            [
+              "Oto plazaları",
+              "Oto galerileri",
+              "Otomobil firmalarının servis istasyonları",
+            ],
+
+          "": "Plaza Paket Sigorta Poliçesi; işletmenize özel olarak oluşturulan teminatları, sunduğu geniş kapsamlı asistans hizmetleri ile işletmenizi ve çalışanlarınızı, üstelik çok ekonomik bir çözümle koruyor.",
+
+          "Plaza Paket Sigortasının tek poliçeyle otomatik olarak sunduğu güvenceler;":
+            [
+              "Yangın, yıldırım, infilak",
+              "Yer kayması",
+              "Yer kayması ek teminatı-civar kazılar sonucu oluşan hasarlar",
+              "Deprem",
+              "Enkaz kaldırma masrafları",
+              "Fırtına",
+              "Duman",
+              "Kar ağırlığı",
+              "Sel, su baskını",
+              "Dahili su",
+              "Sprinkler sızıntısı sonucu oluşan dahili su hasarları",
+              "İzolasyon yetersizliği sonucu oluşan dahili su hasarları",
+              "Kara/hava/deniz taşıtları çarpması",
+              "İş durması",
+              "Alternatif işyeri değişikliği masrafları",
+              "Kira kaybı",
+              "Grev, lokavt, kargaşalık, halk hareketleri, kötü niyetli hareketler, terör",
+              "Hırsızlık",
+              "Bina sabit tesisat hırsızlık",
+              "Nakit para ve kıymetli evrak hırsızlığı",
+              "Taşınan para hırsızlığı",
+              "Emniyeti suiistimal",
+              "Geçici adres-nakil",
+            ],
         },
       },
     ],
@@ -132,13 +291,13 @@ export const products = [
         id: 1,
         title: "muhendislik İnşaat All Risks Sigortası",
         description:
-          "Doğal afetlerin ve ekonomik krizlerin sıkça yaşandığı ülkemizde çeşitli ölçekteki tüm yatırımların güvence altına alınması oldukça önem taşımaktadır.İnşaatAllRisksSigortası'nın gerekliliği; projenin devamlılığın sağlanması, sermaye, iş gücü ve zaman kayıplarının önüne geçilmesi konularında ortaya çıkmaktadır.",
+          "Doğal afetlerin ve ekonomik krizlerin sıkça yaşandığı ülkemizde çeşitli ölçekteki tüm yatırımların güvence altına alınması oldukça önem taşımaktadır.İnşaat AllRisks Sigortası'nın gerekliliği; projenin devamlılığın sağlanması, sermaye, iş gücü ve zaman kayıplarının önüne geçilmesi konularında ortaya çıkmaktadır.",
         subDescription: {
           "İnşaat AllRisks Sigortası;":
             "İnşaat faaliyetlerinin başlangıcından bitimine kadar geçen süre içinde, inşaat faaliyetlerine özgü ani ve beklenmedik sebeplerle ortaya çıkacak hasarların yanı sıra, Doğal afetler (deprem, sel, seylap, toprak kayması, fırtına...) Yangın, yıldırım, infilak Hırsızlık Şantiye-işletme kazaları Dikkatsizlik, sabotaj vb. nedenlerle oluşabilecek risklere karşı projeyi güvence altına alır.!",
 
           "Neden İnşaat All Risks?":
-            "Doğal afetlerin ve ekonomik krizlerin sıkça yaşandığı ülkemizde çeşitli ölçekteki tüm yatırımların güvence altına alınması oldukça önem taşımaktadır.İnşaatAllRisksSigortası'nın gerekliliği; projenin devamlılığın sağlanması, sermaye, iş gücü ve zaman kayıplarının önüne geçilmesi konularında ortaya çıkmaktadır.",
+            "Doğal afetlerin ve ekonomik krizlerin sıkça yaşandığı ülkemizde çeşitli ölçekteki tüm yatırımların güvence altına alınması oldukça önem taşımaktadır.İnşaat AllRisks Sigortası'nın gerekliliği; projenin devamlılığın sağlanması, sermaye, iş gücü ve zaman kayıplarının önüne geçilmesi konularında ortaya çıkmaktadır.",
         },
       },
       {

@@ -7,12 +7,9 @@ const ProductInnerCard: FC<IProductInnerCard> = ({
   title,
   description,
   routePath,
-  contentLength,
 }) => {
   return (
-    <section
-      className={`relative shadow-2xl p-6 rounded-xl lg:w-1/${contentLength}`}
-    >
+    <section className={`relative shadow-2xl p-6 rounded-xl lg:w-[calc(45%)]`}>
       <div className="flex justify-between items-center py-12 px-3 rounded-lg bg-gradient-to-r from-[#0BA5E9] to-blue-700 md:px-5">
         <h1 className="text-xl text-[#fff]">
           {title.split(" ").splice(1).join(" ")}
@@ -25,7 +22,7 @@ const ProductInnerCard: FC<IProductInnerCard> = ({
           className="opacity-20"
         />
       </div>
-      <div className="pt-10 pb-20">
+      <div className="pt-10 pb-20 whitespace-break-spaces">
         <h1>{description}</h1>
       </div>
 
