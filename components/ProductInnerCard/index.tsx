@@ -7,9 +7,12 @@ const ProductInnerCard: FC<IProductInnerCard> = ({
   title,
   description,
   routePath,
+  contentLength,
 }) => {
   return (
-    <section className="relative shadow-2xl p-6 rounded-xl lg:w-1/2">
+    <section
+      className={`relative shadow-2xl p-6 rounded-xl lg:w-1/${contentLength}`}
+    >
       <div className="flex justify-between items-center py-12 px-3 rounded-lg bg-gradient-to-r from-[#0BA5E9] to-blue-700 md:px-5">
         <h1 className="text-xl text-[#fff]">
           {title.split(" ").splice(1).join(" ")}

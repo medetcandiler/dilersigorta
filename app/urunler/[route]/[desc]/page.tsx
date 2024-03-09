@@ -1,5 +1,6 @@
 import type { Metadata, ResolvingMetadata } from "next";
 import { products } from "@/data/products";
+import OfferButton from "@/components/OfferButton";
 
 export async function generateMetadata(
   { params }: { params: { desc: string } },
@@ -51,6 +52,10 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
               )}
             </div>
           ))}
+
+          <div className="grid place-content-center pt-4">
+            <OfferButton isOnMobile={true} />
+          </div>
         </div>
       </div>
     </section>

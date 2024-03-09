@@ -23,4 +23,12 @@ export const dataSlice = [
     bg: "/images/healt.jpg",
     href: "/urunler/saglik",
   },
+  {
+    id: 4,
+    title: "Nakliyat Sigortası",
+    description:
+      "Nakliyat sigortası ile, bir malın bir taşıma aracı ile (gemi, kamyon, uçak, ya da tren) bir yerden bir yere taşınması sırasında poliçede yer alan kloz ve şartlar uyarınca bir kaza ya da olaya bağlı olarak fiziken zarar görmesi teminat altına alınır",
+    bg: "/images/nakliyat.jpg",
+    href: "/urunler/nakliyat",
+  },
 ];

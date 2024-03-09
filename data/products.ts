@@ -1,168 +1,6 @@
 export const products = [
   {
     id: 1,
-    title: "Emeklilik",
-    route: "emeklilik",
-    imageSrc: "/icons/emeklilik.png",
-    content: [
-      {
-        id: 1,
-        title: "emeklilik Temel Plan",
-        description:
-          "Küçük birikimlerle yarınların için güçlü bir adım atmak istiyorsan hemen Temel Plan’a başvur. Yaşam kulüpleri avantajlarından yararlanma fırsatı ile beraber faizli fon alternatiflerinin yanı sıra %30 devlet katkısı avantajıyla!",
-        subDescription: {
-          "Rahat Bir Emeklilikle Yarınlarınız Güvence Altında Olsun.":
-            "Küçük birikimlerle yarınların için güçlü bir adım atmak istiyorsan hemen Temel Plan’a başvur, aylık 673 TL’den başlayan birikim yapma fırsatıyla geleceğini güvence altına al. Faizli fon alternatifleri yanı sıra %30 devlet katkısı avantajıyla!",
-
-          "Temel Plan’a Kimler Katılabilir?":
-            "Düşük asgari katkı payı tutarı avantajı ile Bireysel Emeklilik Sistemi’ne dahil olmak isteyen herkes katılabilir.",
-          "Avantajları Nelerdir?": [
-            "% 30 Devlet Katkısı ile yatırdığınız her 700 TL, 910 TL olarak değerlenir.",
-            "Tercihine göre katkı payı tutarın banka hesabından ya da kredi kartından her ay düzenli olarak tahsil edilir.",
-            "Dilediğin zaman düzenli ödemelerinin dışında belirlediğin tutarda ek katkı payı ödemeleri yapabilirsin.",
-            "Emeklilik planını yılda 4 kez, fon dağılımını ise yılda 12 kez değiştirebilirsin.",
-            "Katkı payı ödemelerini tercihine göre aylık, 3 aylık, 6 aylık veya yıllık olarak yapabilirsin.",
-            "Birikimlerin, uzman portföy yöneticileri tarafından yönetilen portföylerde değerlendirilir.",
-            "Yaşam Kulüpleri ayrıcalıklarından faydalanma imkanı sunulur. Yaşam Kulübü dünyası için tıklayın.",
-          ],
-        },
-      },
-      {
-        id: 2,
-        title: "emeklilik Katılım Esaslı Temel Plan",
-        description:
-          "Küçük birikimlerle yarınların için güçlü bir adım atmak istiyorsan hemen Temel Plan’a başvur. Yaşam kulüpleri avantajlarından yararlanma fırsatı ile beraber faizli fon alternatiflerinin yanı sıra %30 devlet katkısı avantajıyla!",
-        subDescription: {
-          "İstediğiniz şekilde birikim yapın, faizsiz fonlarda değerlensin!":
-            "Küçük birikimlerle yarınların için güçlü bir adım atmak istiyor, birikimlerim faizsiz fonlarda değerlensin istiyorsan hemen Katılım Esaslı Temel Plan’a başvur, aylık 673 TL’den başlayan birikim yapma fırsatıyla geleceğini güvence altına al. Faizsiz fon alternatifleri yanı sıra %30 devlet katkısı avantajıyla!",
-          "Katılım Esaslı Temel Plan’a Kimler Katılabilir?":
-            "Düşük asgari katkı payı tutarı avantajı ile Bireysel Emeklilik Sistemi’ne dahil olmak isteyen, yatırım tercihinde faize duyarlı herkes katılabilir.",
-
-          "Avantajları Nelerdir?": [
-            "% 30 Devlet Katkısı ile yatırdığınız her 700 TL, 910 TL olarak değerlenir.",
-            "Tercihine göre katkı payı tutarın banka hesabından ya da kredi kartından her ay düzenli olarak tahsil edilir.",
-            "Dilediğin zaman düzenli ödemelerinin dışında belirlediğin tutarda ek katkı payı ödemeleri yapabilirsin.",
-            "Emeklilik planını yılda 4 kez, fon dağılımını ise yılda 12 kez değiştirebilirsin.",
-            "Katkı payı ödemelerini tercihine göre aylık, 3 aylık, 6 aylık veya yıllık olarak yapabilirsin.",
-            "Birikimlerin, uzman portföy yöneticileri tarafından yönetilen portföylerde değerlendirilir.",
-            "Yaşam Kulüpleri ayrıcalıklarından faydalanma imkanı sunulur. Yaşam Kulübü dünyası için tıklayın.",
-          ],
-          "Sisteme Nasıl Dahil Olabilirim?":
-            "Vakıf Katılım, Ziraat Katılım, Emlak Katılım, Ziraat Bankası, VakıfBank, Halkbank şubelerini ziyaret ederek faizsiz fon alternatifleri sunulan Katılım Esaslı Temel Plan’ı satın alabilir veya “Hemen Başvur” butonuna tıklayarak başvuru formuna ulaşabilirsiniz.",
-
-          "Plan Özellikleri Nelerdir?":
-            "Aylık Asgari Katkı Payı: 673 TL\nPeşin Giriş Aidatı: Bu plan kapsamında sisteme giriş anında giriş aidatı alınmamaktadır.\nÇıkışa Ertelenmiş Giriş Aidatı: Sistemde 5 yılını dolduran sözleşmeler için herhangi bir çıkışa ertelenmiş giriş aidatı alınmamaktadır. 5 yılını doldurmamış sözleşmeler için ise; her yıl için Aylık Brüt Asgari Ücretin %8,5’ine karşılık gelen tutar dikkate alınır.\nYönetim Gider Kesintisi: Bu planda, sözleşmenin ilk 5 yılı boyunca her ay, teklif yılının ilk 6 ayında açıklanan aylık asgari brüt ücretin %4,25'inin on ikide biri tutarında aylık yönetim gider kesintisi katılımcının birikiminden indirilir.",
-        },
-      },
-      {
-        id: 3,
-        title: "emeklilik Kazanç Planı",
-        description:
-          "Geleceğin için güçlü bir adım atmak istiyorsan hemen Kazanç Plan’a başvur, aylık 3.734 TL’den başlayan birikim yapma fırsatıyla geleceğini güvence altına al. Yaşam kulüpleri avantajlarından yararlanma fırsatı ile beraber faizli fon alternatifleri yanı sıra %30 devlet katkısı avantajıyla!",
-        subDescription: {
-          "Rahat Bir Emeklilikle Yarınlarınız Güvence Altında Olsun.":
-            "Geleceğin için güçlü bir adım atmak istiyorsan hemen Kazanç Plan’a başvur, aylık 3.734 TL’den başlayan birikim yapma fırsatıyla geleceğini güvence altına al. Faizli fon alternatifleri yanı sıra %30 devlet katkısı avantajıyla!",
-
-          "Kazanç Plan’a Kimler Katılabilir?":
-            "Yüksek asgari katkı payı tutarı ve kesinti avantajı ile Bireysel Emeklilik Sistemi’ne dahil olmak isteyen herkes katılabilir.",
-
-          "Avantajları Nelerdir?": [
-            "% 30 Devlet Katkısı ile yatırdığınız her 4.000 TL, 5.200 TL olarak değerlenir.",
-            "Tercihine göre katkı payı tutarın banka hesabından ya da kredi kartından her ay düzenli olarak tahsil edilir.",
-            "Dilediğin zaman düzenli ödemelerinin dışında belirlediğin tutarda ek katkı payı ödemeleri yapabilirsin.",
-            "Emeklilik planını yılda 4 kez, fon dağılımını ise yılda 12 kez değiştirebilirsin.",
-            "Katkı payı ödemelerini tercihine göre aylık, 3 aylık, 6 aylık veya yıllık olarak yapabilirsin.",
-            "Birikimlerin, uzman portföy yöneticileri tarafından yönetilen portföylerde değerlendirilir.",
-            "Yaşam Kulüpleri ayrıcalıklarından faydalanma imkanı sunulur. Yaşam Kulübü dünyası için tıklayın.",
-          ],
-
-          "Sisteme Nasıl Dahil Olabilirim?":
-            "Ziraat Bankası, VakıfBank, Halkbank şubelerini ziyaret ederek faizli fon alternatifleri sunulan Kazanç Plan’ı satın alabilir veya “Hemen Başvur” butonuna tıklayarak başvuru formuna ulaşabilirsiniz.",
-
-          "Plan Özellikleri Nelerdir?":
-            "Aylık Asgari Katkı Payı: 3.734 TL\nPeşin Giriş Aidatı: Bu plan kapsamında sisteme giriş anında giriş aidatı alınmamaktadır.\nÇıkışa Ertelenmiş Giriş Aidatı: Sistemde 5 yılını dolduran sözleşmeler için herhangi bir çıkışa ertelenmiş giriş aidatı alınmamaktadır. 5 yılını doldurmamış sözleşmeler için ise; her yıl için Aylık Brüt Asgari Ücretin %8,5’ine karşılık gelen tutar dikkate alınır.",
-        },
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Hayat",
-    route: "hayat",
-    imageSrc: "/icons/hayat.png",
-    content: [
-      {
-        id: 1,
-        title: "hayat Dövize Endeksli Prim İadeli Hayat Sigortaları",
-        description:
-          "Prim İadeli Hayat Sigortası dünyasının size sunduğu avantajlarından yararlanma fırsatı!",
-        subDescription: {
-          "Dövize Endeksli Prim İadeli Hayat Sigortası Nedir?":
-            "Yaşam kaybı riskine karşı teminat sunan, sigorta süresi sonunda ödediğiniz primleri ABD dolarına endeksli olarak iade alabileceğiniz sigortadır.",
-
-          "Neden Sahip Olmalısınız?":
-            "Dövize Endeksli Prim İadeli Hayat Sigortası, minimum 10 yıl boyunca yaşamınızı teminat altına alır ve süre sonunda hayati risk yaşamamanız halinde ödediğiniz primleri ABD Dolarına endeksli olarak iade eder. Böylelikle size maddi güvence sağlar.",
-
-          Teminatlar: [
-            "Vefat Teminatı: Sigorta süresi içinde Sigortalının yaşamını kaybetmesi durumunda vefat teminatı, poliçe üzerinde belirtilen lehtar(lar)a ödenir.",
-            "Kaza Sonucu Vefat Teminatı: Sigorta süresi içinde Sigortalının kaza sonucu yaşamını kaybetmesi durumunda vefat teminatı, poliçe üzerinde belirtilen lehtar(lar)a ödenir.",
-            "Tehlikeli Hastalık* Teminatı: Sigortalının, sigorta süresi içinde sigorta kapsamındaki tehlikeli hastalıklara yakalanması halinde, tehlikeli hastalık teminatı Sigortalıya ödenir.",
-            "* Kapsam dahilindeki tehlikeli hastalıklar: Kanser, kalp krizi (miyokard enfarktüsü), inme, koroner arter by-pass, böbrek yetmezliği, organ ve kemik iliği nakli, körlük, multiple skleroz, uzuv kaybı, yanıklar aort greft cerrahisi, iyi huylu beyin tümörü, sağırlık, kalp kapakçığı cerrahisi, meslek ve kan yoluyla bulaşan HIV enfeksiyonu, konuşma kaybı, motor nöron hastalığı (ALS), felç, komadır.",
-            "Yaşam Hali Teminatı: Sigortanın bitiş tarihinde Sigortalının hayatta olması (vefat tazminatı ödemesi yapılmamış olması) ve ödenmesi gereken tüm primlerin Sigorta Sözleşmesi ve Özel Şartlar kapsamında ödenmiş olması koşulu ve sigorta süresi içerisinde poliçenin sonlanmamış olması halinde, sigorta süresince ödenen tüm primlerin toplam Sigorta Ettiren’e ödenir.",
-          ],
-
-          "Gelir Vergisi Avantajı Var Mı?":
-            "Ödediğiniz primin tamamını; primi ödediğiniz ayda elde ettiğiniz ücretin %15'ini ve asgari brüt ücretin yıllık tutarını geçmemek koşuluyla içinde bulunduğunuz aydaki vergi diliminize göre %15 ile %40 arasında değişen oranlarda gelir vergisi matrahınızdan indirebilirsiniz.",
-        },
-      },
-      {
-        id: 2,
-        title: "hayat Eğitimin Gücü",
-        description:
-          "Çocuğunuza verebileceğiniz en değerli şey, güzel bir eğitim hayatıdır. Siz de hemen Türkiye Hayat Emeklilike gelin, beklenmeyen durumlara karsı çocuğunuzun eğitimini güvence altına alın. Eğitimin Gücü Sigortası ile çocuğunuzun eğitimi yarıda kalmasın.",
-        subDescription: {
-          "Çocuğunuzun Eğitim Hayatını Bugünden Güvenceye Alın!":
-            "Çocuğunuza verebileceğiniz en değerli şey, güzel bir eğitim hayatıdır. Siz de hemen Türkiye Hayat Emeklilik’e gelin, beklenmeyen durumlara karsı çocuğunuzun eğitimini güvence altına alın. Eğitimin Gücü Sigortası ile çocuğunuzun eğitimi yarıda kalmasın!",
-
-          "Kimler Poliçe Yaptırabilir?":
-            "18-69 yaş arası çocuğunun eğitim hayatını güvence altına almak isteyen tüm müşterilerimiz Eğitimin Gücü Sigortası ürünümüzden yararlanabilir. Sigorta giriş yaşı + süre =71 şeklindedir.",
-
-          "Teminatlar Nelerdir?":
-            "Teminat tutarınız çocuğunuzun yıllık eğitim masrafı ve eğitim süresi dikkate alınarak belirlenir ve kalan eğitim süresi ile orantılı olarak her yıl azalarak eğitim süresi sonuna kadar devam eder. Bu sayede yaşam kaybı riskine karşı her durumda çocuğunuzun onun için planladığınız eğitimi tamamlamasını teminat altına almış olursunuz.",
-
-          "Prim Tablosu ve Ödeme Şekli Nedir?":
-            "Ödemeniz gereken sigorta primi; sigorta süresine, yaşınıza ve teminat tutarınıza göre belirlenir. En az 2 ile en çok 20 yıl arasında olmak üzere çocuğunuzun kalan eğitim süresini düşünerek sigorta sürenizi belirleyebilir, yıllık eğitim masraflarını düşünerek en uygun teminat tutarını dilediğiniz gibi seçebilirsiniz.",
-
-          "Gelir Vergisi Avantajı Var Mı?":
-            "Ödediğiniz primin tamamını; primi ödediğiniz ayda elde ettiğiniz ücretin %15'ini ve asgari brüt ücretin yıllık tutarını geçmemek koşuluyla içinde bulunduğunuz aydaki vergi diliminize göre %15 ile %40 arasında değişen oranlarda gelir vergisi matrahınızdan indirebilirsiniz.",
-        },
-      },
-      {
-        id: 3,
-        title: "hayat Artı Hayat Sigortası",
-        description:
-          "Her türlü belirsiz riskinize karşın tam korunma! Hayat güvenliğinizin anahtarı Artı Hayat Sigortasıyla emin ellerde",
-        subDescription: {
-          "Kimler Poliçe Yaptırabilir?":
-            "Sigortaya sahip olabilme yaşı tehlikeli hastalık teminatının dahil edilmesi durumunda 18-60, tehlikeli hastalık teminatının hariç bırakılması durumunda 18-70'tir.",
-
-          "Teminatlar Nelerdir?":
-            "Vefat ana ve zorunlu teminattır. Tehlikeli Hastalıklar, Kaza Sonucu Vefat, Kaza Sonucu Tam veya Kısmi Daimi Maluliyet, Hastalık Sonucu Tam veya Kısmi Daimi Maluliyet, Kaza Sonucu Tedavi Masrafları ve Kaza Sonucu Hastane Gündelik Tazminat teminatları seçmeli teminatlar olarak sunulmaktadır.",
-
-          "Sigorta Süresi Nedir?":
-            "Sigorta süresi 1 yıldır. Üründe yenileme özelliği mevcuttur. Sigorta başlangıcında sigortalı tarafından seçildiği ve yenileme yıllarında sigortalının aksi talebi olmadığı takdirde poliçe şartlarında belirtilen yaş sınırını aşmamak üzere (5 yıl boyunca 4 kere) prim tahsilatı yapıldığı sürece otomatik yenilenecektir.",
-
-          "Prim Tutarı ve Prim Ödeme Şekli Nedir?":
-            "Sigortalının yaşına, cinsiyetine, meslek risk sınıfına ve alınan teminat tutarına göre değişmektedir. Yıllık prim, peşin veya taksitli (3,6,9 taksit) olarak ödenebilir.",
-
-          "Bilinmesi Gerekenler":
-            "Tehlikeli Hastalık Teminatı 19 hastalık içerir. Tehlikeli Hastalıklar teminatı, Vefat Teminatını aşmamak kaydıyla azami 400.000 TL’ye kadar verilebilir. Tehlikeli Hastalıklar teminatı, asgari 1.000 TL, azami 400.000 TL’ye kadar alınabilir. Kaza Sonucu Tedavi Masrafları Teminatı, Kaza Sonucu Vefat ya da Kaza Sonucu Tam veya Kısmi Daimi Maluliyet teminatlarından en az birinin alınması halinde alınabilir. Kaza Sonucu Hastane Gündelik Tazminat Teminatı, Kaza Sonucu Vefat ya da Kaza Sonucu Tam veya Kısmi Daimi Maluliyet teminatlarından en az birinin alınması halinde alınabilir.",
-        },
-      },
-    ],
-  },
-  {
-    id: 3,
     title: "Sağlık",
     route: "saglik",
     imageSrc: "/icons/saglik.png",
@@ -200,7 +38,7 @@ export const products = [
     ],
   },
   {
-    id: 4,
+    id: 2,
     title: "Araç",
     route: "arac",
     imageSrc: "/icons/car.png",
@@ -228,7 +66,7 @@ export const products = [
     ],
   },
   {
-    id: 5,
+    id: 3,
     title: "Konut",
     route: "konut",
     imageSrc: "/icons/konut.png",
@@ -256,10 +94,10 @@ export const products = [
     ],
   },
   {
-    id: 6,
+    id: 4,
     title: "İş Yeri",
     route: "isyeri",
-    imageSrc: "/icons/fire.jpg",
+    imageSrc: "/icons/isyeri.png",
     content: [
       {
         id: 1,
@@ -279,6 +117,163 @@ export const products = [
         subDescription: {
           "İş Yeri Ekstra Sigortası":
             "Bir iş yeri açmaya karar vermek, sürdürmek ve hatta büyütmek bir birey yetiştirmek kadar zorlu bir süreç. Siz tüm enerjinizi iş yerinizi ayakta tutmak için verirken, biz de aklınıza bile gelmeyecek risklere karşı koruma sağlıyoruz! İş Yeri Ekstra’nın kapsamlı çözümleri ile yarınlarınızı tam güvence altına alın.",
+        },
+      },
+    ],
+  },
+
+  {
+    id: 5,
+    title: "Mühendislik",
+    route: "muhendislik",
+    imageSrc: "/icons/muhendislik.png",
+    content: [
+      {
+        id: 1,
+        title: "muhendislik İnşaat All Risks Sigortası",
+        description:
+          "Doğal afetlerin ve ekonomik krizlerin sıkça yaşandığı ülkemizde çeşitli ölçekteki tüm yatırımların güvence altına alınması oldukça önem taşımaktadır.İnşaatAllRisksSigortası'nın gerekliliği; projenin devamlılığın sağlanması, sermaye, iş gücü ve zaman kayıplarının önüne geçilmesi konularında ortaya çıkmaktadır.",
+        subDescription: {
+          "İnşaat AllRisks Sigortası;":
+            "İnşaat faaliyetlerinin başlangıcından bitimine kadar geçen süre içinde, inşaat faaliyetlerine özgü ani ve beklenmedik sebeplerle ortaya çıkacak hasarların yanı sıra, Doğal afetler (deprem, sel, seylap, toprak kayması, fırtına...) Yangın, yıldırım, infilak Hırsızlık Şantiye-işletme kazaları Dikkatsizlik, sabotaj vb. nedenlerle oluşabilecek risklere karşı projeyi güvence altına alır.!",
+
+          "Neden İnşaat All Risks?":
+            "Doğal afetlerin ve ekonomik krizlerin sıkça yaşandığı ülkemizde çeşitli ölçekteki tüm yatırımların güvence altına alınması oldukça önem taşımaktadır.İnşaatAllRisksSigortası'nın gerekliliği; projenin devamlılığın sağlanması, sermaye, iş gücü ve zaman kayıplarının önüne geçilmesi konularında ortaya çıkmaktadır.",
+        },
+      },
+      {
+        id: 2,
+        title: "muhendislik Montaj AllRisks Sigortası",
+        description:
+          "Günümüzün hızla gelişen teknolojisi ve insan gereksinimlerinin çeşitlenmesi, sanayicileri fabrikalarını ve tesisleri yenilemeye ve yeni yatırımlar yapmaya yöneltmektedir. Yeni yatırımlar gerçekleştirilirken, olası maddi kayıpların önüne geçebilmek için Montaj AllRisksSigortası bir gereklilik olarak karşımıza çıkmaktadır.",
+        subDescription: {
+          "Montaj AllRisks Sigortası;":
+            "Montaj faaliyetlerinin başlangıcından bitimine kadar geçen süre içinde, montaj faaliyetlerine özgü ani ve beklenmedik sebeplerle ortaya çıkacak hasarların yanı sıra, Doğal afetler (deprem, sel, seylap, toprak kayması, fırtına...) Yangın, yıldırım, infila Hırsızlık vb. nedenlerle oluşabilecek riskleri de güvence altına alır. Tek poliçede pek çok sigorta çeşidini toplayarak daha ekonomik ve takibi daha kolay bir çözüm sunar.",
+          "Montaj Sigortası poliçesinde kimler 'sigortalı' olarak belirlenebilir?":
+            'Montaj Sigortası\' nı, imalatçı veya satıcı (montaj işlerinden sorumlu ise), montaj işlerini yüklenen firma, monte edilecek ünite veya tesislerin sahibi yaptırabileceği gibi, her üçü de poliçede "sigortalı" olarak belirlenebilir.',
+        },
+      },
+      {
+        id: 3,
+        title: "muhendislik Makine Kırılması Sigortası",
+        description:
+          "Ekonominin temel unsurlarından biri sanayi ise, sanayinin temel unsurlarından birisinin, belki de en önemlisinin makineler olduğu bir gerçektir. Bu nedenle,makinelerin kullanımı kadar korunması ve güvence altına alınması da önemlidir.",
+        subDescription: {
+          "Makine Kırılması Sigortası Teminatlar":
+            "Makine Kırılması Sigortasının sunduğu güvenceler; Makine ve tesislerin deneme devresinden sonra, Normal çalışır halde iken Aynı iş yerinde temizleme, revizyon veya yer değiştirme esnasında Dururken ani ve beklenmedik her türlü sebepten meydana gelen maddi ziya ve hasarların gerektirdiği tamirat ve ikame masraflarını temin eder.",
+
+          "Makine Kırılması Sigortası ile teminat altına risklerden bazıları şunlardır;":
+            [
+              "İşletme kazaları",
+              "Hatalı tasarımın yol açacağı ziya ve hasarlar",
+              "Kısa devre, diğer elektriksel nedenler",
+              "Tıkanma, yabancı maddelerin girmesi",
+              "Kazanlardaki su eksikliği",
+              "Su çekiçlemesi",
+              "Alçak basıncın yol açacağı deformasyonlar",
+              "Hatalı kullanım, bilgisizlik ve ihmal",
+            ],
+        },
+      },
+      {
+        id: 4,
+        title: "muhendislik Elektronik Cihaz Sigortası",
+        description:
+          "İşyerinizde bulunan elektronik cihazlar yaşamımızın ayrılmaz bir parçası. Onlar olmadan çalışma hayatı çok zahmetli ve sıkıcı olurdu herhalde. Sırf bu gerçek bile onların korunmasının ne kadar önemli olduğunu bize hatırlatıyor.",
+        subDescription: {
+          "Elektronk Cihaz Teminatları":
+            "Elektronik Cihaz Sigortasının sunduğu güvenceler; Cihazların deneme devresinden sonra, Normal çalışır halde iken Aynı iş yerinde temizleme, revizyon veya yer değiştirme esnasında Dururken ani ve beklenmedik sebeplerden meydana gelen maddi ziya ve hasarların gerektirdiği tamirat ve ikame masraflarını temin eder.",
+
+          "Teminat kapsamına giren risklerden bazıları şunlardır;": [
+            "İşletme personelinin hatalı kullanımı",
+            "Hırsızlık",
+            "Kısa devre, yüksek voltaj ve diğer elektriksel sebepler",
+            "Yangın,yıldırım,infilak",
+            "Fırtına, sel su baskını, yer kayması, toprak çökmesi gibi tabii olaylar",
+            "Dahili su hasarları",
+          ],
+        },
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "Nakliyat",
+    route: "nakliyat",
+    imageSrc: "/icons/nakliyat.png",
+    content: [
+      {
+        id: 1,
+        title: "nakliyat Emtia Taşıma Sigortası",
+        description:
+          "Bu sigorta ile, bir malın bir taşıma aracı ile (gemi, kamyon, uçak, ya da tren) bir yerden bir yere taşınması sırasında poliçede yer alan kloz ve şartlar uyarınca bir kaza ya da olaya bağlı olarak fiziken zarar görmesi teminat altına alınır.",
+        subDescription: {
+          "Nakliyat Emtia Sigortası-Teminatlar": "",
+
+          "Tam Ziya Teminatı":
+            "Malın taşıma aracı ile birlikte tüm değerini yitirecek şekilde tamamen zarar görmesi hali.",
+          "Dar Teminat":
+            "Malın tam ziya ile tamamen zarar görmesi  riskine ilave olarak, taşıyan aracın yapacağı kazaya bağlı olarak (çarpma, çarpışma, devrilme, yangın) kısmi zararlar da teminat  altına alınmaktadır. Bu teminat için Enstitü Yük Klozu – C (Institute Cargo Clauses -C) ile belirtilen özel şartlar uygulanmaktadır.",
+          "Geniş Teminat":
+            "Genellikle 'Tüm Rizikolar' (AllRisks) olarak bilinir. Bu teminat için özel şart niteliğini haiz Enstitü Yük Klozu – A (Institute Cargo Clauses -A) ile belirtilen istisnalar dışındaki tüm riskler teminat altına alınmaktadır.",
+
+          "Bu teminat  için geçerli olan en önemli istisnalar;": [
+            "Malın doğasından ve kendi yapısından kaynaklanan hasarlar",
+            "Taşıyan aracın ya da ambalajın uygunsuzluğu",
+            "Her türlü gecikmeden kaynaklanan hasarlar",
+            "Her türlü gecikmeden kaynaklanan hasarlar",
+            "Sigortalının kötü niyeti",
+            "Savaş, grev, terör, kargaşalık v.b.",
+          ],
+        },
+      },
+      {
+        id: 2,
+        title: "nakliyat Tekne Yat Sigortaları",
+        description:
+          "Denizlerde güvenli bir yolculuk için Tekne/Yat Sigortaları yaptırın, yatınız ve içindeki ekipmanları olası risklere karşı güvence altına alalım...",
+        subDescription: {
+          "Gezinti Teknesi Sigortaları":
+            "Yat Sigortası ile yatın gövdesi, makineleri, adını taşıyan servis botları, yat ile birlikte alınıp satılması mutad olan donanım ve ekipmanıInstituteYachtClauses 1.11.82 Cl.328 kapsamında tek bir poliçe ile güvence altına alınmaktadır. Sigorta güvencesi, yatın poliçe içinde belirtilmiş olan coğrafi alan içerisinde bulunması kaydıyla, denizde, yatma mahallinde, çekek yerinde, çekeğe alınırken veya çekekten indirilirken kesintisiz olarak devam eder.",
+
+          "Başlıca aşağıdaki risklere karşı sigortalıdır.": [
+            "Tüm deniz kaza ve tehlikeleri (çarpma, çatma, karaya oturma, alabora olma, fırtına)",
+            "Yangın, yıldırım, infilak",
+            "Deprem, volkanik patlama",
+            "Korsanlık",
+            "Hava taşıtları ile temas",
+            "Yatın veya servis botlarının çalınması",
+            "Yatın veya servis botlarının çalınması",
+            "Yatın sebep olduğu bir kaza neticesinde 3. kişilerin can ve mal kaybı (tekne sigorta bedeliyle sınırlı olmak üzere)",
+            "Enkaz kaldırma masrafları (Tekne sigorta bedeliyle sınırlı olmak üzere)",
+            "Kötü niyetli hareketler (kaptan ve gemi adamlarının barataryası dahil)",
+          ],
+
+          "3. şahıslara karşı sorumluluklar da yat sigortası ile teminat altına alınır:":
+            "Yatın çarpıştığı tekne veya üzerindeki mala gelebilecek kayıp ve hasarlar. Yatın liman, dok, iskele, rıhtım, fener, telefon, telgraf kabloları gibi diğer sabit ve hareketli cisimlere vereceği zararlar. Yatta veya başka bir teknede meydana gelebilecek can kaybı, sakatlanmalar, can kurtarma masrafları Enkaz kaldırma masrafları, geniş teminatlı yat poliçesi tarafından karşılanmaktadır.",
+
+          "Teminat kapsamı dışında kalan riskler:": [
+            "Yatın adını ve işaretini taşımayan servis botları",
+            "Zati eşyalar, yakıt, kumanya, balıkçılık takımları, demirleme donanımları",
+            "Dıştan takma motorların düşmesi",
+            "Dizayndaki veya konstrüksiyondaki hataların giderilmesi veya iyileştirilmesi veya dizaynının veya konstrüksiyonunun değiştirilmesi için yapılan harcamalar veya uğranılan kayıplar.",
+            "Nükleer rizikolar",
+            "Savaş ve benzeri rizikolar, grev-lokavt, halk hareketleri, terör",
+            "Yatın mutad olmadıkça veya yardıma muhtaç durumda bulunmadıkça yedekte çekilmesi veya başka bir tekneyi yedeğine alması veya kurtarma ve yardımda bulunmasını doğuran bir sözleşme yapılması halleri",
+          ],
+        },
+      },
+      {
+        id: 3,
+        title: "nakliyat NAKLİYECİ SORUMLULUK SİGORTALARI",
+        description:
+          "Nakliyat sürecinde oluşabilecek zararları ve sorumlulukları karşılamak için tasarlanmış sigorta ürünleridir. Bu sigortalar, taşıma sırasında mal kaybı, hasar veya diğer risklerden doğan maliyetleri korur ve nakliyecinin sorumluluğunu azaltır.",
+        subDescription: {
+          "Yurt İçi Taşıyıcının Mali Mesuliyeti Sigortaları":
+            "Yurt içinde taşıyacağınız yük, Yurt İçi Taşıyıcının Mali Mesuliyeti Sigortaları ile güvence altında! Türkiye sınırları dahilinde taşımacılık yapan nakliyeci firmaların, kendilerine ait veya kiraladıkları araçlarla taşıma hizmeti verdikleri müşterilerine ait emtiayı taşırken teminat kapsamındaki bir rizikonun gerçekleşmesi sonucunda doğan yasal sorumluluklarını poliçede belirlenmiş şartlar ve limitler dahilinde teminat altına alan sigortalardır. Yurt İçi Sorumluluk Sigortası teminatı Emtia Nakliyat Sigortası'nın yerine geçmez. Sadece taşıyıcının Türk Ticaret Kanun'una göre kusurlu olduğu durumlarda, poliçede yazılı şartlar ve limitler dahilinde teminat sağlar. ",
+
+          "CMR (Taşıyıcının Yurt Dışı Sorumluluğu) Sigortası":
+            "CRM Sigortası ile, taşıyıcının CMR Konvansiyon'una göre kusurlu olduğu durumlar güvence altına alınır. Uluslararası karayolu taşımacılığı yapan nakliyat firmalarının taşıdıkları yükle ilgili olarak CMR Konvansiyonu'ndan (Convention on thecontractfortheinternationalcarriage of goodsbyroad) kaynaklanan hukuki sorumluluklarını poliçede belirtilen şartlar ve limitler dahilinde teminat altına alan sigorta türüdür. Uluslararası karayolu nakliyecileri, CMR Konvansiyonu bakımından istihdam ettikleri kişilerin ve taşımanın yapılması için hizmetinden faydalandıkları aracıların, görevlerini yerine getirirken işlemiş oldukları kusurlardan sorumludurlar. Bu sorumluluk, taşıyıcının malları taşınmak üzere teslim aldığı anda başlar ve varma yerindeki alıcıya teslime kadar devam eder. CMR Sigortası taşınan malın sigortası olmayıp, sadece taşıyıcının CMR Konvansiyon'una göre kusurlu olduğu durumlarda, konvansiyonun belirlemiş olduğu sorumluluk sınırları çerçevesinde doğacak sorumluluğu teminat altına alır.",
         },
       },
     ],

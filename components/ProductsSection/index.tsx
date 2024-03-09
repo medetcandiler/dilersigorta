@@ -34,7 +34,7 @@ const ProductsSection: FC<IProductsSection> = ({ isNav }) => {
       <div
         className={`flex flex-wrap ${
           isNav
-            ? "overflow-x-scroll flex-nowrap gap-3 md:gap-5 px-5 pt-10 pb-5 md:flex-wrap md:justify-center md:container md:mx-auto "
+            ? "overflow-x-scroll flex-nowrap gap-3 md:gap-5 px-5 pt-10 pb-5 md:flex-wrap md:justify-center md:px-0 lg:px-5 lg:container lg:mx-auto"
             : "container mx-auto justify-center gap-3 px-2 pb-10 md:gap-12"
         }`}
       >
