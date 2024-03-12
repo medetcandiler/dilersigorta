@@ -21,7 +21,7 @@ const ProductCard: FC<IProductCard> = ({ title, imageSrc, isNav, route }) => {
         className={`flex flex-col gap-1.5 items-center justify-center rounded-xl bg-[#fefefe] ${
           isNav
             ? "px-6 py-3 size-28 lg:size-32"
-            : "px-12 py-6 size-32 md:size-48"
+            : "px-10 py-4 size-32 md:size-48 md:px-12 md:py-6"
         }`}
       >
         <div className="flex items-center justify-center ">
