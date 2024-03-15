@@ -8,6 +8,8 @@ interface IProductPageProps {
 
 export const metadata: Metadata = {
   title: "Diler Sigorta | Ürünler",
+  description:
+    "Diler Sigorta'nın sunduğu geniş ürün yelpazesini keşfedin. Konut sigortası, araç sigortası, sağlık sigortası ve daha fazlası için doğru adres!",
 };
 
 const ProductLayout: FC<IProductPageProps> = ({ children }) => {

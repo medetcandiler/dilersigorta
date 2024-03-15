@@ -16,6 +16,7 @@ export async function generateMetadata(
     params.route[0].toLocaleUpperCase() + params.route.slice(1);
   return {
     title: `Diler Sigorta | ${capitilisedTitle}`,
+    description: `${capitilisedTitle} hakkında detaylı bilgileri buradan bulabilirsiniz.`,
   };
 }
 

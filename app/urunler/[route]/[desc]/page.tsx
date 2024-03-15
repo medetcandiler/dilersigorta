@@ -11,6 +11,7 @@ export async function generateMetadata(
   const capitilisedTitle = decodedPath.split(" ").slice(1).join(" ");
   return {
     title: `Diler Sigorta | ${capitilisedTitle}`,
+    description: `Bu sayfada ${capitilisedTitle} hakkında detaylı bilgileri bulabilirsiniz. Diler Sigorta'nın sunduğu ${capitilisedTitle} hizmetlerini inceleyebilir ve ihtiyaçlarınıza uygun sigorta çözümleri hakkında bilgi edinebilirsiniz.`,
   };
 }
 
@@ -29,7 +30,7 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
   )[0];
 
   const renderTextWithLineBreaks = (text: string) => {
-    return text.split('\n').map((line, index) => (
+    return text.split("\n").map((line, index) => (
       <React.Fragment key={index}>
         {line}
         <br />
@@ -58,7 +59,9 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
                   ))}
                 </ul>
               ) : (
-                <p className="contentText mb-6">{renderTextWithLineBreaks(value)}</p>
+                <p className="contentText mb-6">
+                  {renderTextWithLineBreaks(value)}
+                </p>
               )}
             </div>
           ))}

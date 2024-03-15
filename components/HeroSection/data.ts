@@ -1,14 +1,6 @@
 export const dataSlice = [
   {
     id: 1,
-    title: "Nakliyat Sigortası",
-    description:
-      "Nakliyat sigortası ile, bir malın bir taşıma aracı ile (gemi, kamyon, uçak, ya da tren) bir yerden bir yere taşınması sırasında poliçede yer alan kloz ve şartlar uyarınca bir kaza ya da olaya bağlı olarak fiziken zarar görmesi teminat altına alınır.",
-    bg: "/images/logistic.jpeg",
-    href: "/urunler/nakliyat",
-  },
-  {
-    id: 2,
     title: "Konut Sigortası",
     description:
       "Ev sigortası ile evinizi ve eşyalarınızı güvence altına alın. Diler Sigorta, doğal afetler, hırsızlık ve diğer risklere karşı kapsamlı bir koruma sunuyor.",
@@ -16,12 +8,20 @@ export const dataSlice = [
     href: "/urunler/konut",
   },
   {
-    id: 3,
+    id: 2,
     title: "Araç Sigortası",
     description:
       "Araç sigortası ile aracınızın güvence altında olduğundan emin olun. Diler Sigorta, trafik kazaları, hırsızlık ve diğer risklere karşı koruma sağlıyor.",
     bg: "/images/carinsurance.jpg",
     href: "/urunler/arac",
+  },
+  {
+    id: 3,
+    title: "Nakliyat Sigortası",
+    description:
+      "Nakliyat sigortası ile eşyalarınızı güvenle taşıyın. Diler Sigorta, taşıma sırasında oluşabilecek kazalar ve hasarlara karşı kapsamlı bir koruma sağlıyor.",
+    bg: "/images/logistic.jpeg",
+    href: "/urunler/nakliyat",
   },
   {
     id: 4,

@@ -2,7 +2,9 @@ function Loader({ isSectionLoader }: { isSectionLoader: boolean }) {
   return (
     <div
       className={`${
-        isSectionLoader ? "h-screen grid place-content-center" : "h-[500px] grid place-content-center"
+        isSectionLoader
+          ? "h-screen grid place-content-center"
+          : "grid place-content-center"
       }`}
       data-testid="loader"
     >

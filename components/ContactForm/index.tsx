@@ -165,11 +165,19 @@ const ContactForm: FC = () => {
         <div className=" relative flex justify-center md:justify-start">
           <button
             type="submit"
-            className="skySqrButton flex items-center justify-center gap-2 cursor-pointer"
+            className={`skySqrButton flex items-center justify-center gap-2 ${
+              isSubmitDisabled ? "cursor-default hover:bg-sky-500" : ""
+            }`}
             disabled={isSubmitDisabled}
           >
             {isLoading && <Loader isSectionLoader={false} />}{" "}
-            <span>Gönder</span>
+            <span>
+              {isSubmitDisabled && isLoading
+                ? "Gönderiliyor"
+                : isSubmitDisabled
+                ? "Formu tamamlayın"
+                : "Gönder"}
+            </span>
           </button>
         </div>
         {showModal && <SuccessModal />}
