@@ -6,7 +6,7 @@ import FooterSectionLinks from "../FooterSectionLinks";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-[#fafafa] py-10 px-5 md:py-15">
+    <footer className="bg-[#fafafa] py-10 px-5">
       <div className="flex flex-col items-center gap-4 text-slate-800 text-center text-md md:text-start md:text-lg">
         <div>
           <Image

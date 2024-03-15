@@ -9,7 +9,7 @@ import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
-    <main className=" ">
+    <main>
       <HeroSection />
       <ProductsSection isNav={false} />
       <Benefits />

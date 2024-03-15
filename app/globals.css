@@ -16,15 +16,15 @@
   }
 
   .skyButton {
-    @apply flex justify-center items-center px-4 py-3 md:px-9 md:py-4 border border-sky-500 bg-sky-500 rounded-full transition duration-300 hover:rounded-md
+    @apply flex justify-center items-center px-4 py-3 md:px-9 md:py-4 border border-sky-500 bg-sky-500 rounded-full transition duration-300 hover:border-sky-600 hover:bg-sky-600
   }
 
   .outlineButton {
-    @apply flex justify-center items-center px-4 py-3 md:px-9 md:py-4 border border-solid rounded-full transition duration-300 hover:rounded-md
+    @apply flex justify-center items-center px-4 py-3 md:px-9 md:py-4 border border-solid rounded-full transition duration-300 hover:border-sky-700
   }
 
   .skySqrButton {
-    @apply gap-3 justify-between items-center px-4 py-3 md:px-9 md:py-4 bg-sky-500 text-[#fff] rounded-md hover:rounded-full
+    @apply gap-3 justify-between items-center px-4 py-3 md:px-9 md:py-4 bg-sky-500 text-[#fff] rounded-md transition duration-300 hover:bg-sky-600
   }
 
   .titleStyle {
@@ -51,6 +51,7 @@
     @apply py-20 md:py-28
   }
 }
+
 
 .bar1,
 .bar2,
@@ -102,7 +103,8 @@
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;

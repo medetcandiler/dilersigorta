@@ -31,7 +31,10 @@ const HeroSectionSlider: FC<IHeroSectionSlider> = ({ content, isVisible }) => {
         <Link href="/iletisim" className="skyButton">
           Teklif Alın
         </Link>
-        <Link href={content.href} className="outlineButton">
+        <Link
+          href={content.href}
+          className="outlineButton hover:bg-[rgba(255, 255, 255, 0.5)]"
+        >
           Daha Fazla Bilgi
         </Link>
       </div>
