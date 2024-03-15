@@ -1,18 +1,27 @@
 import { FC } from "react";
+import Image from "next/image";
 
 const KVKKSection: FC = () => {
   const styling = {
-    backgroundImage:
-      "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.1)), url('/images/guard.jpg')",
+    background:
+      "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.2))",
   };
 
   return (
     <section className="pt-[70px]">
-      <div className="bg-cover bg-center h-[50vh]" style={styling}>
+      <div className="relative h-[50vh]" style={styling}>
+        <Image
+          src="/images/guard.jpg"
+          fill={true}
+          alt="Diler sigorta kvkk section background"
+          className="object-cover -z-10"
+          priority
+        />
         <div className="flex justify-center items-center h-full">
           <h3 className="titleStyle text-[#fff]">KVKK Aydınlatma Metni</h3>
         </div>
       </div>
+
       <div className="container mx-auto flex justify-center items-center py-20 md:px-5 lg:px-20 ">
         <div className="md:border-black px-10 md:py-10 lg:px-20 lg:py-16 md:rounded-lg md:shadow-black md:shadow-lg md:overflow-y-auto">
           <h4 className="font-bold contentHeader text-lg mb-2">1. GİRİŞ</h4>

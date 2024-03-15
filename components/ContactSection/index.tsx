@@ -7,13 +7,20 @@ import ContactSectionAdress from "../ContactSectionAdress";
 
 const ContactSection: FC<IContentSectionProps> = ({ isPage }) => {
   const styling = {
-    backgroundImage:
-      "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.1)), url('/images/dilersigortabg2.png')",
+    background:
+      "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.2))",
   };
   return (
     <div className={`${isPage ? "pt-[70px]" : ""}`}>
       {isPage ? (
-        <div className="bg-cover bg-center h-[50vh]" style={styling}>
+        <div className="relative h-[50vh]" style={styling}>
+          <Image
+            src="/images/dilersigortabg2.png"
+            fill={true}
+            alt="Diler sigorta contact section background"
+            className="object-cover -z-10"
+            priority
+          />
           <div className="flex justify-center items-center h-full">
             <h3 className="titleStyle text-[#fff]">İletişim</h3>
           </div>

@@ -3,18 +3,18 @@ export const insuranceServices = [
     imageSrc: "/icons/wallet.svg",
     title: "Güvende Olma",
     description:
-      "Sigorta poliçelerimizle huzur içinde olun. Önemli riskleri de kapsayan sigorta poliçelerimizle huzur içinde olun.",
+      "Diler Sigorta poliçelerimizle huzur içinde olun. Önemli riskleri de kapsayan sigorta poliçelerimizle huzur içinde olun.",
   },
   {
     imageSrc: "/icons/save.svg",
     title: "Geleceğe Güvence",
     description:
-      "Sigorta poliçelerimizle geleceğinizi güvence altına alın. Planlı bir şekilde geleceğe adım atın.",
+      "Diler Sigorta poliçelerimizle geleceğinizi güvence altına alın. Planlı bir şekilde geleceğe adım atın.",
   },
   {
     imageSrc: "/icons/peopleicon.svg",
     title: "%100 Müşteri Memnuniyeti",
     description:
-      "Müşteri memnuniyeti odaklı hizmetimizle her zaman yanınızdayız. Sorunsuz bir sigorta deneyimi yaşayın.",
+      "Diler Sigorta müşteri memnuniyeti odaklı hizmetimizle her zaman yanınızdayız. Sorunsuz bir sigorta deneyimi yaşayın.",
   },
 ];

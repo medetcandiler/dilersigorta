@@ -21,6 +21,13 @@ const BenefitCard: FC<IBenefitCard> = ({
         height={40}
         className="object-center"
       />
+      <h1
+        className={`${
+          bgColor ? "text-white" : "text-slate-800"
+        } text-2xl font-bold text-center -mb-3 mt-2 md:text-start`}
+      >
+        Diler Sigorta ile
+      </h1>
       <h3
         className={`${
           bgColor ? "text-white" : "text-slate-800"

@@ -1,11 +1,11 @@
-import AboutSection from "@/components/AboutSection"
+import AboutSection from "@/components/AboutSection";
 
 const AboutPage = () => {
   return (
-    <>
+    <section>
       <AboutSection />
-    </>
-  )
-}
+    </section>
+  );
+};
 
-export default AboutPage
+export default AboutPage;

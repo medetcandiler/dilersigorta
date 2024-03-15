@@ -1,3 +1,4 @@
+// @eslint-disable
 import { FC, useEffect } from "react";
 import Arrow from "../Arrow";
 import { IHeroSectionSliderButtons } from "./interface";

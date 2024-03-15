@@ -1,15 +1,23 @@
 import { FC } from "react";
 import { aboutSectionContent } from "./data";
 import AboutCard from "../AboutCard";
+import Image from "next/image";
 
 const AboutSection: FC = () => {
   const styling = {
-    backgroundImage:
-      "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.1)), url('/images/aboutsect.jpg')",
+    background:
+      "radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.2))",
   };
   return (
     <div className="relative pt-[70px]">
-      <div className="bg-cover bg-center h-[50vh]" style={styling}>
+      <div className="relative h-[50vh]" style={styling}>
+        <Image
+          src="/images/aboutsect.jpg"
+          fill={true}
+          alt="Diler sigorta about section background"
+          className="object-cover -z-10"
+          priority
+        />
         <div className="flex justify-center items-center h-full">
           <h3 className="titleStyle text-[#fff]">Hakkımızda</h3>
         </div>

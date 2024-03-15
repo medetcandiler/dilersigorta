@@ -9,9 +9,9 @@ import GoToTopButton from "@/components/GoToTopButton";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Diler Sigorta | Anasayfa",
+  title: "Diler Sigorta | Güvenilir Sigorta Çözümleri",
   description:
-    "Diler Sigorta, güvenilir ve kapsamlı sigorta çözümleri sunan lider bir sigorta şirketidir. Araç, konut, sağlık ve daha fazlası için en iyi sigorta seçenekleri!",
+    "Diler Sigorta, Türkiye'nin güvenilir sigorta çözüm ortağı. Araç, konut, sağlık ve daha fazlası için güvenilir sigorta çözümleri sunuyoruz.",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="tr">
       <body className={outfit.className}>
         <Header />
         {children}

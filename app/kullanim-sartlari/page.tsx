@@ -1,10 +1,10 @@
 import TermsOfUseSection from "@/components/TermsOfUseSection";
-const IletisimPage = () => {
+const TermsOfUsePage = () => {
   return (
-    <>
+    <section>
       <TermsOfUseSection />
-    </>
+    </section>
   );
 };
 
-export default IletisimPage;
+export default TermsOfUsePage;

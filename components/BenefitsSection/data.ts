@@ -1,23 +1,21 @@
 export const benefits = [
   {
-    imageUrl:
-      "/icons/peopleicon.svg",
+    imageUrl: "/icons/peopleicon.svg",
     title: "Kapsamlı Güvence",
     description:
-      "Beklenmedik durumlar karşısında korunmanızı sağlamak için buradayız.",
+      "Beklenmedik durumlar karşısında Diler Sigorta ile korunmanızı sağlayın.",
   },
   {
-    imageUrl:
-      "/icons/peopleicon.svg",
+    imageUrl: "/icons/peopleicon.svg",
     title: "Geleceği Garantileyin",
-    description: "Sigorta poliçelerimizle geleceğinizi güvence altına alın.",
+    description:
+      "Diler Sigorta poliçelerimizle geleceğinizi güvence altına alın.",
   },
   {
-    imageUrl:
-      "/icons/whitepeople.png",
+    imageUrl: "/icons/whitepeople.png",
     title: "%100 Müşteri Memnuniyeti",
     description:
-      "Müşteri memnuniyeti odaklı hizmetimizle her zaman yanınızdayız.",
+      "Müşteri memnuniyeti odaklı hizmetimizle Diler Sigorta her zaman yanınızda.",
     bgColor: true,
   },
 ];

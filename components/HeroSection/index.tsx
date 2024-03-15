@@ -3,19 +3,28 @@ import { dataSlice } from "./data";
 import { useState } from "react";
 import HeroSectionSlider from "../HeroSectionSlider";
 import HeroSectionSliderButtons from "../HeroSectionSliderButtons";
+import Image from "next/image";
 
 const HeroSection = () => {
   const [currentSlice, setCurrentSlice] = useState(0);
-
   const backgroundImageStyle = {
-    backgroundImage: `radial-gradient(rgba(0, 128, 128, 0.2), rgba(0, 123, 255, 0.1)), url('${dataSlice[currentSlice].bg}')`,
+    background: `radial-gradient(rgba(0, 128, 128, 0.3), rgba(0, 123, 255, 0.3))`,
   };
 
   return (
     <section
       style={backgroundImageStyle}
-      className={`bg-cover bg-center h-screen relative overflow-hidden pt-[70px]`}
+      className={`relative bg-cover bg-center h-screen overflow-hidden pt-[70px]`}
     >
+      
+      <Image
+        src={dataSlice[currentSlice].bg}
+        fill={true}
+        alt="diler sigorta welcoming images"
+        priority
+        className="-z-10 object-cover"
+      />
+
       <div className="absolute bottom-1/2 translate-y-1/2 px-1 sm:px-3 flex w-full justify-between md:pt-[70px]">
         <HeroSectionSliderButtons
           dataSlice={dataSlice}

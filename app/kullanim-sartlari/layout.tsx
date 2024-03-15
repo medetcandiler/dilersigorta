@@ -7,9 +7,12 @@ interface ITermsOfUseProps {
 
 export const metadata: Metadata = {
   title: "Diler Sigorta | Kullanım Şartları",
+  description:
+    "Diler Sigorta'nın web sitesini kullanırken geçerli olan kullanım şartlarını öğrenin. Web sitemizi kullanarak kabul ettiğiniz koşulları buradan inceleyin.",
 };
-const IletisimLayout: FC<ITermsOfUseProps> = ({ children }) => {
+
+const TermsOfUseLayout: FC<ITermsOfUseProps> = ({ children }) => {
   return <section>{children}</section>;
 };
 
-export default IletisimLayout;
+export default TermsOfUseLayout;

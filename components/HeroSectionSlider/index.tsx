@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { IHeroSectionSlider } from "./interface";
 import Link from "next/link";
+import Image from "next/image";
 
 const HeroSectionSlider: FC<IHeroSectionSlider> = ({ content, isVisible }) => {
   return (
@@ -11,6 +12,17 @@ const HeroSectionSlider: FC<IHeroSectionSlider> = ({ content, isVisible }) => {
           : "opacity-0 translate-y-[-150px]"
       } md:w-1/2`}
     >
+      <div className="flex flex-col items-center justify-center">
+        <Image
+          src="/images/whitedilerlogo.png"
+          alt="diler sigorta logo"
+          width={80}
+          height={80}
+        />
+        <h1 className="text-lg font-bold text-[#fff] -mb-6 -mt-3">
+          Diler Sigorta
+        </h1>
+      </div>
       <h1 className="titleStyle text-[#fff]">{content.title}</h1>
       <p className="text-lg font-medium text-[#fff] text-center md:text-xl">
         {content.description}

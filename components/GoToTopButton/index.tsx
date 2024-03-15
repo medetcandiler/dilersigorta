@@ -38,7 +38,7 @@ const GoToTopButton: FC = () => {
       src="/icons/arrowUp.svg"
       width={65}
       height={65}
-      alt="go to top button"
+      alt="diler sigorta go to top button"
     ></Image>
   );
 };

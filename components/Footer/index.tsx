@@ -4,6 +4,7 @@ import FooterSocialLinks from "../FooterSocialLinks";
 import FooterSectionLinks from "../FooterSectionLinks";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-[#fafafa] py-10 px-5 md:py-15">
       <div className="flex flex-col items-center gap-4 text-slate-800 text-center text-md md:text-start md:text-lg">
@@ -12,13 +13,13 @@ const Footer = () => {
             src="/images/dilerlogo.png"
             width={250}
             height={250}
-            alt="dilersigorta logo"
+            alt="diler sigorta logo"
           />
         </div>
         <div className="flex gap-2.5 justify-between ">
           <Image
             src="/icons/phone.svg"
-            alt="phone"
+            alt="diler sigorta phone icon"
             className="my-auto w-[24px] h-[24px] "
             width={24}
             height={24}
@@ -30,7 +31,7 @@ const Footer = () => {
         <div className="flex gap-2.5 justify-between">
           <Image
             src="/icons/location.svg"
-            alt="location"
+            alt="diler sigorta location icon"
             className="w-[24px] h-[24px] "
             width={24}
             height={24}
@@ -54,11 +55,10 @@ const Footer = () => {
             hasan@dilersigorta.com
           </Link>
         </div>
-        <div className="flex flex-col items-center gap-1 md:flex-row md:gap-2">
-          <FooterSectionLinks />
-          <span className="hidden md:block">|</span>
-          <p>2024 © Diler Sigorta. Tüm hakları saklıdır.</p>
-        </div>
+        <FooterSectionLinks />
+        <p className="text-gray-600 text-sm">
+          1995 - {currentYear} © Diler Sigorta. Tüm hakları saklıdır.
+        </p>
         <FooterSocialLinks />
       </div>
     </footer>

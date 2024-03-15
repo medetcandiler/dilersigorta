@@ -14,7 +14,7 @@ const Header: FC = () => {
           <Link href="/" className="cursor-pointer ml-0 md:-ml-5 xl:ml-0">
             <Image
               src="/images/dilerlogo.png"
-              alt="logo"
+              alt="diler sigorta logo"
               width={200}
               height={200}
               priority

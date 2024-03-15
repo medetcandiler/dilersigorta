@@ -1,11 +1,11 @@
-import HelpfullLinkPage from "@/components/HelpfullLinkPage"
+import HelpfullLinkPage from "@/components/HelpfullLinkPage";
 
-const AboutPage = () => {
+const HelpfulLinksPage = () => {
   return (
-    <>
+    <section>
       <HelpfullLinkPage />
-    </>
-  )
-}
+    </section>
+  );
+};
 
-export default AboutPage
+export default HelpfulLinksPage;
