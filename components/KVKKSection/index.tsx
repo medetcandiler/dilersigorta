@@ -22,8 +22,8 @@ const KVKKSection: FC = () => {
         </div>
       </div>
 
-      <div className="container mx-auto flex justify-center items-center py-20 md:px-5 lg:px-20 ">
-        <div className="md:border-black px-10 md:py-10 lg:px-20 lg:py-16 md:rounded-lg md:shadow-black md:shadow-lg md:overflow-y-auto">
+      <div className="container mx-auto flex justify-center items-center py-20 md:px-5 lg:px-20 md:py-[100px] ">
+        <div className="md:border-black px-10 md:py-10 lg:px-20 lg:py-16 md:rounded-lg md:shadow-black md:shadow md:overflow-y-auto">
           <h4 className="font-bold contentHeader text-lg mb-2">1. GİRİŞ</h4>
           <p className="contentText mb-6">
             İşbu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması

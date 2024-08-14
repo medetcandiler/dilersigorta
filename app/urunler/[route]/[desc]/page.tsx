@@ -40,8 +40,8 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
 
   return (
     <section>
-      <div className="container mx-auto flex justify-center items-center pb-10 pt-5 md:pt-10 md:px-5 lg:px-20">
-        <div className="md:border-black px-10 md:py-10 lg:px-20 lg:py-16 md:rounded-lg md:shadow-black md:shadow-lg md:overflow-y-auto">
+      <div className="container mx-auto flex justify-center items-center pb-20 pt-10 md:pt-10 md:px-5 lg:px-20 ">
+        <div className="md:border-black px-10 md:py-10 lg:px-20 lg:py-16 md:rounded-lg md:shadow md:shadow-black md:overflow-y-auto">
           <div className="flex justify-center items-center pb-5">
             <h3 className="text-center font-bold text-3xl md:text-4xl text-slate-800">
               {matchedTitle.title.split(" ").slice(1).join(" ")}

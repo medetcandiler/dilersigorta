@@ -3,7 +3,7 @@ export const aboutSectionContent = [
     id: 1,
     title: "Biz Kimiz?",
     content:
-      "Güçlü ve deneyimli ekibiyle, Diler Sigorta sigorta sektöründe öne çıkan projelerde kapsamlı hizmet sunmaktadır.\n\nBireysel ve kurumsal sigorta ihtiyaçlarına yönelik geniş bir yelpazede çözüm sunan şirket, Türkiye Sigorta, AXA Sigorta ve HDI Sigorta gibi sektörün önde gelen partnerleriyle işbirliği yapmaktadır.\n\nMüşterilerine etkili ve güvenilir sigorta çözümleri sunmayı amaçlayan Diler Sigorta, kalite ve müşteri memnuniyetini merkezine almıştır. Yenilikçi yaklaşımıyla sektördeki geleneksel yöntemleri sorgulayan ve modern çözümlerle müşterilerine daima en iyiyi sunmayı hedefleyen Diler Sigorta, uzman kadrosunu sürekli eğitimlerle güncel tutarak sektördeki en son trendlerle müşterilerini buluşturur.",
+      "Güçlü ve deneyimli ekibiyle, Diler Sigorta sigorta sektöründe öne çıkan projelerde kapsamlı hizmetler sunar. Türkiye Sigorta, AXA Sigorta ve HDI Sigorta gibi lider partnerlerle işbirliği yapan şirket, bireysel ve kurumsal sigorta ihtiyaçlarına yönelik geniş bir yelpazede çözüm sağlar. Kalite ve müşteri memnuniyetini merkezine alarak, yenilikçi ve modern sigorta çözümleri sunmayı hedefler.",
     imageSrc: "/images/aboutfirst.jpg",
   },
   {

@@ -12,7 +12,7 @@ export const benefits = [
       "Diler Sigorta poliçelerimizle geleceğinizi güvence altına alın.",
   },
   {
-    imageUrl: "/icons/whitepeople.png",
+    imageUrl: "/icons/peopleicon.svg",
     title: "%100 Müşteri Memnuniyeti",
     description:
       "Müşteri memnuniyeti odaklı hizmetimizle Diler Sigorta her zaman yanınızda.",

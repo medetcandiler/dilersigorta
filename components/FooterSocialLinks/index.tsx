@@ -4,7 +4,7 @@ const FooterSocialLinks = () => {
   return (
     <div className="flex items-center justify-center gap-5">
       <Link
-        className="transition duration-300 hoverTranslateY hover:scale-105"
+        className="transition duration-300 hover:scale-125"
         href="https://www.instagram.com/"
         target="_blank"
       >
@@ -24,7 +24,7 @@ const FooterSocialLinks = () => {
         </svg>
       </Link>
       <Link
-        className="transition duration-300 hoverTranslateY hover:scale-110"
+        className="transition duration-300 hover:scale-125"
         href="https://www.instagram.com/"
         target="_blank"
       >
@@ -42,7 +42,7 @@ const FooterSocialLinks = () => {
         </svg>
       </Link>
       <Link
-        className="transition duration-300 hoverTranslateY hover:scale-105"
+        className="transition duration-300 hover:scale-125"
         href="https://www.instagram.com/"
         target="_blank"
       >

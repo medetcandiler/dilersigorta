@@ -3,9 +3,9 @@ import InsuranceServiceCard from "../InsuranceServiceCard";
 
 const InsuranceServicesSection = () => {
   return (
-    <section className=" bg-[#fff] paddingForSections px-10 ">
-      <div className="container mx-auto md:px-5">
-        <div className="grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-3">
+    <section className=" bg-[#fff] ">
+      <div className="container mx-auto paddingForSections ">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
           {insuranceServices.map((service) => (
             <InsuranceServiceCard
               key={service.title}

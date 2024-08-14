@@ -23,7 +23,7 @@ const AboutSection: FC = () => {
         </div>
       </div>
 
-      <div className="container mx-auto flex flex-col gap-20 py-10">
+      <div className="container mx-auto flex flex-col gap-20 paddingForSections">
         {aboutSectionContent.map((content) => (
           <AboutCard
             key={content.id}

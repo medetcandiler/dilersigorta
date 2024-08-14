@@ -4,7 +4,7 @@ import PartnerCard from "../PartnerCard";
 
 const PartnersSection: FC = () => {
   return (
-    <section className="bg-[#fff] paddingForSections px-5 md:px-16">
+    <section className="bg-[#fff] paddingForSections">
       <div className="container mx-auto ">
         <h1 className="titleStyle pb-8">İş Birliği Yaptığımız Şirketler</h1>
         <h3 className="subTitleStyle">

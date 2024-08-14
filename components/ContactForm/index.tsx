@@ -90,7 +90,7 @@ const ContactForm: FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className="flex justify-center items-center ">
-      <div className="relative flex flex-col items-center gap-10 border border-black rounded-lg shadow-black shadow-lg px-10 py-10 sm:px-20 sm:py-16 lg:px-20 lg:py-20">
+      <div className="relative flex flex-col items-center gap-10 rounded-lg shadow shadow-black px-10 py-10 sm:px-20 sm:py-16 lg:px-20 lg:py-20">
         <div className="flex flex-col gap-9 sm:gap-12 sm:flex-row ">
           <div className="relative z-0 w-full group">
             <input
@@ -166,7 +166,7 @@ const ContactForm: FC = () => {
           <button
             type="submit"
             className={`skySqrButton flex items-center justify-center gap-2 ${
-              isSubmitDisabled ? "cursor-default hover:bg-sky-500" : ""
+              isSubmitDisabled ? "cursor-default hover:bg-sky-500 opacity-50" : ""
             }`}
             disabled={isSubmitDisabled}
           >
@@ -175,7 +175,7 @@ const ContactForm: FC = () => {
               {isSubmitDisabled && isLoading
                 ? "Gönderiliyor"
                 : isSubmitDisabled
-                ? "Formu tamamlayın"
+                ? "Formu Tamamlayın"
                 : "Gönder"}
             </span>
           </button>

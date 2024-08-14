@@ -10,7 +10,7 @@ const HeroSectionSlider: FC<IHeroSectionSlider> = ({ content, isVisible }) => {
         isVisible
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-[-150px]"
-      } md:w-1/2`}
+      } md:w-2/5`}
     >
       <div className="flex flex-col items-center justify-center">
         <Image
@@ -28,7 +28,7 @@ const HeroSectionSlider: FC<IHeroSectionSlider> = ({ content, isVisible }) => {
         {content.description}
       </p>
       <div className="flex gap-2.5 items-center text-sm font-bold tracking-wide leading-5 text-center text-[#fff] whitespace-nowrap">
-        <Link href="/iletisim" className="skyButton">
+        <Link href="/iletisim" className="skySqrButton">
           Teklif Alın
         </Link>
         <Link

@@ -10,12 +10,10 @@ const ProductsSection: FC<IProductsSection> = ({ isNav }) => {
   };
   return (
     <section
-      className={
-        isNav ? "pt-[70px]" : "bg-[#fff] py-10 px-10 xl:px-40 2xl:px-72"
-      }
+      className={isNav ? "pt-[70px]" : "bg-[#fff] paddingForSections px-0"}
     >
       {isNav ? (
-        <div className="bg-cover bg-center h-[25vh]" style={styling}>
+        <div className="bg-cover bg-center h-[25vh] " style={styling}>
           <div className="flex flex-col items-center justify-center pt-[70px] h-full">
             <h3 className="titleStyle text-[#fff] pb-1">Ürünlerimiz</h3>
             <p className="subTitleStyle text-[#fff]">
@@ -35,7 +33,7 @@ const ProductsSection: FC<IProductsSection> = ({ isNav }) => {
         className={`flex flex-wrap ${
           isNav
             ? "overflow-x-scroll flex-nowrap gap-3 md:gap-5 px-5 pt-10 pb-5 md:flex-wrap md:justify-center md:px-0 lg:px-5 lg:container lg:mx-auto"
-            : "container mx-auto justify-center gap-3 px-2 pb-10 md:gap-12"
+            : "container mx-auto justify-center gap-4 px-2 "
         }`}
       >
         {products.map((product) => (
