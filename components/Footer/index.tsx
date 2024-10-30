@@ -61,10 +61,10 @@ const Footer = () => {
           </Link>
         </div>
         <FooterSectionLinks />
+        <FooterSocialLinks />
         <p className="text-gray-600 text-sm">
           1995 - {currentYear} © Diler Sigorta. Tüm hakları saklıdır.
         </p>
-        <FooterSocialLinks />
       </div>
     </footer>
   );
