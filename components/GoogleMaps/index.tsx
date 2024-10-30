@@ -35,8 +35,6 @@ const GoogleMaps = () => {
     let marker2: google.maps.marker.AdvancedMarkerElement | undefined;
 
     if (isLoaded && map && google.maps.marker?.AdvancedMarkerElement) {
-      // Custom marker icons
-
       const markerContent1 = document.createElement("div");
       markerContent1.innerHTML = `
   <svg
@@ -82,7 +80,8 @@ const GoogleMaps = () => {
   }, [isLoaded, map]);
 
   return isLoaded ? (
-    <div className="flex items-center justify-center w-[290px] h-[250px] sm:w-[500px] sm:h-[325px] md:w-[600px] lg:w-[800px] lg:h-[400px] px-5 pt-3">
+    <div className="flex items-center justify-center w-[300px] h-[250px] sm:w-[500px] sm:h-[325px] md:w-[600px] lg:w-[800px] lg:h-[400px] px-5 pt-3">
+      <h1 className="hidden">Atalar Sigorta</h1>
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         center={center}

@@ -17,6 +17,7 @@ const HeroSection = () => {
       className={`relative bg-cover bg-center h-screen overflow-hidden pt-[70px]`}
     >
       <h1 className="hidden">Atalar Sigorta</h1>
+      <h1 className="hidden">Kartal Sigorta</h1>
       <Image
         src={dataSlice[currentSlice].bg}
         fill={true}

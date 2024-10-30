@@ -13,7 +13,7 @@ const ContactSectionAdress: FC<IContactSectionAdressProps> = ({
       href={`https://${linkToMap}`}
       className=" links-hover pb-0 flex items-center justify-center group"
     >
-      <p className="flex font-medium tracking-wide text-neutral-500 text-md text-center items-center relative pl-5 w-full md:pl-8 ">
+      <p className="flex links-hover font-medium tracking-wide text-neutral-500 text-md text-center items-center relative pl-5 w-full md:pl-8 ">
         <Image
           className=" absolute top-1 left-0 md:top-1/2 md:-translate-y-1/2 sm:block transition duration-300 group-hover:scale-125 "
           src="/icons/location.svg"

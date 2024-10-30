@@ -18,6 +18,10 @@ const DesktopNavLinkChild: FC<IDesktopNavLinkChild> = ({ desktopNavChild }) => {
           <span>
             {link === "isyeri"
               ? "İş Yeri"
+              : link === "saglik"
+              ? "Sağlık"
+              : link === "arac"
+              ? "Araç"
               : link[0].toLocaleUpperCase() + link.slice(1)}
           </span>
           <Arrow

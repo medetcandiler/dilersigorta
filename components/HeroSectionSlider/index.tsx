@@ -19,7 +19,7 @@ const HeroSectionSlider: FC<IHeroSectionSlider> = ({ content, isVisible }) => {
           width={80}
           height={80}
         />
-        <h1 className="text-lg font-bold text-[#fff] -mb-6 -mt-3">
+        <h1 className="text-md font-bold text-[#fff] -mb-2 -mt-3">
           Diler Sigorta
         </h1>
       </div>

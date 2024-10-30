@@ -12,17 +12,39 @@ export const products = [
           "Tamamlayıcı Sağlık Sigortası ile SGK anlaşmalı 550'den fazla hastanede ihtiyacınız olan yüksek kalitedeki sağlık hizmetlerinden fark ödemeden faydalanabilirsiniz.",
         subDescription: {
           "Tamamlayıcı Sağlık Sigortası":
-            "Tamamlayıcı Sağlık Sigortası sayesinde SGK anlaşmalı hastanelerde ihtiyacınız olan sağlık hizmetlerinden fark ödemeden faydalanabilirsiniz.Bunun yanında sizlere, yaşa ve sigortalılık süresine bağlı olarak 2 ile 4 yıl arasında değişen sürelerde yenileme garantisi sunuyoruz.Tamamlayıcı Sağlık Sigortası Bilgilendirme Formu için tıklayınız.Vergi İndirimi Avantajına ilişkin detaylı bilgi almak için tıklayınız.Türkiye Sigorta Tamamlayıcı Sağlık Sigortası başvurunuzu Mobil Şube, Anlaşmalı Acente ve Banka şubelerimizden yapabilirsiniz.Türkiye Sigorta anlaşmalı sağlık kurumları için tıklayınız.",
+            "Tamamlayıcı Sağlık Sigortası, SGK anlaşmalı hastanelerde özel sağlık hizmetlerinden fark ücreti ödemeden faydalanmanızı sağlar. Kapsamda hem yatarak hem de ayakta tedavi seçenekleri bulunur. Bu sigorta, ameliyatlar, hastane yatışları, yoğun bakım, acil durum tedavileri gibi hizmetleri karşılayarak güvence sunar.",
+          "Öne Çıkan Teminatlar": [
+            "Yatarak Tedavi: Ameliyat, hastane yatışı, yoğun bakım ve acil durumlar",
+            "Ayakta Tedavi: Doktor muayenesi, laboratuvar tetkikleri, görüntüleme hizmetleri ve fizik tedavi",
+            "Doğum Teminatı: Annelik süreci için özel doğum ve rutin kontrollerde ek güvence",
+            "Acil Yardım: 7/24 ambulans hizmeti ve ilk yardım imkanı",
+          ],
+          "Ekstra Avantajlar": [
+            "Ömür Boyu Yenileme Garantisi: Kesintisiz sigortalılık süresine göre ömür boyu yenileme imkanı",
+            "Geniş Anlaşmalı Kurum Ağı: Türkiye çapında 550'den fazla SGK anlaşmalı sağlık kuruluşunda geçerli",
+            "Vergi İndirimi: Belirli prim tutarlarına bağlı vergi indirim avantajları",
+          ],
         },
       },
       {
         id: 2,
         title: "saglik Özel Sağlık Sigortası",
         description:
-          "Her şeyin başı sağlık diyerek, kendinize geniş kapsamlı bir özel sağlık sigortası yaptırmaya karar verdiyseniz ihtiyacınız için en uygun sigorta Özel Sağlık Sigortası",
+          "Özel Sağlık Sigortası, yurt içi ve yurt dışında oluşabilecek sağlık harcamalarınızı güvence altına alarak kapsamlı bir koruma sağlar.",
         subDescription: {
           "Özel Sağlık Sigortası":
-            "Her şeyin başı sağlık diyerek, kendinize şöyle kapsamlı bir sigorta yaptırmaya karar verdiniz.İşte ihtiyacınız için en uygun sigorta Özel Sağlık Sigortası (Limitsiz)! Türkiye Sigorta Özel Sağlık Sigortası (Limitsiz) ile yurt içi ve yurt dışında meydana gelebilecek sağlık giderleri için size kapsamlı teminatlar sunuyoruz. Bunun yanında sizlere, yaşa ve sigortalılık süresine bağlı olarak 2 ile 4 yıl arasında değişen sürelerde yenileme garantisi sunuyoruz. Bireysel Özel Sağlık Sigortası Bilgilendirme ve Aydınlanma Formu için tıklayınız. Vergi İndirimi Avantajına ilişkin detaylı bilgi almak için  tıklayınız.",
+            "Özel Sağlık Sigortası, SGK anlaşmalı veya anlaşmasız tüm sağlık kurumlarında, kapsamlı teminatlar sunar. Yatarak ve ayakta tedavi seçenekleriyle, çeşitli sağlık ihtiyaçlarınızı karşılarken yüksek kaliteli sağlık hizmetlerinden faydalanmanızı sağlar.",
+          "Kapsamda Yer Alan Teminatlar": [
+            "Limitsiz Yatarak Tedavi: Ameliyatlar, hastane yatışları, yoğun bakım",
+            "Ayakta Tedavi: Doktor muayenesi, laboratuvar, MR, tomografi gibi görüntüleme hizmetleri",
+            "Doğum ve Yeni Doğan Bakımı: Doğum teminatı ve yenidoğan bebeğiniz için sağlık güvence paketleri",
+            "Yurt Dışı Teminatı: Yurt dışında geçerli ek sağlık sigortası avantajları",
+          ],
+          "Ekstra Avantajlar ve Hizmetler": [
+            "Yenileme Garantisi: Uzun süreli sigortalılığa göre belirlenen yenileme imkanı",
+            "Acil Durum Teminatı: 7/24 acil yardım ve ambulans hizmeti",
+            "Vergi Avantajı: Prim tutarlarına göre vergi indirimi avantajı",
+          ],
         },
       },
 
@@ -95,36 +117,42 @@ export const products = [
     content: [
       {
         id: 1,
-        title: "arac Kasko Sigortası",
+        title: "arac Genişletilmiş Kasko",
         description:
-          "İhtiyacınıza özel genişletilmiş teminatlarla hazırlanan kasko sigortası ile aracınız, başına gelebilecek risklere karşı koruma altında! Genişletilmiş Kasko Sigortası aracınızı çarpma, çarpışma, yanma, çalınma ve bunun gibi birçok duruma karşı güvence altına alır.",
+          "Genişletilmiş Kasko ile aracınız, çarpma, çarpılma, hırsızlık, yanma ve doğal afetler gibi birçok riske karşı geniş kapsamlı olarak güvence altına alınır. Aracınızda oluşabilecek mini hasarlardan kaza sonrası yedek araç hizmetine kadar birçok avantaj içerir.",
         subDescription: {
-          "Kasko Sigortası nedir?":
-            "Kasko Sigortası, karayollarında hareket edebilen her türlü nakil aracınızın gerek hareket gerekse durma halindeyken uğrayabileceği zararları güvence altına alır. \n\n Kasko Sigortası; hasar, araç sahibinin kendi hatası sonucu meydana gelmiş olsa bile temin etmektedir. Ayrıca istenirse araç yardım hizmetleri de (asistans) teminata dahil edilebilmektedir.",
-
-          "Teminatlar;": [
-            "Çarpma, çarpılma, çarpışma",
-            "Yanma",
-            "Çalınma, çalınmaya teşebbüs",
-            "Sel ve su baskını",
-            "Deprem ve yanardağ püskürmesi",
-            "Grev, lokavt, kargaşalık, halk hareketleri, terör",
-            "Enflasyon (Üretici Fiyat Endeksi'ne göre)",
-            "Otomatik değer artışı (ödenen hasar sonrası araç değerinin primsiz olarak hasar öncesi meblağa yükseltilmesi)",
-            "İhtiyari mali sorumluluk (aracın işletenine yöneltilebilecek sorumluluğun Zorunlu Mali Sorumluluk Sigortası limitleri üzerinde olan kısmının - bedeni ve maddi olmak üzere - temin edilmesi)",
-            "Ferdi Kaza Sigortası (Bir kaza neticesinde araçta seyahat eden yolcu, sürücü ve sürücü yardımcılarının isim belirtilmeden yaşam kaybı, sürekli sakatlık ve tedavi masraflarının karşılanması)",
+          "Genişletilmiş Kasko Sigortası":
+            "Genişletilmiş Kasko, standart kasko teminatlarını genişleten bir sigorta türüdür. Sadece temel kazalar değil, yangın, hırsızlık ve doğal afetler gibi çeşitli durumlar da bu kapsamda güvence altına alınır. Ayrıca mini onarım hizmetleri, yedek araç temini gibi özelliklerle araç sahiplerine kapsamlı bir güvence sunar. Yurt dışı teminatı seçeneği ile aracınızı yurt dışında bile güvence altına alabilirsiniz. Bu ürün, yüksek hasar riskine karşı ekstra güvenlik isteyen kullanıcılar için tasarlanmıştır.",
+          "Öne Çıkan Teminatlar": [
+            "Çarpma, çarpılma ve kaza sonrası oluşan maddi zararlar",
+            "Aracın yanması ve hırsızlık gibi risklere karşı koruma",
+            "Sel ve su baskını, deprem, fırtına gibi doğal afetler için teminat",
+            "Yurtdışı teminatı ile yurt dışında güvence",
+            "Mini onarım hizmetleri (cam, boya, kaporta hasarlarında)",
+            "Kaza sonrası yedek araç temini",
+            "İhtiyari Mali Mesuliyet (Karşı tarafa verilecek yüksek hasarlarda ek koruma)",
           ],
-
-          "Oto Kasko Sigortası'nın teminat kapsamı, istenildiği takdirde aşağıdaki ek teminatlarla genişletilebilmektedir.":
-            [
-              "Sigara yanığı",
-              "Yetkili olmayan kişilerce çekilme",
-              "Asistans hizmetleri",
-              "Kıymet kazanma (poliçe teminatına giren herhangi bir hasar sonucunda ödenecek tazminat tutarından eskime düşülmemesi)",
-              "Sıfır kilometre hususi araçlara, araç alındığında sigortalanması şartıyla, aracın çalınması ya da tam ziya olması halinde anahtar teslim değerinin ödenmesi",
-              "Aracın anahtarının kaybolması, çalınması nedeniyle aracın güvenliğini sağlamak için yapılan anahtarın kopyalanması, alarm veya immobilizerin yeniden kodlanması, komple kilit kontak setinin değiştirilme masraflarının karşılanması",
-              "Araçta bulunan çanta, gözlük vb kişisel eşyanın poliçe üzerinde belirtilen rakam dahilinde temin edilmesi",
-            ],
+          "Ekstra Hizmetler ve Avantajlar":
+            "Genişletilmiş Kasko Sigortası, kapsamlı bir kasko çözümü arayanlar için ideal bir üründür. Poliçede yer alan mini onarım hizmetleri, sıkça yaşanan küçük çaplı hasarların hızlı bir şekilde giderilmesini sağlar. Yedek araç teminatı ile aracınız hasar gördüğünde mobilitenizi koruyabilir, yol yardım hizmetleriyle acil durumlarda profesyonel destek alabilirsiniz. Bu teminatlarla birlikte, aracınızın başına gelebilecek büyük veya küçük tüm olaylarda yanınızdayız. Genişletilmiş Kasko, araç değerinizin korunmasını sağlarken, poliçenizin sunduğu avantajlarla yolunuza güvenle devam edebilirsiniz.",
+        },
+      },
+      {
+        id: 2,
+        title: "arac Tutumlu Kasko",
+        description:
+          "Tutumlu Kasko ile aracınız, temel kasko teminatları kapsamında uygun primlerle güvence altında! Ekstra hizmetlere ihtiyaç duymayanlar için ekonomik bir sigorta çözümü sunar.",
+        subDescription: {
+          "Tutumlu Kasko Sigortası":
+            "Tutumlu Kasko, aracınız için uygun fiyatlı bir güvence arıyorsanız ideal bir seçenektir. Çarpma, çarpılma, hırsızlık, yangın gibi temel risklere karşı koruma sağlar. Temel kasko kapsamına sahip bu ürün, özellikle sık kullanıma ihtiyaç duymayan veya daha sınırlı bir koruma tercih eden sigortalılar için tasarlanmıştır. Tutumlu Kasko ile ekonomik bir primle aracınızı güvence altına alabilirsiniz.",
+          "Sağlanan Teminatlar": [
+            "Çarpma, çarpılma ve kaza sonrası temel koruma",
+            "Yangın, çalınma ve çalınmaya teşebbüs durumlarına karşı teminat",
+            "Sel, deprem ve fırtına gibi doğal afet risklerine karşı koruma",
+            "Yol yardımı ve çekme hizmeti (belirli limitlerde)",
+            "Grev, lokavt gibi halk hareketlerinde sınırlı koruma",
+          ],
+          "Ekonomik Çözümler":
+            "Tutumlu Kasko, ekonomik bir sigorta arayan araç sahipleri için geliştirilmiş bir üründür. Uygun fiyatıyla aracınızı başlıca risklere karşı korurken, kasko güvencesi ile rahatlık sağlar. Ekstra hizmetleri tercih etmeyen, bütçesini korumak isteyen sigortalılar için tasarlanan bu poliçe ile aracınızı beklenmedik durumlara karşı güvence altına alabilirsiniz.",
         },
       },
       {
@@ -159,10 +187,29 @@ export const products = [
         id: 2,
         title: "konut Konut Paket Sigortası",
         description:
-          "Konut Paket Sigortası ile yangın, deprem, hırsızlık gibi birçok riske karşı evinizi ve eşyalarınızı güvence altına alın!",
+          "Konut Sigortası, DASK'ın sağladığı deprem teminatı limitlerini aşan veya DASK'ın kapsamadığı zararları güvence altına alır. Konut Sigortası, hırsızlık, yangın, su baskını gibi olaylara karşı daha kapsamlı bir koruma sunarak ev sahipleri ve kiracılar için güvence sağlar. Bu sigorta, yalnızca yapıyı değil, içindeki eşya ve cihazları da koruma altına alır.",
         subDescription: {
-          "Konut Sigortası":
-            "Risk denilince birçoğumuzun aklına evin dışında yaşayabileceğimiz riskler geliyor. Peki, ya evde yaşanabilecek riskler? Evimizde; hırsızlıktan su basmasına, elektronik aletlerin bozulmasından yer kaymasına müdahale edemeyeceğimiz durumlar söz konusu olabilir. Ama endişeye gerek yok. Konut Paket Sigortası ile evinizden, eşyalarınıza hatta karşılaştığınız sağlık sorunlarına kadar uğradığınız hasarları telafi etmek çok kolay.",
+          "Konut Sigortası ile Sağlanan Teminatlar": [
+            "DASK'ın limitini aşan deprem kaynaklı hasarlar",
+            "Yangın, patlama, yıldırım gibi doğal afet ve kazalardan doğan zararlar",
+            "Hırsızlık, vandalizm ve dış etkenlerden kaynaklanan hasarlar",
+            "Sel, su baskını, dolu, fırtına gibi hava olayları",
+            "Dahili su hasarları: Boru patlaması, sızıntı vb.",
+            "Evdeki eşyaların ve dekoratif öğelerin hasarı",
+            "Cam kırılması, mobilya zararları, kişisel eşyaların korunması",
+          ],
+          "İsteğe Bağlı Ek Teminatlar": [
+            "Elektronik cihazların sigortalanması",
+            "Makine kırılması teminatı",
+            "Değerli eşyalar için özel koruma",
+            "Kiracılar için ek teminatlar",
+            "Geçici konaklama masrafları",
+          ],
+          "Neden Konut Sigortası?": [
+            "DASK, yalnızca belirli bir limit kapsamında ve temel yapı elemanlarına yönelik teminat sunarken, Konut Sigortası evin içindeki varlıkları ve eşyaları da kapsar.",
+            "Deprem, yangın, hırsızlık gibi durumlarda oluşabilecek yüksek maliyetlerin tamamı için güvence sağlar.",
+            "Ev sahipleri ve kiracılar için özelleştirilebilir teminat seçenekleri sunar.",
+          ],
         },
       },
     ],
