@@ -8,7 +8,7 @@ interface IIletisimLayoutProps {
 export const metadata: Metadata = {
   title: "Diler Sigorta | İletişim",
   description:
-    "Diler Sigorta ile iletişime geçin. Sorularınızı sormak, geri bildirimde bulunmak veya teklif almak için bize ulaşın.",
+    "Diler Sigorta İstanbul ilinin Kartal ilçesinde faaliyet gösteren bir sigorta acentedir. Sorularınızı sormak, geri bildirimde bulunmak veya teklif almak için bize ulaşın.",
 };
 
 const IletisimLayout: FC<IIletisimLayoutProps> = ({ children }) => {

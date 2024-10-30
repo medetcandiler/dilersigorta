@@ -8,7 +8,7 @@ interface IKvkkLayoutProps {
 export const metadata: Metadata = {
   title: "Diler Sigorta | KVKK Aydınlatma Metni",
   description:
-    "Diler Sigorta'nın Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında hazırladığı aydınlatma metnini inceleyin. Kişisel verilerinizin işlenmesi hakkında detaylı bilgi alın.",
+    "Kartal ilçesinde güvenilir sigorta hizmetleri sunan Diler Sigorta’nın Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında hazırladığı aydınlatma metnini inceleyin. Kişisel verilerinizin işlenmesi hakkında detaylı bilgi alın.",
 };
 
 const KvkkLayout: FC<IKvkkLayoutProps> = ({ children }) => {

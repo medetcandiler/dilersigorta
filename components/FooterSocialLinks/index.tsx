@@ -5,7 +5,7 @@ const FooterSocialLinks = () => {
     <div className="flex items-center justify-center gap-5">
       <Link
         className="transition duration-300 hover:scale-125"
-        href="https://www.instagram.com/"
+        href="https://www.instagram.com/dilersigorta"
         target="_blank"
       >
         <svg

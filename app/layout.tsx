@@ -11,7 +11,7 @@ const outfit = Outfit({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Diler Sigorta | Güvenilir Sigorta Çözümleri",
   description:
-    "Diler Sigorta, Türkiye'nin güvenilir sigorta çözüm ortağı. Araç, konut, sağlık ve daha fazlası için güvenilir sigorta çözümleri sunuyoruz.",
+    "Diler Sigorta, İstanbul’un Kartal ilçesinde uzman sigorta hizmetleri sunar. Araç, sağlık, konut ve işyeri sigortalarında güvenilir çözümlerle ihtiyaçlarınızı güvence altına alıyoruz.",
 };
 
 export default function RootLayout({
