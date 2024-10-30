@@ -2,6 +2,7 @@ import { FC } from "react";
 import GoogleMaps from "../GoogleMaps";
 import ContactForm from "../ContactForm";
 import Image from "next/image";
+import Link from "next/link";
 import { IContentSectionProps } from "./interface";
 import ContactSectionAdress from "../ContactSectionAdress";
 
@@ -33,10 +34,45 @@ const ContactSection: FC<IContentSectionProps> = ({ isPage }) => {
         <div className="flex flex-col items-center gap-8">
           <div className="flex flex-col gap-5 items-center">
             <h1 className="titleStyle md:text-3xl lg:text-4xl">Bize Ulaşın</h1>
+            <div className="flex flex-col gap-5  justify-between md:flex-row md:gap-12">
+              <div className="flex  gap-2.5 justify-between group">
+                <Image
+                  src="/icons/phone.svg"
+                  alt="diler sigorta phone icon"
+                  className="my-auto w-[24px] h-[24px] transition duration-300 group-hover:scale-125 "
+                  width={24}
+                  height={24}
+                />
+                <Link
+                  href="tel:+905392343777"
+                  className="flex-auto links-hover subTitleStyle pb-0 text-center text-xl font-medium "
+                >
+                  (539) 234 37 77
+                </Link>
+              </div>
+
+              <div className="flex gap-2.5 justify-between group">
+                <Image
+                  src="/icons/phone.svg"
+                  alt="diler sigorta phone icon"
+                  className="my-auto w-[24px] h-[24px] transition duration-300 group-hover:scale-125 "
+                  width={24}
+                  height={24}
+                />
+                <Link
+                  href="tel:+902163534892"
+                  className="flex-auto links-hover subTitleStyle pb-0 text-center text-xl font-medium "
+                >
+                  (216) 353 48 92
+                </Link>
+              </div>
+            </div>
+
             <h3 className="subTitleStyle pb-0 text-center text-xl font-medium ">
               Diler Sigorta Ofis Lokasyonlarımız
             </h3>
           </div>
+
           <div className="flex flex-col gap-3 items-center">
             <ContactSectionAdress
               address="Atalar, Diler Sigorta, Üsküdar Cd. NO: 117, 34862 Kartal/İstanbul"

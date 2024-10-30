@@ -25,8 +25,8 @@ const Footer = () => {
             width={24}
             height={24}
           />
-          <Link href="tel:+902163534892" className="flex-auto links-hover ">
-            (216) 353 48 92
+          <Link href="tel:+905392343777" className="flex-auto links-hover ">
+            (539) 234 37 77
           </Link>
         </div>
         <div className="flex gap-2.5 justify-between group">

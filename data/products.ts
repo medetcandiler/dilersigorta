@@ -17,16 +17,6 @@ export const products = [
       },
       {
         id: 2,
-        title: "saglik Genç Tamamlayıcı Sağlık Sigortası",
-        description:
-          "Gençliğinizin tadını çıkarın ve sağlığınızı güvence altına alın.",
-        subDescription: {
-          "Genç Tamamlayıcı Sağlık Sigortası":
-            "Gençlerimize özel hazırlanan Genç Tamamlayıcı Sağlık Sigortası ile 16 – 25 yaş arasındaki gençlerin sağlığını güvence altına alıyoruz. Yatarak ve ayakta tedavi seçeneklerinin yer aldığı farklı paketler ile temel sağlık ihtiyaçlarınızı karşılarken, gençlerin günlük yaşamına yönelik geniş bir hizmet yelpazesi sunuyoruz.Siz de gençliğiniz tadını çıkarın ve sağlığınızı güvence altına alın.",
-        },
-      },
-      {
-        id: 3,
         title: "saglik Özel Sağlık Sigortası",
         description:
           "Her şeyin başı sağlık diyerek, kendinize geniş kapsamlı bir özel sağlık sigortası yaptırmaya karar verdiyseniz ihtiyacınız için en uygun sigorta Özel Sağlık Sigortası",
@@ -35,6 +25,32 @@ export const products = [
             "Her şeyin başı sağlık diyerek, kendinize şöyle kapsamlı bir sigorta yaptırmaya karar verdiniz.İşte ihtiyacınız için en uygun sigorta Özel Sağlık Sigortası (Limitsiz)! Türkiye Sigorta Özel Sağlık Sigortası (Limitsiz) ile yurt içi ve yurt dışında meydana gelebilecek sağlık giderleri için size kapsamlı teminatlar sunuyoruz. Bunun yanında sizlere, yaşa ve sigortalılık süresine bağlı olarak 2 ile 4 yıl arasında değişen sürelerde yenileme garantisi sunuyoruz. Bireysel Özel Sağlık Sigortası Bilgilendirme ve Aydınlanma Formu için tıklayınız. Vergi İndirimi Avantajına ilişkin detaylı bilgi almak için  tıklayınız.",
         },
       },
+
+      {
+        id: 3,
+        title: "saglik AXA Dijital Sağlık Sigortası",
+        description:
+          "AXA Dijital Sağlık Sigortası ile dilediğiniz zaman, dilediğiniz yerde kapsamlı doktor muayenesi! Türkiye'de bir ilk olan bu dijital sağlık hizmeti, Koç Healthcare bünyesindeki Amerikan Hastanesi ve Koç Üniversitesi Hastanesi doktorları ile uluslararası standartlarda sunuluyor.",
+        subDescription: {
+          "AXA Dijital Sağlık Sigortası":
+            "AXA Dijital Sağlık Sigortası, limitsiz yatarak tedavi, dijital ve online gerçek muayene imkanı sunar. E-Nabız entegrasyonu sayesinde kolay reçete alma imkanı sağlar. Ayrıca ücretsiz TytoCare cihazı, dijital ayakta tedavi ve 7/24 aile hekimi/pratisyen hekim desteği gibi özellikleri bulunmaktadır.",
+          "Bu sigorta kapsamına giren teminatlar aşağıda belirtilmiştir:": [
+            "Limitsiz Yatarak Tedavi (Tüm ÖSS Networkü)",
+            "TytoCare Dijital Muayene Cihazı ile muayene",
+            "Dijital Ayakta Tedavi",
+            "Sınırsız Aile Hekimi / Pratisyen Hekim (7/24)",
+            "Dahiliye ve Pediatri branşı uzman doktor muayenesi (yılda 24 kez)",
+            "İlaç ve Laboratuvar Hizmetleri (Dijital Muayene Sonrası)",
+            "Endoskopi",
+            "Diğer Branş Uzman Doktor Muayene Ek Teminatı (Yılda 2 defa)",
+            "Dijital Check-Up Ek teminati (İstanbul)",
+            "Yurt Dışı Yatarak Tedavi Ek Teminatı",
+          ],
+          "Aile İmkanları":
+            "Sigortalı olmayan 4 kişi, sınırsız aile hekimi/pratisyen hekimden ücretsiz yararlanabilir.",
+        },
+      },
+
       {
         id: 4,
         title: "saglik Bireysel Ferdi Kaza Sigortası",

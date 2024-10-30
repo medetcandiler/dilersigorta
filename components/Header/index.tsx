@@ -20,7 +20,8 @@ const Header: FC = () => {
               priority
             />
           </Link>
-
+          <h1 className="hidden">Atalar Sigorta</h1>
+          <h1 className="hidden">Kartal Sigorta</h1>
           <nav className="flex gap-3 md:gap-6">
             <DesktopNav />
             <HamburgerMenu />
