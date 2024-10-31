@@ -27,6 +27,12 @@ const MobileNavLinkChild: FC<IMobileNavLinkChild> = ({
           <span className="child">
             {link === "isyeri"
               ? "İş Yeri"
+              : link === "arac"
+              ? "Araç"
+              : link === "saglik"
+              ? "Sağlık"
+              : link === "muhendislik"
+              ? "Mühendislik"
               : link[0].toLocaleUpperCase() + link.slice(1)}
           </span>
         </Link>
