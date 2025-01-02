@@ -3,6 +3,7 @@ export interface IHeroSectionSlider {
     title: string;
     description: string;
     href: string;
+    wp: string;
   };
   isVisible: boolean;
 }

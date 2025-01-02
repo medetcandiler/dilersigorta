@@ -24,7 +24,10 @@ const MobileNav: FC<IMobileNav> = ({ isClicked, onclick }) => {
       ))}
       <div className="flex flex-col justify-center bg-[#fff] items-start gap-3 py-3 px-10">
         <ContactButton />
-        <OfferButton isOnMobile={true} />
+        <OfferButton
+          isOnMobile={true}
+          wp={"Merhaba, sigorta teklifleri hakkında bilgi almak istiyorum."}
+        />
       </div>
     </nav>
   );

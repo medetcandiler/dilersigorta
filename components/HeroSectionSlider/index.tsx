@@ -28,7 +28,11 @@ const HeroSectionSlider: FC<IHeroSectionSlider> = ({ content, isVisible }) => {
         {content.description}
       </p>
       <div className="flex gap-2.5 items-center text-sm font-bold tracking-wide leading-5 text-center text-[#fff] whitespace-nowrap">
-        <Link href="/iletisim" className="skySqrButton">
+        <Link
+          href={`https://api.whatsapp.com/send/?phone=905392343777&text=${content.wp}&type=phone_number&app_absent=0`}
+          target="_blank"
+          className="skySqrButton"
+        >
           Teklif Alın
         </Link>
         <Link

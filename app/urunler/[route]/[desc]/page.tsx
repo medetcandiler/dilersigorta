@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata, ResolvingMetadata } from "next";
 import { products } from "@/data/products";
 import OfferButton from "@/components/OfferButton";
+import Image from "next/image";
 
 export async function generateMetadata(
   { params }: { params: { desc: string } },
@@ -29,6 +30,8 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
     (desc) => desc.title.toLocaleLowerCase() === decodedPath.toLocaleLowerCase()
   )[0];
 
+  console.log(matchedTitle.imageSrc);
+
   const renderTextWithLineBreaks = (text: string) => {
     return text.split("\n").map((line, index) => (
       <React.Fragment key={index}>
@@ -47,27 +50,43 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
               {matchedTitle.title.split(" ").slice(1).join(" ")}
             </h3>
           </div>
-          {Object.entries(matchedTitle.subDescription).map(([key, value]) => (
-            <div key={key}>
-              <h4 className="font-bold contentHeader text-lg mb-2">{key}</h4>
-              {Array.isArray(value) ? (
-                <ul className="list-disc pl-6 pb-5">
-                  {value.map((item, index) => (
-                    <li key={index} className="listItem contentText">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="contentText mb-6">
-                  {renderTextWithLineBreaks(value)}
-                </p>
+          <div>
+            <div>
+              {Object.entries(matchedTitle.subDescription).map(
+                ([key, value]) => (
+                  <div key={key}>
+                    <h4 className="font-bold contentHeader text-lg mb-2">
+                      {key}
+                    </h4>
+                    {Array.isArray(value) ? (
+                      <ul className="list-disc pl-6 pb-5">
+                        {value.map((item, index) => (
+                          <li key={index} className="listItem contentText">
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="contentText mb-6">
+                        {renderTextWithLineBreaks(value)}
+                      </p>
+                    )}
+                  </div>
+                )
               )}
             </div>
-          ))}
+            <div>
+              <Image
+                src={`${matchedTitle.imageSrc}`}
+                width={300}
+                height={300}
+                alt={`${matchedTitle.title}`}
+              />
+            </div>
+          </div>
 
           <div className="grid place-content-center pt-4">
-            <OfferButton isOnMobile={true} />
+            <OfferButton isOnMobile={true} wp={matchedTitle.wp} />
           </div>
         </div>
       </div>

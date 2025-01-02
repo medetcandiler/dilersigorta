@@ -57,7 +57,7 @@ const Footer = () => {
             href="mailto:hasan@dilersigorta.com"
             className="flex-auto links-hover"
           >
-            hasan@dilersigorta.com
+            info@dilersigorta.com
           </Link>
         </div>
         <FooterSectionLinks />

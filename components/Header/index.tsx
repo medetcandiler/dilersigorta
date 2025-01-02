@@ -31,7 +31,10 @@ const Header: FC = () => {
             <div className="hidden lg:flex">
               <ContactButton />
             </div>
-            <OfferButton isOnMobile={false} />
+            <OfferButton
+              isOnMobile={false}
+              wp={"Merhaba, sigorta teklifleri hakkında bilgi almak istiyorum."}
+            />
           </div>
         </div>
       </section>

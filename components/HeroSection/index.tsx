@@ -9,7 +9,6 @@ const HeroSection = () => {
   const [currentSlice, setCurrentSlice] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
 
-  // Show popup 2 seconds after page load
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);
@@ -54,8 +53,6 @@ const HeroSection = () => {
           />
         ))}
       </div>
-
-      {/* Popup Section */}
       {showPopup && (
         <div
           className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
