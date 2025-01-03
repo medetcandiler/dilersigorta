@@ -75,7 +75,7 @@ const ContactSection: FC<IContentSectionProps> = ({ isPage }) => {
 
           <div className="flex flex-col gap-3 items-center">
             <ContactSectionAdress
-              address="Atalar, Diler Sigorta, Üsküdar Cd. NO: 117, 34862 Kartal/İstanbul"
+              address="Atalar, Diler Sigorta, Üsküdar Cd. NO: 117B, 34862 Kartal/İstanbul"
               linkToMap="www.google.com/maps/dir//Atalar,+Diler+Sigorta,+%C3%9Csk%C3%BCdar+Cd.+NO:117,+34862+Kartal%2F%C4%B0stanbul/@40.9021467,29.083375,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14cac38ba3ac041d:0xba966ab998541c9!2m2!1d29.1658033!2d40.9021946?entry=ttu"
             />
             <ContactSectionAdress

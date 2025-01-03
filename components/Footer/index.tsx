@@ -6,7 +6,7 @@ import FooterSectionLinks from "../FooterSectionLinks";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-[#fafafa] paddingForSections">
+    <footer className="bg-[#fafafa] paddingForSections py-10">
       <div className="flex flex-col items-center gap-4 text-slate-800 text-center text-md md:text-start md:text-lg">
         <div>
           <Image
@@ -29,21 +29,40 @@ const Footer = () => {
             (539) 234 37 77
           </Link>
         </div>
-        <div className="flex gap-2.5 justify-between group">
-          <Image
-            src="/icons/location.svg"
-            alt="diler sigorta location icon"
-            className="w-[24px] h-[24px] transition duration-300 group-hover:scale-125"
-            width={24}
-            height={24}
-          />
-          <Link
-            target="_blank"
-            href="https://www.google.com/maps/dir//Atalar,+Diler+Sigorta,+%C3%9Csk%C3%BCdar+Cd.+NO:117,+34862+Kartal%2F%C4%B0stanbul/@40.9021467,29.083375,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14cac38ba3ac041d:0xba966ab998541c9!2m2!1d29.1658033!2d40.9021946?entry=ttu"
-            className="flex-auto links-hover "
-          >
-            Atalar, Diler Sigorta, Üsküdar Cd. NO:117, 34862 Kartal/İstanbul
-          </Link>
+        <div className="flex flex-col gap-2.5 items-center">
+          <div className="flex gap-2.5 justify-between group">
+            <Image
+              src="/icons/location.svg"
+              alt="diler sigorta location icon"
+              className="w-[24px] h-[24px] transition duration-300 group-hover:scale-125"
+              width={24}
+              height={24}
+            />
+            <Link
+              target="_blank"
+              href="https://www.google.com/maps/dir//Atalar,+Diler+Sigorta,+%C3%9Csk%C3%BCdar+Cd.+NO:117,+34862+Kartal%2F%C4%B0stanbul/@40.9021467,29.083375,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14cac38ba3ac041d:0xba966ab998541c9!2m2!1d29.1658033!2d40.9021946?entry=ttu"
+              className="flex-auto links-hover "
+            >
+              Atalar, Diler Sigorta, Üsküdar Cd. NO:117B, 34862 Kartal/İstanbul
+            </Link>
+          </div>
+          <div className="flex gap-2.5 justify-between group">
+            <Image
+              src="/icons/location.svg"
+              alt="diler sigorta location icon"
+              className="w-[24px] h-[24px] transition duration-300 group-hover:scale-125"
+              width={24}
+              height={24}
+            />
+            <Link
+              target="_blank"
+              href="https://www.google.com/maps/dir//%C3%96rnek,+Ferah+Feza+Sk.+No:9,+34704+Ata%C5%9Fehir%2F%C4%B0stanbul/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x14cac7dac57c8bf9:0x34dbfdafd9a528f?sa=X&ved=1t:707&ictx=111"
+              className="flex-auto links-hover "
+            >
+              Örnek Mahallesi,Cahar Dudayev Cad.Ferah Feza Sok.No:9
+              Ataşehir/İstanbul
+            </Link>
+          </div>
         </div>
         <div className="flex gap-2.5 justify-between group">
           <Image

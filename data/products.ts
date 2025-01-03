@@ -193,7 +193,7 @@ export const products = [
         description:
           "Zorunlu bir konut sigortası olan Zorunlu Deprem Sigortası (DASK) deprem sonucu meydana gelen maddi zararları teminat altına alır.",
         wp: "Merhaba+Zorunlu+Deprem+Sigortası+DASK+Teklifi+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/dask.png",
         subDescription: {
           "Zorunlu Deprem Sigortası":
             "Konut Zorunlu Deprem Sigortası (DASK), Türkiye'de yaşanan depremlerin etkilerini azaltmak amacıyla zorunlu hale getirilmiş bir sigorta türüdür. DASK, deprem sonucu meydana gelen maddi zararları teminat altına alarak konut sahiplerini korur. Bu sigorta, devlet tarafından belirlenen primlerle sağlanır ve konut sahiplerinin mülkiyetlerini depreme karşı korunmasını sağlar. DASK, deprem riski altındaki bölgelerde yaşayan herkes için zorunludur ve konut sahiplerine güvence sağlayarak olası deprem zararlarını en aza indirmeyi amaçlar.",
@@ -205,7 +205,7 @@ export const products = [
         description:
           "Konut Sigortası, DASK'ın sağladığı deprem teminatı limitlerini aşan veya DASK'ın kapsamadığı zararları güvence altına alır. Konut Sigortası, hırsızlık, yangın, su baskını gibi olaylara karşı daha kapsamlı bir koruma sunarak ev sahipleri ve kiracılar için güvence sağlar. Bu sigorta, yalnızca yapıyı değil, içindeki eşya ve cihazları da koruma altına alır.",
         wp: "Merhaba+Konutum+İçin+Sigorta+Teklif+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/konut2.png",
         subDescription: {
           "Konut Sigortası ile Sağlanan Teminatlar": [
             "DASK'ın limitini aşan deprem kaynaklı hasarlar",
@@ -244,7 +244,7 @@ export const products = [
         description:
           "İş yerinizde karşılaşabileceğiniz birçok riske karşı özel olarak hazırladığımız geniş kapsamlı koruma sağlayan Kapsamlı İş Yeri Sigortası ile iş yeriniz güvencemiz altında.",
         wp: "Merhaba+İşyerim+İçin+Sigorta+Teklif+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/isyeri2.png",
         subDescription: {
           "İşyeri Paket Sigortası nedir?":
             "İşyeri Paket Sigortası ile işyeri binanızı, muhteviyatınızı (demirbaş, makine-tesisat, emtea vb.) ve camlarınızı, paket olarak biraraya getirilmiş otomatik teminatlar çerçevesinde sigorta güvencesi altına alabilirsiniz. Otomatik teminatlara ilave olarak, aşağıda listelenen ek teminatlardan dilediğinizi seçerek kapsamı genişletebilir, ihtiyaçlarınıza en uygun alternatifi yaratabilirsiniz.",
@@ -271,7 +271,7 @@ export const products = [
         id: 2,
         title: "isyeri Eczane Paket Sigortası",
         wp: "Merhaba+İşyerim+İçin+Sigorta+Teklif+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/isyeri2.png",
         description:
           "Eczane Paket Sigorta Poliçesi ile eczanelerin tüm sigorta ihtiyaçları tek bir poliçede toplanmıştır. Eczane Paket Sigorta Poliçesi; işletmenize özel olarak oluşturulan teminatları, sunduğu geniş kapsamlı asistans hizmetleri ile işletmenizi ve çalışanlarınızı, üstelik çok ekonomik bir çözümle koruyor.",
         subDescription: {
@@ -309,7 +309,7 @@ export const products = [
         id: 3,
         title: "isyeri Noter Paket Sigortası",
         wp: "Merhaba+İşyerim+İçin+Sigorta+Teklif+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/isyeri2.png",
         description:
           "Noterlerimizin günümüz ihtiyaçlarına ve mesleki çalışma koşullarına göre özel olarak tasarlanan Noter Paket Poliçesi yangından depreme, üçüncü şahıs sorumluluktan ferdi kazaya kadar çok geniş teminatlar içermektedir.",
         subDescription: {
@@ -343,7 +343,7 @@ export const products = [
         id: 4,
         title: "isyeri Otel Paket Sigortası",
         wp: "Merhaba+İşyerim+İçin+Sigorta+Teklif+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/isyeri2.png",
         description:
           "Otel Paket Sigortası, turizm işletmelerinin karşılaşabileceği büyük-küçük pek çok riski geniş kapsamlı tek bir poliçeyle güvence altına almaktadır.",
         subDescription: {
@@ -383,7 +383,7 @@ export const products = [
         description:
           "Plaza Paket Sigorta Poliçesi ile otomotiv sektöründe faaliyet gösteren işletmelerin tüm sigorta ihtiyaçları tek bir poliçe ile teminat altına alınmaktadır.",
         wp: "Merhaba+İşyerim+İçin+Sigorta+Teklif+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/isyeri2.png",
         subDescription: {
           "Plaza Paket Sigortası nedir?":
             "Plaza Paket Sigortası, otomotiv sektöründe hizmet veren işletmelerin özel sigorta gereksinimlerini karşılamak üzere tasarlanmış bir poliçedir. Bu özel sigorta paketi, işletmelerin yangın, hırsızlık, iş durması gibi çeşitli risklere karşı korunmasını sağlar ve işletmelerin faaliyetlerini kesintisiz sürdürmelerine yardımcı olur.",
@@ -441,7 +441,7 @@ export const products = [
         description:
           "Doğal afetlerin ve ekonomik krizlerin sıkça yaşandığı ülkemizde çeşitli ölçekteki tüm yatırımların güvence altına alınması oldukça önem taşımaktadır.İnşaat AllRisks Sigortası'nın gerekliliği; projenin devamlılığın sağlanması, sermaye, iş gücü ve zaman kayıplarının önüne geçilmesi konularında ortaya çıkmaktadır.",
         wp: "Merhaba+All+Risk+Sigortası+Teklifi+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/allrisks.jpg",
         subDescription: {
           "İnşaat AllRisks Sigortası;":
             "İnşaat faaliyetlerinin başlangıcından bitimine kadar geçen süre içinde, inşaat faaliyetlerine özgü ani ve beklenmedik sebeplerle ortaya çıkacak hasarların yanı sıra, Doğal afetler (deprem, sel, seylap, toprak kayması, fırtına...) Yangın, yıldırım, infilak Hırsızlık Şantiye-işletme kazaları Dikkatsizlik, sabotaj vb. nedenlerle oluşabilecek risklere karşı projeyi güvence altına alır.!",
@@ -456,7 +456,7 @@ export const products = [
         description:
           "Günümüzün hızla gelişen teknolojisi ve insan gereksinimlerinin çeşitlenmesi, sanayicileri fabrikalarını ve tesisleri yenilemeye ve yeni yatırımlar yapmaya yöneltmektedir. Yeni yatırımlar gerçekleştirilirken, olası maddi kayıpların önüne geçebilmek için Montaj AllRisksSigortası bir gereklilik olarak karşımıza çıkmaktadır.",
         wp: "Merhaba+Montaj+All+Risk+Sigortası+Teklifi+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/allrisks.jpg",
         subDescription: {
           "Montaj AllRisks Sigortası;":
             "Montaj faaliyetlerinin başlangıcından bitimine kadar geçen süre içinde, montaj faaliyetlerine özgü ani ve beklenmedik sebeplerle ortaya çıkacak hasarların yanı sıra, Doğal afetler (deprem, sel, seylap, toprak kayması, fırtına...) Yangın, yıldırım, infila Hırsızlık vb. nedenlerle oluşabilecek riskleri de güvence altına alır. Tek poliçede pek çok sigorta çeşidini toplayarak daha ekonomik ve takibi daha kolay bir çözüm sunar.",
@@ -470,7 +470,7 @@ export const products = [
         description:
           "Ekonominin temel unsurlarından biri sanayi ise, sanayinin temel unsurlarından birisinin, belki de en önemlisinin makineler olduğu bir gerçektir. Bu nedenle,makinelerin kullanımı kadar korunması ve güvence altına alınması da önemlidir.",
         wp: "Merhaba+Makine+Kırılması+Teklifi+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/allrisks.jpg",
         subDescription: {
           "Makine Kırılması Sigortası Teminatlar":
             "Makine Kırılması Sigortasının sunduğu güvenceler; Makine ve tesislerin deneme devresinden sonra, Normal çalışır halde iken Aynı iş yerinde temizleme, revizyon veya yer değiştirme esnasında Dururken ani ve beklenmedik her türlü sebepten meydana gelen maddi ziya ve hasarların gerektirdiği tamirat ve ikame masraflarını temin eder.",
@@ -494,7 +494,7 @@ export const products = [
         description:
           "İşyerinizde bulunan elektronik cihazlar yaşamımızın ayrılmaz bir parçası. Onlar olmadan çalışma hayatı çok zahmetli ve sıkıcı olurdu herhalde. Sırf bu gerçek bile onların korunmasının ne kadar önemli olduğunu bize hatırlatıyor.",
         wp: "Merhaba+Elektronik+Cihaz+Sigortası+(ECS)+Teklifi+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/makinekirilmasi.jpg",
         subDescription: {
           "Elektronk Cihaz Teminatları":
             "Elektronik Cihaz Sigortasının sunduğu güvenceler; Cihazların deneme devresinden sonra, Normal çalışır halde iken Aynı iş yerinde temizleme, revizyon veya yer değiştirme esnasında Dururken ani ve beklenmedik sebeplerden meydana gelen maddi ziya ve hasarların gerektirdiği tamirat ve ikame masraflarını temin eder.",
@@ -523,7 +523,7 @@ export const products = [
         description:
           "Bu sigorta ile, bir malın bir taşıma aracı ile (gemi, kamyon, uçak, ya da tren) bir yerden bir yere taşınması sırasında poliçede yer alan kloz ve şartlar uyarınca bir kaza ya da olaya bağlı olarak fiziken zarar görmesi teminat altına alınır.",
         wp: "Merhaba+Emtia+Taşıma+Sigortası+Teklifi+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/nakliyatsigortası.png",
         subDescription: {
           "Tam Ziya Teminatı":
             "Malın taşıma aracı ile birlikte tüm değerini yitirecek şekilde tamamen zarar görmesi hali.",
@@ -548,7 +548,7 @@ export const products = [
         description:
           "Denizlerde güvenli bir yolculuk için Tekne/Yat Sigortaları yaptırın, yatınız ve içindeki ekipmanları olası risklere karşı güvence altına alalım...",
         wp: "Merhaba+Tekne+Yat+Sigortası+Teklifi+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/nakliyatsigortası.png",
         subDescription: {
           "Gezinti Teknesi Sigortaları":
             "Yat Sigortası ile yatın gövdesi, makineleri, adını taşıyan servis botları, yat ile birlikte alınıp satılması mutad olan donanım ve ekipmanıInstituteYachtClauses 1.11.82 Cl.328 kapsamında tek bir poliçe ile güvence altına alınmaktadır. Sigorta güvencesi, yatın poliçe içinde belirtilmiş olan coğrafi alan içerisinde bulunması kaydıyla, denizde, yatma mahallinde, çekek yerinde, çekeğe alınırken veya çekekten indirilirken kesintisiz olarak devam eder.",
@@ -586,7 +586,7 @@ export const products = [
         description:
           "Nakliyat sürecinde oluşabilecek zararları ve sorumlulukları karşılamak için tasarlanmış sigorta ürünleridir. Bu sigortalar, taşıma sırasında mal kaybı, hasar veya diğer risklerden doğan maliyetleri korur ve nakliyecinin sorumluluğunu azaltır.",
         wp: "Merhaba+Nakliyeci+Sorumluluk+Sigortası+Teklifi+Almak+İstiyorum",
-        imageSrc: "/images/tss.png",
+        imageSrc: "/images/nakliyatsigortası.png",
         subDescription: {
           "Yurt İçi Taşıyıcının Mali Mesuliyeti Sigortaları":
             "Yurt içinde taşıyacağınız yük, Yurt İçi Taşıyıcının Mali Mesuliyeti Sigortaları ile güvence altında! Türkiye sınırları dahilinde taşımacılık yapan nakliyeci firmaların, kendilerine ait veya kiraladıkları araçlarla taşıma hizmeti verdikleri müşterilerine ait emtiayı taşırken teminat kapsamındaki bir rizikonun gerçekleşmesi sonucunda doğan yasal sorumluluklarını poliçede belirlenmiş şartlar ve limitler dahilinde teminat altına alan sigortalardır. Yurt İçi Sorumluluk Sigortası teminatı Emtia Nakliyat Sigortası'nın yerine geçmez. Sadece taşıyıcının Türk Ticaret Kanun'una göre kusurlu olduğu durumlarda, poliçede yazılı şartlar ve limitler dahilinde teminat sağlar. ",

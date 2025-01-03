@@ -11,7 +11,7 @@ const AboutCard: FC<IAboutCard> = ({ title, content, imageSrc }) => {
         } md:w-1/2`}
       >
         <Image
-          className="rounded-xl shadow"
+          className="rounded-xl shadow  object-cover w-[270px] h-[200px] md:h-[350px] md:w-[400px]"
           src={imageSrc}
           width={450}
           height={450}

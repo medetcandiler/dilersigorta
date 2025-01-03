@@ -30,8 +30,6 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
     (desc) => desc.title.toLocaleLowerCase() === decodedPath.toLocaleLowerCase()
   )[0];
 
-  console.log(matchedTitle.imageSrc);
-
   const renderTextWithLineBreaks = (text: string) => {
     return text.split("\n").map((line, index) => (
       <React.Fragment key={index}>
@@ -44,14 +42,14 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
   return (
     <section>
       <div className="container mx-auto flex justify-center items-center pb-20 pt-10 md:pt-10 md:px-5 lg:px-20 ">
-        <div className="md:border-black px-10 md:py-10 lg:px-20 lg:py-16 md:rounded-lg md:shadow md:shadow-black md:overflow-y-auto">
+        <div className="flex flex-col gap-5 md:border-black px-10 lg:px-20  md:py-10 lg:py-16 md:rounded-lg md:shadow md:shadow-black md:overflow-y-auto">
           <div className="flex justify-center items-center pb-5">
             <h3 className="text-center font-bold text-3xl md:text-4xl text-slate-800">
               {matchedTitle.title.split(" ").slice(1).join(" ")}
             </h3>
           </div>
-          <div>
-            <div>
+          <div className="flex flex-col items-center justify-center gap-5 md:flex-row">
+            <div className="md:w-2/3">
               {Object.entries(matchedTitle.subDescription).map(
                 ([key, value]) => (
                   <div key={key}>
@@ -75,12 +73,13 @@ const NestedDescPage = ({ params }: { params: { desc: string } }) => {
                 )
               )}
             </div>
-            <div>
+            <div className="flex justify-center md:w-1/3">
               <Image
                 src={`${matchedTitle.imageSrc}`}
                 width={300}
                 height={300}
                 alt={`${matchedTitle.title}`}
+                className="w-full object-contain"
               />
             </div>
           </div>

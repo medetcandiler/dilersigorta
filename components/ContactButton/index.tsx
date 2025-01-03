@@ -12,7 +12,7 @@ const ContactButton: FC = () => {
       </div>
       <Link className="flex items-center links-hover group " href="tel:+905304175231">
         <Image src="/icons/phone.svg" width={20} height={20} alt="phone icon" className="transition duration-300 group-hover:scale-110" />
-        <span className="ml-2 ">(530) 417 52 31</span>
+        <span className="ml-2 ">(539) 234 37 77</span>
       </Link>
     </section>
   );
